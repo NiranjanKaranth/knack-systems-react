@@ -1,0 +1,344 @@
+/* ==========================================================================
+   GLOBAL RESETS & BASE STYLES
+   ========================================================================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #222222;
+  font-family: Poppins, sans-serif;
+}
+
+.landing-container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #ffffff;
+}
+
+/* Buttons */
+.orange-button {
+  position: relative;
+  background-color: #e86800;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.orange-button:hover {
+  background-color: #444;
+}
+
+/* Container Spacing Across Viewports */
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1400px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* ==========================================================================
+   KS-WRAPPER TYPOGRAPHY & LINKS
+   ========================================================================== */
+.ks-wrapper h1 {
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+  margin: 0 0 30px;
+  font-size: 32px;
+  line-height: 42px;
+}
+
+.ks-wrapper h2 {
+  color: #222;
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 28px;
+  line-height: 38px;
+}
+
+.ks-wrapper h3 {
+  color: #222;
+  font-family: "Roboto Serif", serif;
+  font-weight: 600;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.ks-wrapper h4 {
+  color: #222;
+  font-weight: 600;
+  margin: 0 0 30px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.ks-wrapper h5 {
+  color: #222;
+  font-weight: 600;
+  margin: 0 0 30px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+.ks-wrapper h6 {
+  color: #222;
+  font-weight: 600;
+  margin: 0 0 30px;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.ks-wrapper p {
+  color: #444;
+  font-size: 16px;
+  line-height: 28px;
+  margin: 0 0 30px;
+}
+
+.ks-wrapper p:last-child {
+  margin: 0;
+}
+
+.ks-wrapper a {
+  color: #222;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.ks-wrapper a:hover {
+  color: #e86800;
+  text-decoration: none;
+}
+
+.ks-wrapper ul,
+.ks-wrapper ol {
+  list-style: none;
+}
+
+.ks-wrapper img {
+  height: auto;
+  width: 100%;
+}
+
+/* Breakpoint Typography Scaling */
+@media only screen and (min-width: 768px) {
+  .ks-wrapper h1 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .ks-wrapper h2 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .ks-wrapper h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .ks-wrapper h4 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .ks-wrapper h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .ks-wrapper h6 {
+    font-size: 18px;
+    line-height: 28px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .ks-wrapper h1 {
+    font-size: 34px;
+    line-height: 46px;
+  }
+
+  .ks-wrapper h2 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .ks-wrapper h3 {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .ks-wrapper h4 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ks-wrapper h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .ks-wrapper h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .ks-wrapper h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  .ks-wrapper h2 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .ks-wrapper h3 {
+    font-size: 34px;
+    line-height: 44px;
+  }
+
+  .ks-wrapper h4 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .ks-wrapper h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ks-wrapper h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .ks-wrapper h1 {
+    font-size: 38px;
+    line-height: 56px;
+  }
+
+  .ks-wrapper h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .ks-wrapper h3 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+
+  .ks-wrapper h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .ks-wrapper h5 {
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .ks-wrapper h6 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* ==========================================================================
+   BUTTON STYLES
+   ========================================================================== */
+.cta-button {
+  background-color: #e86800;
+  color: #ffffff !important;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #222;
+}
+
+.cta-black-button {
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  padding: 16px 32px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  border-radius: 30px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.cta-black-button:hover {
+  background-color: #e86800;
+  transform: translateY(-2px);
+}
+
+@media only screen and (min-width: 768px) {
+  .cta-button,
+  .cta-black-button {
+    width: fit-content;
+  }
+}

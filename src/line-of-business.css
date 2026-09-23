@@ -1,0 +1,393 @@
+/* src/line-of-business.css */
+.lob-landing-page {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* LOB Grid Cards Section */
+.lob-section {
+  padding: 80px 0;
+}
+
+.lob-intro-text {
+  text-align: center;
+  margin: 0 0 50px !important;
+}
+
+.lob-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.lob-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lob-card:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.lob-image-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.lob-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+}
+
+.lob-content h4 {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.lob-cta-btn {
+  display: inline-block;
+  margin-top: auto;
+  background-color: #e86800;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: fit-content;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.lob-cta-btn:hover {
+  background-color: #444;
+}
+
+/* Why Knack Systems Section */
+.why-knack-section {
+  padding: 80px 0px;
+  background-color: #f9f9f9;
+}
+
+.why-knack-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.why-knack-img-col {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.why-knack-img-col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.why-knack-text-col {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.why-knack-list {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.why-knack-list li {
+  font-size: 16px;
+  line-height: 28px;
+  color: #444;
+  list-style-type: disc;
+}
+
+/* --- Line of Business Sub-Pages Styling --- */
+.lob-sub-pages {
+  font-family: inherit;
+}
+
+/* Overview Section */
+.lob-overview {
+  padding: 80px 0;
+}
+
+.lob-overview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.lob-overview-img-wrapper {
+  flex: 1;
+  min-width: 300px;
+}
+
+.lob-overview-text {
+  flex: 1.5;
+  min-width: 300px;
+}
+
+.lob-overview-text h2 {
+  text-align: left;
+}
+
+.lob-overview-img-wrapper img {
+  display: block;
+}
+
+/* How We Can Help Cards */
+.lob-help {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+
+.lob-card-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.lob-help .card {
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+  background-color: #ffffff;
+  padding: 20px;
+  align-items: center;
+  align-content: center;
+}
+
+.lob-help .card:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.lob-help p {
+  text-align: center;
+}
+
+.content-inline-link {
+  text-decoration: underline !important;
+}
+
+/* --- CPQ Focused Industries Grid Section --- */
+.cpq-focused-industries {
+  padding: 80px 0;
+}
+
+.cpq-focused-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px 30px;
+}
+
+.cpq-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cpq-focused-industries h4 {
+  text-align: left;
+  width: fit-content;
+  display: inline-block;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #444;
+}
+
+.cpq-focused-industries p {
+  flex-grow: 1;
+}
+
+/* Services Dark Section */
+.lob-services {
+  background-color: #212529;
+  color: #fff;
+  padding: 80px 0;
+}
+
+.lob-services h3,
+.lob-services p {
+  color: #fff;
+  text-align: center;
+}
+
+.lob-services-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+/* Our Solution Section */
+.lob-solution {
+  padding: 80px 0;
+}
+
+.lob-solution ul {
+  padding-left: 30px !important;
+}
+
+.lob-solution ul,
+.lob-services ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.lob-solution ul li,
+.lob-services ul li {
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.lob-solution ul li:last-child,
+.lob-services ul li:last-child {
+  margin-bottom: 0;
+}
+
+.solutions-content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.commerce{
+  margin-bottom: 0px;
+}
+
+.solutions-col h4 {
+  text-align: left;
+}
+
+.solutions-col-img {
+  text-align: center;
+}
+
+.solutions-col-img h6 {
+  margin: 30px 0 10px 0;
+}
+
+.black-button {
+  display: inline-block;
+  margin-top: auto;
+  background-color: #444;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  border-radius: 25px;
+  width: fit-content;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.black-button:hover {
+  background-color: #e86800;
+}
+
+.solutions-main-content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr;
+}
+
+.solutions-main-content h5 {
+  font-weight: 400;
+}
+
+.lob-button-parent a:first-child {
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+.b2b-img-heading {
+  text-decoration: underline !important;
+  font-size: 18px !important;
+  line-height: 28px !important;
+}
+
+/* Bottom Banner */
+.lob-bottom-banner {
+  background-color: #2b2b2b !important;
+  padding: 60px 0;
+  text-align: center;
+  color: #fff;
+}
+
+.lob-bottom-banner h3,
+.lob-bottom-banner p {
+  color: #fff;
+}
+
+.lob-overview-text ul{
+  list-style-type: disc;
+  padding-left: 30px;
+}
+
+.lob-overview-text ul li{
+  margin-bottom: 15px;
+}
+
+.lob-overview-text ul li:last-child{
+  margin-bottom: 0;
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .lob-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lob-card-content {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .cpq-focused-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .lob-services-content {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .solutions-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .solutions-main-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .b2b-img-heading {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .lob-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

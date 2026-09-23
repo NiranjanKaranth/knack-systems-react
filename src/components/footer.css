@@ -1,0 +1,200 @@
+/* ==========================================================================
+   FOOTER STYLES
+   ========================================================================== */
+.site-footer {
+    background-color: #ffffff;
+    padding-top: 60px;
+    color: #fff;
+    border-top: 1px solid #eaeaea;
+}
+
+/* 1. Columns Grid */
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-heading {
+    font-size: 18px !important;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 30px;
+    text-align: left !important;
+    line-height: 1.3 !important;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #444444 !important;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: #e86800 !important;
+}
+
+/* 2. Middle Section (Socials, Podcasts & Back-to-Top) */
+.footer-middle {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.social-podcasts-group {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.sub-heading {
+    font-size: 16px !important;
+    line-height: 26px !important;
+    font-weight: 600;
+    color: #222222;
+    margin-bottom: 30px;
+    text-align: left !important;
+}
+
+.icon-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: #000000;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-icon:hover {
+    background-color: #e86800;
+    transform: translateY(-2px);
+}
+
+.scroll-top-btn {
+    background-color: #e86800;
+    color: #ffffff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: background-color 0.2s ease;
+    align-self: flex-end;
+}
+
+.scroll-top-btn:hover {
+    background-color: #222222;
+}
+
+/* 3. Bottom Legal Section */
+.footer-bottom {
+    border-top: 1px solid #e0e0e0;
+    padding: 20px 0;
+}
+
+.footer-bottom-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+.copyright-text {
+    font-size: 14px !important;
+    color: #444;
+    margin: 0 !important;
+}
+
+.legal-links {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.legal-links a {
+    font-size: 14px;
+    color: #444 !important;
+    text-decoration: underline !important;
+    transition: color 0.2s ease;
+}
+
+.legal-links a:hover {
+    color: #444;
+    text-decoration: none !important;
+}
+
+.legal-links .divider {
+    color: #888888;
+    font-size: 14px;
+}
+
+/* ==========================================================================
+   FOOTER RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px 20px;
+    }
+
+    .social-podcasts-group {
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .footer-middle {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .footer-bottom-container {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+/* Desktop (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+}

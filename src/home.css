@@ -1,0 +1,796 @@
+/* ==========================================================================
+   HOMEPAGE STYLES (Home.css)
+   ========================================================================== */
+
+.home-container {
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #ffffff;
+}
+
+/* --------------------------------------------------------------------------
+   1. HERO CAROUSEL SECTION
+   -------------------------------------------------------------------------- */
+.home-hero-carousel {
+  position: relative;
+  width: 100%;
+  min-height: 570px;
+  height: 80vh;
+  max-height: 700px;
+  overflow: hidden;
+}
+
+.hero-slider-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  /* transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); */
+  will-change: transform;
+}
+
+.hero-slide {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  min-width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Dark overlay for readability */
+.hero-slide::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+.home-hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 0 20px;
+  color: #ffffff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.slider-pr-image {
+  display: block;
+  margin-bottom: 40px;
+}
+
+
+.home-hero-title {
+  color: #ffffff;
+  line-height: 48px !important;
+}
+
+.home-hero-subtitle {
+  color: #fff !important;
+  max-width: 580px;
+}
+
+/* Grouped Controls (Bottom Right) */
+.carousel-controls-box {
+  position: absolute;
+  bottom: 40px;
+  right: 20px;
+  z-index: 10;
+  display: flex;
+}
+
+.carousel-btn {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid #fff;
+  color: #ffffff;
+  font-size: 34px;
+  padding-bottom: 4px;
+  line-height: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.carousel-btn:hover {
+  background-color: #e65100;
+  border-color: #e65100;
+}
+
+/* --------------------------------------------------------------------------
+   2. TRUSTED BRANDS SECTION (GRID + CAROUSEL)
+   -------------------------------------------------------------------------- */
+.trusted-brands-section {
+  width: 100%;
+  padding: 80px 0;
+}
+
+.trusted-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.trusted-left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.trusted-heading {
+  text-align: left !important;
+}
+
+.view-work-btn {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 30px;
+  font-size: 16px;
+  text-decoration: none;
+  width: fit-content;
+}
+
+.view-work-btn:hover {
+  color: #e65100;
+}
+
+.arrow-box {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #e65100;
+  color: #e65100;
+  font-weight: 300;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  padding-bottom: 2px;
+  transition: transform 0.2s ease;
+}
+
+.trusted-divider {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.trusted-right {
+  flex: 1.2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-carousel-track {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+}
+
+.logo-grid-page {
+  flex: 0 0 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 40px 15px;
+}
+
+.brand-card {
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+.brand-card img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+}
+
+/* Dots Controls */
+.brand-dots-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.square-dot {
+  width: 10px;
+  height: 10px;
+  border: 1px solid #e65100;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: background-color 0.2s ease;
+}
+
+.square-dot.active {
+  background-color: #e65100;
+}
+
+/* --------------------------------------------------------------------------
+   3. CUSTOMER SUCCESS STORIES CAROUSEL
+   -------------------------------------------------------------------------- */
+.stories-section {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  padding: 80px 0 100px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.stories-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 420px;
+}
+
+.stories-carousel-track {
+  display: flex;
+  margin-top: 110px;
+  gap: 40px;
+  will-change: transform;
+}
+
+/* Card width set to ~65vw to show 1 full card + 0.5 next card on screen */
+.story-card {
+  position: relative;
+  flex: 0 0 calc(100vw - 40px);
+  width: calc(100vw - 40px);
+  max-width: calc(100vw - 40px);
+  margin: 0 auto;
+}
+
+.ms-slide__image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ms-slide__image {
+  width: 100%;
+  height: 250px !important;
+  object-fit: cover;
+  transform: scale(1.1);
+  transition: transform 0.6s ease;
+}
+
+/* Big top-centered number matching reference image */
+.story-bg-number {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 90px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.19);
+  line-height: 1;
+  user-select: none;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.story-active-text-panel {
+  position: absolute;
+  left: max(20px, calc((100vw - 1200px) / 2));
+  width: 340px;
+  z-index: 10;
+  pointer-events: auto;
+}
+
+.story-content-wrapper {
+  display: flex;
+  align-items: stretch;
+  gap: 0px;
+  position: relative;
+  z-index: 2;
+}
+
+.story-card-inner {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.story-text-col {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 5;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.story-card.is-active .story-text-col {
+  opacity: 1;
+  visibility: visible;
+}
+
+.story-title {
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+.story-image-col {
+  width: 100%;
+  height: auto;
+  margin-left: 0px;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+}
+
+/* Controls fixed at bottom right edge */
+.stories-controls {
+  position: absolute;
+  bottom: 0px;
+  right: 20px;
+  display: flex;
+  gap: 0px;
+  z-index: 10;
+}
+
+.story-arrow-btn {
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: #ffffff;
+  font-size: 36px;
+  padding-bottom: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.story-arrow-btn:hover {
+  background-color: #e65100;
+  color: #fff;
+}
+
+.stories-main-title {
+  color: #fff !important;
+  text-align: left !important;
+}
+
+.stories-main-description {
+  color: #fff !important;
+  text-align: left !important;
+}
+
+.stories-carousel-viewport {
+  width: 100%;
+  padding-left: 0;
+  overflow: visible;
+}
+
+/* ==========================================================================
+   TESTIMONIAL SECTION (Mobile-First Default)
+   ========================================================================== */
+
+.testimonial-section {
+  padding: 80px 0;
+  background-color: #ffffff;
+}
+
+.testimonial-title {
+  text-align: center;
+  margin-bottom: 40px !important;
+}
+
+/* Mobile: Single-column stacked grid layout */
+.testimonial-grid {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 30px;
+}
+
+.testimonial-content {
+  width: 100%;
+}
+
+.testimonial-quote {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+/* Orange Quote Icon styling */
+.quote-mark {
+  color: #e65100;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 1;
+  display: inline-block;
+}
+
+.quote-img1 {
+  display: inline-block;
+  width: 25px !important;
+  height: auto;
+  margin-right: 6px;
+  vertical-align: baseline;
+}
+
+.quote-img2 {
+  display: inline-block;
+  width: 25px !important;
+  height: auto;
+  margin-left: 6px;
+  vertical-align: baseline;
+}
+
+/* Author Box with Vertical Line Divider */
+.testimonial-author-box {
+  display: block;
+  align-items: center;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.testimonial-company-logo {
+  width: auto;
+  flex-shrink: 0;
+  border-bottom: 3px solid #e65100;
+  padding-bottom: 20px;
+}
+
+.testimonial-company-logo img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.author-divider {
+  display: none;
+}
+
+.author-info {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.author-info p:first-child {
+  margin-bottom: 2px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.author-info p {
+  margin: 0;
+}
+
+/* Video Column Styles */
+.testimonial-video-col {
+  width: 100%;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+/* --------------------------------------------------------------------------
+   3. RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------------------------- */
+
+@media only screen and (min-width: 768px) {
+  .home-hero-carousel {
+    min-height: 400px;
+  }
+
+  .home-hero-title {
+    max-width: 560px;
+    line-height: 48px !important;
+  }
+
+  .home-hero-content {
+    padding: 0 22px;
+  }
+
+  .slider-pr-image {
+    display: none;
+  }
+
+  .carousel-controls-box {
+    right: 25px;
+  }
+
+  .logo-grid-page {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .trusted-container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  .trusted-divider {
+    width: 1px;
+    height: 220px;
+  }
+
+  .story-bg-number {
+    font-size: 90px;
+    left: 21%;
+  }
+
+  .story-content-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .story-active-text-panel {
+    position: relative;
+    left: 0;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 20px;
+  }
+
+  .stories-carousel-viewport {
+    padding-left: 20px;
+  }
+
+  .ms-slide__image {
+    transform: scale(0.9);
+    height: 100% !important;
+  }
+
+  .story-text-col {
+    flex: 0 0 auto;
+    width: 100%;
+    left: 5px;
+    text-align: left;
+    display: block;
+    transform: translateY(-50%);
+  }
+
+  .story-image-col {
+    margin-left: 75px;
+    height: auto;
+  }
+
+  .stories-carousel-track {
+    gap: 20px;
+    margin-top: 90px;
+  }
+
+  .story-card {
+    flex: 0 0 60vw;
+    width: 60vw;
+    max-width: 820px;
+  }
+
+  .story-title {
+    max-width: 370px;
+  }
+
+  .stories-carousel-wrapper {
+    min-height: 390px;
+    height: auto;
+  }
+
+  .stories-controls {
+    right: calc((162vw - 1200px) / 2);
+  }
+
+  .author-divider {
+    width: 3px;
+    height: 110px;
+    background-color: #e65100;
+    flex-shrink: 0;
+    display: block;
+  }
+
+  /* Two-column layout on Desktop */
+  .testimonial-grid {
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .testimonial-company-logo {
+    border: none;
+    width: 130px;
+    padding: 0;
+  }
+
+  .testimonial-author-box {
+    display: flex;
+    gap: 20px;
+  }
+
+  .author-info {
+    padding: 0;
+  }
+
+  .testimonial-content {
+    flex: 1;
+  }
+
+  .testimonial-video-col {
+    flex: 1;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .home-hero-carousel {
+    min-height: 360px;
+  }
+
+  .home-hero-title {
+    max-width: 560px;
+    line-height: 52px !important;
+  }
+
+  .home-hero-content {
+    padding: 0 32px;
+  }
+
+  .carousel-controls-box {
+    right: 32px;
+  }
+
+  .trusted-container {
+    gap: 50px;
+  }
+
+  .story-bg-number {
+    font-size: 96px;
+    left: 17%;
+  }
+
+  .stories-carousel-viewport {
+    padding-left: 20px;
+  }
+
+  .story-text-col {
+    left: 12px;
+  }
+
+  .stories-carousel-wrapper {
+    min-height: 480px;
+  }
+
+  .stories-controls {
+    right: calc((124vw - 1200px) / 2);
+  }
+
+  .author-divider {
+    height: 80px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .home-hero-carousel {
+    min-height: 400px;
+  }
+
+  .home-hero-title {
+    max-width: 625px;
+    line-height: 60px !important;
+  }
+
+  .home-hero-content {
+    padding: 0 40px;
+  }
+
+  .carousel-controls-box {
+    right: 75px;
+  }
+
+  .story-bg-number {
+    font-size: 98px;
+    left: 16%;
+  }
+
+  .stories-carousel-viewport {
+    padding-left: 55px;
+  }
+
+  .story-text-col {
+    left: 20px;
+  }
+
+  .stories-carousel-wrapper {
+    min-height: 600px;
+  }
+
+  .stories-controls {
+    right: calc((99vw - 1200px) / 2);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .home-hero-title {
+    max-width: 650px;
+    line-height: 64px !important;
+  }
+
+  .carousel-controls-box {
+    right: 60px;
+  }
+
+  .stories-carousel-viewport {
+    padding-left: 40px;
+  }
+
+  .stories-carousel-track {
+    gap: 40px;
+    margin-top: 100px;
+  }
+
+  .story-card {
+    max-width: 845px;
+  }
+
+  .story-bg-number {
+    font-size: 106px;
+    left: 14.5%;
+  }
+
+  .story-title {
+    max-width: 400px;
+  }
+
+  .story-text-col {
+    left: 20px;
+  }
+
+  .stories-carousel-wrapper {
+    min-height: 630px;
+  }
+
+  .stories-controls {
+    right: calc((92vw - 1200px) / 2);
+  }
+}

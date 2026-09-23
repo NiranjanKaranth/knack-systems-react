@@ -1,0 +1,477 @@
+/* ==========================================================================
+   INDUSTRIES PAGE STYLES
+   ========================================================================== */
+
+/* 2. Industries Section Grid */
+.industries-section {
+  width: 100%;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #ffffff;
+}
+
+.industries-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+.industry-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.industry-image {
+  width: 100%;
+}
+
+.industry-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.industry-content h4 {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.industry-content p {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+/* 3. Stats Section (Centered Grid Matrix Alignment) */
+.stats-section {
+  width: 100%;
+  background: url('https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/achivement-image.png') no-repeat center center / cover;
+  padding: 60px 0;
+  color: #ffffff;
+}
+
+.stats-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 30px 20px;
+  justify-items: center;
+  align-items: flex-start;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  width: 100%;
+}
+
+.stat-item h2 {
+  color: #ffffff !important;
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 10px 0;
+  line-height: 1.1;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+
+.stat-item p {
+  color: #fff !important;
+  margin: 0;
+  text-align: center;
+}
+
+/* 4. CTA Banner Section */
+.cta-banner-section {
+  width: 100%;
+  background-color: #f4f4f4;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.cta-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 5. Our Clients Carousel Section */
+.clients-section {
+  width: 100%;
+  background-color: #f7f7f7;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.carousel-wrapper {
+  width: 100%;
+  margin: 20px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.carousel-viewport {
+  overflow: hidden;
+  width: 100%;
+}
+
+.logo-track {
+  display: flex;
+  align-items: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.logo-card {
+  padding: 0 15px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-card img {
+  max-height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+.carousel-arrow {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  color: #333333;
+  cursor: pointer;
+  padding: 0px;
+  user-select: none;
+}
+
+/* Consumer Brands Section */
+.consumer-brands-section {
+  background-color: #222;
+  padding: 50px 0;
+}
+
+.consumer-brands-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.brands-heading {
+  text-align: center;
+}
+
+.brands-heading h2 {
+  color: #ffffff;
+  margin: 0;
+}
+
+.brands-category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  width: 100%;
+}
+
+.brand-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.brand-icon-wrapper {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.brand-item p {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Overview Section */
+.industry-overview-section {
+  padding: 60px 0;
+}
+
+.overview-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.overview-help-content h4 {
+  text-align: left;
+}
+
+.sub-link-text {
+  text-decoration: underline !important;
+}
+
+.overview-help-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.overview-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+}
+
+.pill-btn {
+  background-color: #000000;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+
+.pill-btn:hover {
+  background-color: #e86800;
+}
+
+.overview-help-image img {
+  border: 1px solid #ccc;
+  padding: 15px;
+}
+
+/* Our Solutions Section */
+.our-solutions-section {
+  padding: 60px 0;
+}
+
+.solutions-intro {
+  text-align: center;
+}
+
+.solutions-intro strong {
+  text-decoration: underline;
+}
+
+.solutions-intro strong:hover {
+  color: #e86800;
+  text-decoration: none;
+}
+
+.solutions-achieve-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.achieve-left h4 {
+  text-align: left;
+}
+
+.stat-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.stat-items p {
+  margin: 0;
+}
+
+.stat-circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background-color: #262626;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.achieve-actions {
+  display: block;
+  margin-top: 50px;
+}
+
+.achieve-actions a {
+  margin-bottom: 30px;
+  width: -webkit-fill-available;
+}
+
+.btn-orange {
+  background-color: #e86800;
+  border: none;
+  border-radius: 50px;
+  color: #fff !important;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.btn-orange:hover {
+  background-color: #444;
+  color: #fff !important;
+}
+
+/* Global CTA Section */
+.global-cta-section {
+  background-color: #f3f4f6;
+  padding: 60px 0;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-black {
+  background-color: #000000;
+  color: #ffffff !important;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.btn-black:hover {
+  background-color: #e86800;
+}
+
+.overview-help-list {
+  list-style-type: disc !important;
+  padding: 0 20px;
+}
+
+.overview-help-list li {
+  padding: 0 0 10px 0;
+}
+
+
+/* 2. Mobile & Tablets (480px to 991px): 2 Columns */
+@media only screen and (min-width: 480px) {
+  .brands-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 20px;
+  }
+}
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .industries-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+
+  .industry-card {
+    flex-direction: row;
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .industry-image {
+    flex: 0 0 40%;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px 20px;
+  }
+
+  .stat-item h2 {
+    font-size: 44px;
+  }
+
+  /* Consumer Brands Desktop */
+  .consumer-brands-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .brands-heading {
+    text-align: left;
+    flex: 0 0 30%;
+  }
+
+  .brands-category-grid {
+    grid-template-columns: repeat(4, 1fr);
+    flex: 0 0 65%;
+  }
+
+  /* Overview Desktop */
+  .overview-help-grid {
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .overview-help-content,
+  .overview-help-image {
+    flex: 1;
+  }
+
+  /* Solutions Desktop */
+  .solutions-achieve-grid {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .achieve-left,
+  .achieve-right {
+    flex: 1;
+  }
+
+  .achieve-actions {
+    display: flex;
+    gap: 30px;
+  }
+
+  .achieve-actions a {
+    margin-bottom: 0px;
+    width: auto;
+  }
+}
+
+/* Small Laptops (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+  .hero-card {
+    flex: 0 0 400px;
+  }
+
+  .stats-container {
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Standard Desktop (min-width: 1280px) */
+@media only screen and (min-width: 1280px) {
+  .hero-card {
+    flex: 0 0 450px;
+  }
+
+  .stat-item h2 {
+    font-size: 48px;
+  }
+}
