@@ -1,4 +1,3 @@
-import React from "react";
 import IndustryHero from "../../components/global/GlobalHero";
 import IndustryOverview from "../../components/industry/IndustryOverview";
 import GlobalCTA from "../../components/global/GlobalCTA";
