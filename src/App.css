@@ -23,7 +23,7 @@ body {
 .orange-button {
   position: relative;
   background-color: #e86800;
-  color: #ffffff;
+  color: #ffffff !important;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
