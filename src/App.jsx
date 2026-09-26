@@ -46,10 +46,10 @@ function App() {
           <Route path="/industries/building-materials" element={<BuildingMaterials />} />
           <Route path="/industries/life-sciences" element={<LifeSciences />} />
           <Route path="/line-of-business" element={<LineOfBusiness/>} />
-          <Route path="/line-of-business/cpq" element={<CPQ />} />
           <Route path="/line-of-business/e-commerce" element={<ECommerce />} />
           <Route path="/line-of-business/b2b-commerce" element={<B2BCommerce />} />
           <Route path="/line-of-business/b2c-commerce" element={<B2CCommerce />} />
+          <Route path="/line-of-business/cpq" element={<CPQ />} />
           <Route path="/line-of-business/Sales" element={<Sales />} />
           <Route path="/line-of-business/Service" element={<Service />} />
           <Route path="/line-of-business/Marketing" element={<Marketing />} />

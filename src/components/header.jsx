@@ -104,7 +104,7 @@ function Header() {
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("industries")}
               >
-                <span>Industries</span>
+                <span><Link to="/industries" onClick={closeMobile}>Industries</Link></span>
                 <span className="arrow-icon">▶</span>
               </div>
 
@@ -113,21 +113,21 @@ function Header() {
                   <div className="dropdown-column left-column">
                     <span className="column-title">CONSUMER BRANDS</span>
                     <ul className="dropdown-item-list">
-                      <li><Link to="/industries" onClick={closeMobile}>Apparel & Fashion</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Footwear & Accessories</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Sports & Outdoor</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Consumer Durables</Link></li>
+                      <li><Link to="/industries/apparel-and-fashion" onClick={closeMobile}>Apparel & Fashion</Link></li>
+                      <li><Link to="/industries/footwear-and-accessories" onClick={closeMobile}>Footwear & Accessories</Link></li>
+                      <li><Link to="/industries/sports" onClick={closeMobile}>Sports & Outdoor</Link></li>
+                      <li><Link to="/industries/consumer-durables" onClick={closeMobile}>Consumer Durables</Link></li>
                     </ul>
                   </div>
                   <div className="dropdown-column right-column">
                     <ul className="dropdown-item-list">
-                      <li><Link to="/industries" onClick={closeMobile}>Wholesale and Distribution</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Manufacturing</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>IM&C</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Chemical</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>High Tech</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Building Materials</Link></li>
-                      <li><Link to="/industries" onClick={closeMobile}>Life Sciences</Link></li>
+                      <li><Link to="/industries/wholesale" onClick={closeMobile}>Wholesale and Distribution</Link></li>
+                      <li><Link to="/industries/manufacturing" onClick={closeMobile}>Manufacturing</Link></li>
+                      <li><Link to="/industries/imc" onClick={closeMobile}>IM&C</Link></li>
+                      <li><Link to="/industries/chemical" onClick={closeMobile}>Chemical</Link></li>
+                      <li><Link to="/industries/hightech" onClick={closeMobile}>High Tech</Link></li>
+                      <li><Link to="/industries/building-materials" onClick={closeMobile}>Building Materials</Link></li>
+                      <li><Link to="/industries/life-sciences" onClick={closeMobile}>Life Sciences</Link></li>
                     </ul>
                   </div>
                 </div>
@@ -144,25 +144,25 @@ function Header() {
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("lob")}
               >
-                <span>Line of Business</span>
+                <span><Link to="/line-of-business" onClick={closeMobile}>Line of Business</Link></span>
                 <span className="arrow-icon">▶</span>
               </div>
 
               {activeMenu === "lob" && (
                 <div className="dropdown-menu two-column-dropdown">
                   <div className="dropdown-column left-column">
-                    <span className="column-title">E-COMMERCE</span>
+                    <span className="column-title"><Link to="/line-of-business/e-commerce" onClick={closeMobile}>E-COMMERCE</Link></span>
                     <ul className="dropdown-item-list">
-                      <li><Link to="#" onClick={closeMobile}>B2B Commerce</Link></li>
-                      <li><Link to="#" onClick={closeMobile}>B2C Commerce</Link></li>
+                      <li><Link to="/line-of-business/b2b-commerce" onClick={closeMobile}>B2B Commerce</Link></li>
+                      <li><Link to="/line-of-business/b2c-commerce" onClick={closeMobile}>B2C Commerce</Link></li>
                     </ul>
                   </div>
                   <div className="dropdown-column right-column">
                     <ul className="dropdown-item-list">
-                      <li><Link to="#" onClick={closeMobile}>Configure, Price and Quote (CPQ)</Link></li>
-                      <li><Link to="#" onClick={closeMobile}>Sales</Link></li>
-                      <li><Link to="#" onClick={closeMobile}>Service</Link></li>
-                      <li><Link to="#" onClick={closeMobile}>Marketing</Link></li>
+                      <li><Link to="/line-of-business/cpq" onClick={closeMobile}>Configure, Price and Quote (CPQ)</Link></li>
+                      <li><Link to="/line-of-business/Sales" onClick={closeMobile}>Sales</Link></li>
+                      <li><Link to="/line-of-business/Service" onClick={closeMobile}>Service</Link></li>
+                      <li><Link to="/line-of-business/Marketing" onClick={closeMobile}>Marketing</Link></li>
                     </ul>
                   </div>
                 </div>
