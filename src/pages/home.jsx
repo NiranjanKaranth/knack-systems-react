@@ -297,6 +297,128 @@ function Home() {
   const activeDisplayIndex = storyIndex % baseSuccessStories.length;
   const formattedNumber = String(activeDisplayIndex + 1).padStart(2, "0");
 
+  // Industry Transform Cards Data
+  const industryCards = [
+    {
+      id: 1,
+      title: "Consumer Products",
+      description:
+        "Stay ahead of shifting consumer demands with modern e-commerce, sales, CPQ, and marketing solutions. Knack Systems helps consumer brands deliver seamless shopping experiences and build loyalty with data-driven insights.",
+      image: "https://www.knacksystems.com/hubfs/ks-website-2025/consumer.webp",
+      hoverImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/consumer-product-black-03.webp",
+      link: "#",
+    },
+    {
+      id: 2,
+      title: "Building Materials",
+      description:
+        "Simplify sales, pricing, and customer engagement with tailored SAP CX solutions. From e-commerce to marketing, Knack Systems powers building materials businesses with tools that drive efficiency and growth.",
+      image: "https://www.knacksystems.com/hubfs/ks-website-2025/building.webp",
+      hoverImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/building-material-black.webp",
+      link: "#",
+    },
+    {
+      id: 3,
+      title: "Industrial Manufacturing",
+      description:
+        "Streamline complex sales and scale operations with SAP CX solutions. Knack Systems enables manufacturers to enhance e-commerce, personalize marketing, and improve customer satisfaction.",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/manufacturing.webp",
+      hoverImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/manufacturing-black.webp",
+      link: "#",
+    },
+    {
+      id: 4,
+      title: "Chemicals",
+      description:
+        "Optimize sales and deliver exceptional customer experiences with SAP CX tools. Knack Systems helps chemical businesses drive growth with advanced CPQ, marketing automation, and secure customer data.",
+      image: "https://www.knacksystems.com/hubfs/ks-website-2025/chemical.webp",
+      hoverImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/chemical-black.webp",
+      link: "#",
+    },
+    {
+      id: 5,
+      title: "Wholesale & Distribution",
+      description:
+        "Boost efficiency and connect better with customers using Knack Systems’ e-commerce, sales, and CPQ solutions. We simplify your operations and help build loyalty with smarter marketing and data insights.",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/wholesale.webp",
+      hoverImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Wholesale-black.webp",
+      link: "#",
+    },
+  ];
+
+  // SAP-Focused Services State & Data
+  const [activeServiceTab, setActiveServiceTab] = useState(0);
+
+  const sapServices = [
+    {
+      id: 1,
+      name: "Strategy & Planning",
+      title:
+        "A clear roadmap across sales, service and commerce with workflows that fit real business needs. We remove uncertainty by defining simple steps your teams can adopt immediately.",
+      description:
+        "We remove uncertainty by defining simple steps your teams can adopt immediately.",
+      buttonText: "Read More",
+      link: "#",
+    },
+    {
+      id: 2,
+      name: "SAP Implementation Services",
+      title:
+        "End-to-end SAP implementation designed for agility and long-term business scalability.",
+      description:
+        "Accelerate deployment times and reduce friction with our proven framework and certified experts.",
+      buttonText: "Read More",
+      link: "#",
+    },
+    {
+      id: 3,
+      name: "Application Managed Services",
+      title:
+        "Reliable, 24/7 support and optimization for your core SAP enterprise ecosystems.",
+      description:
+        "Keep your operations running seamlessly with continuous monitoring, proactive fixes, and updates.",
+      buttonText: "Read More",
+      link: "#",
+    },
+    {
+      id: 4,
+      name: "Commerce AMS Services",
+      title:
+        "Maximize online store performance and conversions with specialized SAP Commerce support.",
+      description:
+        "Deliver flawless checkout paths, quick catalog updates, and peak reliability during high-traffic events.",
+      buttonText: "Read More",
+      link: "#",
+    },
+    {
+      id: 5,
+      name: "Solution Design",
+      title:
+        "Architecting custom blueprints that align complex enterprise requirements with modern user experiences.",
+      description:
+        "Build robust, secure workflows tailored specifically to your unique industry ecosystem.",
+      buttonText: "Read More",
+      link: "#",
+    },
+    {
+      id: 6,
+      name: "SAP Rollout & Upgrade Services",
+      title:
+        "Smooth global rollouts and version upgrades with minimal disruption to daily business activities.",
+      description:
+        "Expand your footprint safely across regions while unlocking the newest features of the SAP suite.",
+      buttonText: "Read More",
+      link: "#",
+    },
+  ];
+
   return (
     <div className="home-container">
       {/* Hero Section */}
@@ -474,7 +596,7 @@ function Home() {
       <section className="testimonial-section">
         <div className="container">
           {/* Section Heading */}
-          <h2 className="testimonial-title">Our Customers Have Spoken</h2>
+          <h3 className="testimonial-title">Our Customers Have Spoken</h3>
 
           <div className="testimonial-grid">
             {/* Left Column: Quote & Author Details */}
@@ -539,6 +661,135 @@ function Home() {
                   Your browser does not support the video tag.
                 </video>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Transforming Industries with AI-Enabled SAP CX Section */}
+      <section className="transforming-industries-section">
+        <div className="container">
+          <div className="transforming-header-row">
+            <div className="transforming-title-wrapper">
+              <h3 className="transforming-main-title">
+                Transforming Industries with AI-Enabled SAP CX
+              </h3>
+            </div>
+            <div className="transforming-action-wrapper">
+              <p className="transforming-subtitle">
+                We bring industry ready workflows, clear processes and strong
+                engineering to help teams work faster and make better decisions.
+              </p>
+              <a href="#experts" className="orange-button">
+                Talk to our experts!
+              </a>
+            </div>
+          </div>
+
+          <div className="transforming-grid">
+            {industryCards.map((card) => (
+              <div key={card.id} className="transforming-card">
+                <div className="transforming-card-media">
+                  <img
+                    src={card.image}
+                    alt={card.title}
+                    className="default-img"
+                  />
+                  <img
+                    src={card.hoverImage}
+                    alt={`${card.title} hover`}
+                    className="hover-img"
+                  />
+                </div>
+                <div className="transforming-card-content">
+                  <p className="transforming-card-title">{card.title}</p>
+                  <p className="transforming-card-desc">{card.description}</p>
+                  <a
+                    href={card.link}
+                    className="orange-button transforming-card-btn"
+                  >
+                    Learn More!
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Our SAP-Focused Services Section */}
+      <section className="sap-services-section">
+        {/* Desktop Left Full-Bleed Content Box */}
+        <div
+          className="desktop-only-content"
+          style={{
+            backgroundImage: `url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg')`,
+          }}
+        >
+          <div className="sap-content-inner-wrapper">
+            <h3 className="sap-content-title">
+              {sapServices[activeServiceTab].title}
+            </h3>
+            <p className="sap-content-desc">
+              {sapServices[activeServiceTab].description}
+            </p>
+            <a
+              href={sapServices[activeServiceTab].link}
+              className="orange-button sap-content-btn"
+            >
+              {sapServices[activeServiceTab].buttonText}
+            </a>
+          </div>
+        </div>
+
+        <div className="container">
+          <div className="sap-services-header">
+            <h3 className="sap-services-main-title">
+              Our SAP-Focused Services Tailored to Your Success
+            </h3>
+            <p className="sap-services-main-subtitle">
+              Focused on customer success, Knack Systems delivers value-driven,
+              industry-tailored digital CX transformations with robust service
+              offerings.
+            </p>
+          </div>
+
+          <div className="sap-services-grid-wrapper">
+            <div className="desktop-spacer"></div>
+
+            {/* Vertical Tabs & Mobile Accordion List */}
+            <div className="sap-services-tabs-box">
+              {sapServices.map((service, index) => {
+                const isActive = activeServiceTab === index;
+                return (
+                  <div
+                    key={service.id}
+                    className={`sap-tab-item ${isActive ? "active" : ""}`}
+                    onClick={() => setActiveServiceTab(index)}
+                  >
+                    <div className="sap-tab-header">
+                      <span className="sap-tab-name">{service.name}</span>
+                    </div>
+
+                    {/* Mobile Accordion Content Drawer (Appears right under the clicked tab item on mobile) */}
+                    <div
+                      className="mobile-accordion-content"
+                      style={{
+                        backgroundImage: `url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg')`,
+                      }}
+                    >
+                      <h3 className="sap-content-title">{service.title}</h3>
+                      <p className="sap-content-desc">{service.description}</p>
+                      <a
+                        href={service.link}
+                        className="orange-button sap-content-btn"
+                      >
+                        {service.buttonText}
+                      </a>
+                    </div>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </div>

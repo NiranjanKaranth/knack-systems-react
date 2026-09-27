@@ -390,6 +390,7 @@
 .stories-main-description {
   color: #fff !important;
   text-align: left !important;
+  margin: 0 0 30px 0 !important;
 }
 
 .stories-carousel-viewport {
@@ -515,6 +516,253 @@
   display: block;
 }
 
+/* =================================================================xture
+   Transforming Industries Section (Mobile First CSS)
+   ==================================================================== */
+
+.transforming-industries-section {
+  padding: 0;
+}
+
+/* Header Grid Layout */
+.transforming-header-row {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
+.transforming-action-wrapper {
+  text-align: center;
+}
+
+/* Cards Grid - Mobile First (Stacked / 1 Column) */
+.transforming-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  cursor: pointer;
+}
+
+/* Individual Card Styling */
+.transforming-card {
+  position: relative;
+  height: 465px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Media / Images */
+.transforming-card-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.transforming-card-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* Default Image Visible, Hover Image Hidden */
+.transforming-card-media .default-img {
+  opacity: 1;
+}
+
+.transforming-card-media .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* Swap images on card hover */
+.transforming-card:hover .default-img {
+  opacity: 0;
+}
+
+.transforming-card:hover .hover-img {
+  opacity: 1;
+}
+
+/* Card Content (Hidden initially at the bottom, pops up smoothly on hover) */
+.transforming-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85) 15%, rgba(0, 0, 0, 0) 60%);
+  color: #ffffff;
+  transition: background 0.6s cubic-bezier(0.25, 1, 0.5, 1), justify-content 0.6s cubic-bezier(0.25, 1, 0.5, 1), padding 0.6s ease;
+}
+
+/* Trigger Pop-up Animation on Hover */
+.transforming-card:hover .transforming-card-content {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+}
+
+/* Typography & Elements inside Pop-up */
+.transforming-card-title {
+  margin-bottom: 0px !important;
+  color: #fff !important;
+  font-size: 18px !important;
+  transition: all 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.transforming-card:hover .transforming-card-title {
+  margin-bottom: 20px !important;
+  font-size: 20px !important;
+}
+
+.transforming-card-desc {
+  margin-bottom: 0px !important;
+  color: #fff !important;
+  transition: margin-bottom 0.4s ease;
+}
+
+.transforming-card:hover .transforming-card-btn {
+  margin-top: 30px !important;
+}
+
+.transforming-card-desc,
+.transforming-card-btn {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out, max-height 0.5s ease-in-out;
+  max-height: 0;
+}
+
+.transforming-card:hover .transforming-card-desc,
+.transforming-card:hover .transforming-card-btn {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  max-height: 300px;
+}
+
+/* =================================================================
+   Our SAP-Focused Services Section (Mobile First CSS)
+   ==================================================================== */
+
+.sap-services-section {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.sap-services-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px !important;
+}
+
+/* Grid layout - Mobile Stacked */
+.sap-services-grid {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Hide desktop-only content box on mobile */
+.desktop-only-content {
+  display: none;
+}
+
+/* Left Content Box */
+.sap-services-content-box {
+  background: url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg') no-repeat center center;
+  background-size: cover;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sap-content-title {
+  text-align: left !important;
+}
+
+/* Right Vertical Tabs Box */
+.sap-services-tabs-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.sap-tab-item {
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  padding: 15px;
+}
+
+.sap-tab-item:last-child {
+  border-bottom: none;
+}
+
+.sap-tab-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sap-tab-item span {
+  font-size: 18px;
+  transition: color 0.3s ease;
+  color: #444;
+}
+
+.mobile-accordion-icon {
+  font-size: 18px;
+  font-weight: 400;
+  color: #444;
+}
+
+/* Mobile Accordion Content Drawer (Collapsed by default) */
+.mobile-accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.4s ease-in-out, opacity 0.3s ease-in-out, padding 0.3s ease;
+  padding: 0 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #fafafa;
+  border-radius: 8px;
+  margin-bottom: 0;
+}
+
+/* Active State for Mobile Accordion */
+.sap-tab-item.active .sap-tab-header span {
+  color: #ff6600;
+}
+
+.sap-tab-item.active .mobile-accordion-content {
+  max-height: 450px;
+  opacity: 1;
+  padding: 25px 20px;
+  margin-bottom: 15px;
+}
+
 
 /* --------------------------------------------------------------------------
    3. RESPONSIVE BREAKPOINTS
@@ -638,6 +886,14 @@
     gap: 50px;
   }
 
+  .transforming-card-title {
+    font-size: 16px !important;
+  }
+
+  .transforming-card:hover .transforming-card-title {
+    font-size: 22px !important;
+  }
+
   .testimonial-company-logo {
     border: none;
     width: 130px;
@@ -659,6 +915,109 @@
 
   .testimonial-video-col {
     flex: 1;
+  }
+
+  /* Side-by-side header layout for larger screens */
+  .transforming-header-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .transforming-title-wrapper {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .transforming-main-title {
+    margin: 0 !important;
+  }
+
+  .transforming-action-wrapper {
+    flex: 1;
+    max-width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  /* 5-Column Grid layout on Desktop */
+  .transforming-grid {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: 510px;
+  }
+
+  .transforming-card {
+    flex: 1;
+    height: 510px;
+    transition: flex 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+  }
+
+  /* Hover state: The hovered card grows wider while others shrink */
+  .transforming-grid:hover .transforming-card:not(:hover) {
+    flex: 1.2;
+  }
+
+  .transforming-card:hover {
+    flex: 3.5;
+  }
+
+  /* Show Desktop Content Box, Hide Mobile Accordion Folders */
+  .desktop-only-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start;
+    flex: 1;
+    background: url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 40px;
+    min-height: 420px; */
+    position: absolute;
+    top: 240px;
+    left: 0;
+    width: 50vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: #fafafa;
+    padding: 60px 50px 60px calc((100vw - 1200px) / 2 + 15px);
+    min-height: 440px;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    box-shadow: 4px 0 20px rgba(0, 0, 0, 0.03);
+    z-index: 2;
+  }
+
+  /* Disable mobile accordion drawer behavior on desktop */
+  .mobile-accordion-content {
+    display: none !important;
+  }
+
+  .sap-services-grid-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .desktop-spacer {
+    display: block;
+    flex: 1;
+  }
+
+  /* Side-by-side Layout on Desktop */
+  .sap-services-grid {
+    flex-direction: row;
+  }
+
+  .sap-services-tabs-box {
+    flex: 1;
+    z-index: 3;
   }
 }
 
@@ -707,6 +1066,22 @@
 
   .author-divider {
     height: 80px;
+  }
+
+  .transforming-card {
+    height: 100%;
+  }
+
+  .transforming-card:hover .transforming-card-title {
+    font-size: 24px !important;
+  }
+
+  .transforming-card:hover {
+    flex: 2.5;
+  }
+
+  .transforming-card-title {
+    font-size: 18px !important;
   }
 }
 
