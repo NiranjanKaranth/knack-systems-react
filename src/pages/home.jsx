@@ -362,8 +362,6 @@ function Home() {
       name: "Strategy & Planning",
       title:
         "A clear roadmap across sales, service and commerce with workflows that fit real business needs. We remove uncertainty by defining simple steps your teams can adopt immediately.",
-      description:
-        "We remove uncertainty by defining simple steps your teams can adopt immediately.",
       buttonText: "Read More",
       link: "#",
     },
@@ -371,9 +369,7 @@ function Home() {
       id: 2,
       name: "SAP Implementation Services",
       title:
-        "End-to-end SAP implementation designed for agility and long-term business scalability.",
-      description:
-        "Accelerate deployment times and reduce friction with our proven framework and certified experts.",
+        "Structured builds using SAP Activate with predictable outcomes and strong engineering. Every implementation stays focused on value, not customization for its own sake.",
       buttonText: "Read More",
       link: "#",
     },
@@ -381,9 +377,7 @@ function Home() {
       id: 3,
       name: "Application Managed Services",
       title:
-        "Reliable, 24/7 support and optimization for your core SAP enterprise ecosystems.",
-      description:
-        "Keep your operations running seamlessly with continuous monitoring, proactive fixes, and updates.",
+        "Support that keeps your systems stable and your teams focused. Our AMS model gives you faster issue resolution and steady system performance.",
       buttonText: "Read More",
       link: "#",
     },
@@ -391,9 +385,7 @@ function Home() {
       id: 4,
       name: "Commerce AMS Services",
       title:
-        "Maximize online store performance and conversions with specialized SAP Commerce support.",
-      description:
-        "Deliver flawless checkout paths, quick catalog updates, and peak reliability during high-traffic events.",
+        "Consistent performance, catalog updates and AI supported product discovery. We help you keep your storefront accurate, fast and ready for growth.",
       buttonText: "Read More",
       link: "#",
     },
@@ -401,9 +393,7 @@ function Home() {
       id: 5,
       name: "Solution Design",
       title:
-        "Architecting custom blueprints that align complex enterprise requirements with modern user experiences.",
-      description:
-        "Build robust, secure workflows tailored specifically to your unique industry ecosystem.",
+        "Simple, human centered design that guides buyers and supports teams. Every design choice is tested for clarity so users get to the right action faster.",
       buttonText: "Read More",
       link: "#",
     },
@@ -411,13 +401,389 @@ function Home() {
       id: 6,
       name: "SAP Rollout & Upgrade Services",
       title:
-        "Smooth global rollouts and version upgrades with minimal disruption to daily business activities.",
-      description:
-        "Expand your footprint safely across regions while unlocking the newest features of the SAP suite.",
+        "Fast upgrades and scalable rollouts with minimal disruption. We keep your SAP CX landscape current so your teams benefit from the latest capabilities.",
       buttonText: "Read More",
       link: "#",
     },
   ];
+
+  // Digital CX Accelerators State & Data
+  const [activeAcceleratorTab, setActiveAcceleratorTab] = useState(0);
+
+  const accelerators = [
+    {
+      id: 1,
+      name: "SAP Commerce Cloud, cloud ERP edition",
+      title: "Commerce Built for SAP Cloud ERP Customers",
+      description:
+        "Knack Systems helps empower SAP Cloud ERP customers across their B2B buyers and internal teams with full commerce lifecycle, confident self-service and AI-assisted guidance.",
+      features: [
+        "Real-time contract pricing",
+        "Live order & shipment tracking",
+        "Quote-to-order, contract-driven",
+        "AI-assisted buying guidance",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Commerce-Cloud-Cloud-ERP.webp",
+      layoutType: "standard",
+    },
+    {
+      id: 2,
+      name: "AI for SAP CX",
+      title: "AI for SAP CX",
+      paragraphs: [
+        "Customers expect faster answers, clearer choices, and effortless digital experiences. Teams need AI that removes repetitive work and does not add more steps.",
+        "Knack Systems delivers enterprise-ready AI across SAP CX using the SAP CX Toolkit, Joule, and SAP BTP. We apply AI directly within sales, service, commerce, and customer data processes to streamline workflows, improve accuracy, and help teams act with confidence.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/AI-for-SAP-CX1.webp",
+      layoutType: "standard",
+    },
+    {
+      id: 3,
+      name: "SAP B2B Self-Service Portal Accelerator",
+      title: "Your Fastest Path to B2B Self-Service Success.",
+      description:
+        "SAP B2B Self-Service Portal Accelerator is a new, fully flexible, cloud-based, enterprise-grade platform built on SAP Commerce Cloud that connects directly to your SAP ERP (S/4, ECC, or even non-SAP systems). It’s a one-stop shop for your channel partners, sales teams, and customers to",
+      features: [
+        "Check orders & history instantly",
+        "Request quotes & create claims",
+        "Initiate returns & pay invoices",
+        "View contracts & pricing",
+        "Submit and track support requests",
+      ],
+      buttonText: "Request A Demo!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/knack-brava.webp",
+      layoutType: "standard",
+    },
+    {
+      id: 4,
+      name: "B2B Omnichannel Solution",
+      logoUrl:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Knack-Brava_Logo.svg",
+      description:
+        "Knack Brava is a robust B2B self-service solution for SAP ERP, SAP ECC, SAP Commerce Cloud and SAP S4 HANA. It is a comprehensive B2B solution with robust self-service capabilities, enabling seamless order management, real-time collaboration.",
+      listCol1: [
+        "Order Accuracy",
+        "Customizable Platform",
+        "Better Collaboration",
+        "Committed Support",
+        "Rich Product Information",
+      ],
+      listCol2: [
+        "Data Security & Privacy",
+        "Reduced Billing Errors",
+        "Backend Systems Integration",
+      ],
+      buttonText: "Request A Demo!",
+      link: "#",
+      badgeImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Available-on-SAP-Store-Black.png",
+      mainImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/B2B-Omnichannel-Solution.webp",
+      layoutType: "dual-list-col2",
+    },
+    {
+      id: 5,
+      name: "Network Commerce Solution",
+      title: "SeasonOne B2B2C",
+      subtitle: "Network Commerce Solution",
+      description:
+        "SeasonOne B2B2C simplifies and speeds up your digital channel growth. It brings your sales reps, channel partners, and customers together, giving you full control, visibility, and agility. With SeasonOne, your team and partners can create microsites, launch events and promotions, and deliver personalized experiences—all in minutes.",
+      features: ["Scale", "Speed", "Accuracy"],
+      buttonText: "Request A Demo!",
+      link: "#",
+      badgeImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Available-on-SAP-Store-Black.png",
+      mainImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Network-Commerce-Solution.webp",
+      layoutType: "list-badge-col2",
+    },
+    {
+      id: 6,
+      name: "B2B Fashion Wholesale Solution",
+      title: "SeasonOne",
+      subtitle: "B2B Fashion Wholesale Solution",
+      description:
+        "SeasonOne is one unified platform to enable your sales and service reps to operate efficiently and endow collaboration for the entire B2B network. It includes capabilities for new season launch, customer specific e-Catalog, digital showrooms, Pre-Book, Replenishment & Re-Order, Customer 360, rich product content and Live Order-Book.",
+      featureHeading: "Unique Features",
+      features: [
+        "Pre-Season Ordering",
+        "Current Season Ordering",
+        "Value-added services for personalized products",
+      ],
+      buttonText: "Request A Demo!",
+      link: "#",
+      badgeImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Available-on-SAP-Store-Black.png",
+      mainImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/B2B-Fashion-Wholesale-Solution1.webp",
+      layoutType: "list-badge-col2",
+    },
+  ];
+
+  // Helper renderer for Accelerator Tab Content
+  const renderAcceleratorContent = (item) => {
+    if (item.layoutType === "dual-list-col2") {
+      return (
+        <div className="accelerator-layout-dual">
+          <div className="accelerator-text-side">
+            {item.logoUrl && (
+              <img
+                src={item.logoUrl}
+                alt="Logo"
+                className="accelerator-logo-img"
+              />
+            )}
+            <p className="accelerator-content-desc">{item.description}</p>
+
+            <div className="dual-lists-wrapper">
+              <ul className="accelerator-features-list mobile-list">
+                {item.listCol1.map((li, idx) => (
+                  <li key={idx}>
+                    <span className="feature-arrow">▶</span> {li}
+                  </li>
+                ))}
+              </ul>
+              <ul className="accelerator-features-list">
+                {item.listCol2.map((li, idx) => (
+                  <li key={idx}>
+                    <span className="feature-arrow">▶</span> {li}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Button and Badge aligned side-by-side below the second column list */}
+            <div className="action-button-badge-row">
+              <a href={item.link} className="orange-button accelerator-btn">
+                {item.buttonText}
+              </a>
+              {item.badgeImage && (
+                <img
+                  src={item.badgeImage}
+                  alt="SAP Store Badge"
+                  className="sap-store-badge"
+                />
+              )}
+            </div>
+          </div>
+          <div className="accelerator-image-side">
+            <div className="accelerator-image-wrapper">
+              <img src={item.mainImage} alt="Accelerator Visual" />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    if (item.layoutType === "list-badge-col2") {
+      return (
+        <div className="accelerator-layout-dual">
+          <div className="accelerator-text-side">
+            {item.title && (
+              <h4 className="accelerator-content-title sub-heading1">
+                {item.title}
+              </h4>
+            )}
+            {item.subtitle && (
+              <h4 className="accelerator-subtitle-tag">{item.subtitle}</h4>
+            )}
+            <p className="accelerator-content-desc">{item.description}</p>
+
+            {item.featureHeading && (
+              <h4 className="feature-heading-title">{item.featureHeading}</h4>
+            )}
+
+            <ul className="accelerator-features-list">
+              {item.features.map((li, idx) => (
+                <li key={idx}>
+                  <span className="feature-arrow">▶</span> {li}
+                </li>
+              ))}
+            </ul>
+
+            {/* Button and Badge container to place them side by side */}
+            <div className="action-button-badge-row">
+              <a href={item.link} className="orange-button accelerator-btn">
+                {item.buttonText}
+              </a>
+              {item.badgeImage && (
+                <img
+                  src={item.badgeImage}
+                  alt="SAP Store Badge"
+                  className="sap-store-badge"
+                />
+              )}
+            </div>
+          </div>
+          <div className="accelerator-image-side">
+            <div className="accelerator-image-wrapper">
+              <img src={item.mainImage} alt="Accelerator Visual" />
+            </div>
+          </div>
+        </div>
+      );
+    }
+
+    // Standard Layout (Items 1, 2, 3)
+    return (
+      <div className="accelerator-layout-dual">
+        <div className="accelerator-text-side">
+          {item.title && (
+            <h4 className="accelerator-content-title">{item.title}</h4>
+          )}
+          {item.paragraphs ? (
+            item.paragraphs.map((p, idx) => (
+              <p key={idx} className="accelerator-content-desc">
+                {p}
+              </p>
+            ))
+          ) : (
+            <p className="accelerator-content-desc">{item.description}</p>
+          )}
+
+          {item.features && (
+            <ul className="accelerator-features-list">
+              {item.features.map((li, idx) => (
+                <li key={idx}>
+                  <span className="feature-arrow">▶</span> {li}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div className="action-button-badge-row">
+            <a href={item.link} className="orange-button accelerator-btn">
+              {item.buttonText}
+            </a>
+            {item.badgeImage && (
+              <img
+                src={item.badgeImage}
+                alt="SAP Store Badge"
+                className="sap-store-badge"
+              />
+            )}
+          </div>
+        </div>
+        <div className="accelerator-image-side">
+          <div className="accelerator-image-wrapper">
+            <img src={item.image} alt="Accelerator Visual" />
+          </div>
+        </div>
+      </div>
+    );
+  };
+
+  // SAP CX Solutions Vertical Tab State & Data
+  const [activeCxTab, setActiveCxTab] = useState(0);
+
+  const cxSolutions = [
+    {
+      id: 1,
+      name: "SAP Commerce Cloud",
+      title: "SAP Commerce Cloud",
+      paragraphs: [
+        "As a niche SAP Commerce Cloud partner, we are committed to delivering exceptional e-commerce solutions tailored to your specific industry needs.",
+        "We understand that one size does not fit all when it comes to e-commerce, and that's why we leverage the power of SAP Commerce Cloud for Industries to transform your online shopping experience and drive digital transformation and competitiveness in your sector.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Commerce-Cloud-02.webp",
+    },
+    {
+      id: 2,
+      name: "SAP Sales Cloud",
+      title: "SAP Sales Cloud",
+      paragraphs: [
+        "We help your business thrive by harnessing the full potential of SAP Sales Cloud to optimize processes, enhance customer interactions, and drive revenue growth for your organization.",
+        "With our tailored solutions, we empower your team for sales excellence. Partnering with Knack Systems means choosing a dedicated team that is committed to your success.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Sales-Cloud-02.webp",
+    },
+    {
+      id: 3,
+      name: "SAP CPQ",
+      title: "SAP CPQ",
+      paragraphs: [
+        "We specialize in unlocking the full potential of SAP Configure, Price, Quote (CPQ) solution. Our experts will provide tailored solutions that enable precise quotes, shorten sales cycles, and boost profitability.",
+        "When you choose Knack Systems as your SAP CPQ partner, you're choosing to gain a competitive edge in today's competitive market with 100% accurate quotes and consistent margin management.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-CPQ-02.webp",
+    },
+    {
+      id: 4,
+      name: "SAP Service Cloud",
+      title: "SAP Service Cloud",
+      paragraphs: [
+        "At Knack Systems, we are dedicated to elevating your customer service processes and ensuring customer satisfaction is at the heart of your operations. We specialize in enhancing customer service, streamlining support operations, and nurturing lasting relationships with your valued customers.",
+        "By choosing Knack Systems as your partner, you're making a strategic decision to excel and create remarkable customer experiences.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Service-Cloud-02.webp",
+    },
+    {
+      id: 5,
+      name: "SAP Marketing Cloud",
+      title: "SAP Marketing Cloud",
+      paragraphs: [
+        "Marketing is more than just broadcasting messages—it's about creating meaningful connections with your audience. SAP Marketing Cloud is a powerful tool that allows you to do just that.",
+        "That's why we work closely with your organization to craft tailored solutions that align perfectly with your specific needs. Our approach ensures that you can make the most of SAP Marketing Cloud, regardless of your industry or size.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Marketing-Cloud.webp",
+    },
+    {
+      id: 6,
+      name: "SAP Customer Data Cloud",
+      title: "SAP Customer Data Cloud",
+      paragraphs: [
+        "SAP Customer Data Cloud is a powerful solution designed to help businesses efficiently manage and protect their customer data.",
+        "By partnering with Knack Systems, businesses can optimize their SAP Customer Data Cloud implementation, ensuring a secure and efficient data management system that enables personalized customer experiences, improved marketing strategies, and long-term scalability.",
+      ],
+      buttonText: "Learn More!",
+      link: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Customer-Data-Cloud.webp",
+    },
+  ];
+
+  // Helper renderer for CX tab content
+  const renderCxContent = (item) => (
+    <div className="cx-content-panel">
+      <div className="cx-text-column">
+        <h3 className="cx-panel-title">{item.title}</h3>
+        {item.paragraphs.map((p, idx) => (
+          <p key={idx} className="cx-panel-desc">{p}</p>
+        ))}
+        <a href={item.link} className="orange-button cx-btn">{item.buttonText}</a>
+      </div>
+
+      <div className="cx-image-column">
+        <div className="cx-image-wrapper">
+          <img src={item.image} alt={item.title} />
+        </div>
+      </div>
+    </div>
+  );
+  
 
   return (
     <div className="home-container">
@@ -726,13 +1092,10 @@ function Home() {
             backgroundImage: `url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg')`,
           }}
         >
-          <div className="sap-content-inner-wrapper">
-            <h3 className="sap-content-title">
+          <div className="container">
+            <h5 className="sap-content-title">
               {sapServices[activeServiceTab].title}
-            </h3>
-            <p className="sap-content-desc">
-              {sapServices[activeServiceTab].description}
-            </p>
+            </h5>
             <a
               href={sapServices[activeServiceTab].link}
               className="orange-button sap-content-btn"
@@ -778,8 +1141,7 @@ function Home() {
                         backgroundImage: `url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg')`,
                       }}
                     >
-                      <h3 className="sap-content-title">{service.title}</h3>
-                      <p className="sap-content-desc">{service.description}</p>
+                      <h5 className="sap-content-title">{service.title}</h5>
                       <a
                         href={service.link}
                         className="orange-button sap-content-btn"
@@ -790,6 +1152,108 @@ function Home() {
                   </div>
                 );
               })}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Digital Customer Experience Accelerators Section */}
+      <section className="accelerators-section">
+        <div className="container">
+          {/* Header Top Row */}
+          <div className="accelerators-header-row">
+            <div className="accelerators-title-col">
+              <h3 className="accelerators-main-title">
+                Digital Customer Experience Accelerators for B2B and B2B2C
+              </h3>
+            </div>
+            <div className="accelerators-desc-col">
+              <h4 className="accelerators-subheading">
+                Our Industry Solutions
+              </h4>
+              <p className="accelerators-header-desc">
+                SAP B2B Self-Service Portal Accelerator, B2B Omnichannel, B2B2C
+                Network Commerce and B2B Fashion Wholesale solutions are truly
+                innovative solutions that shine in addressing sales, service and
+                ordering challenges across Knack-focused industries.
+              </p>
+            </div>
+          </div>
+
+          {/* Horizontal Card Tabs / Mobile Accordion Navigation */}
+          <div className="accelerators-tabs-container">
+            {accelerators.map((item, index) => {
+              const isActive = activeAcceleratorTab === index;
+              return (
+                <div
+                  key={item.id}
+                  className={`accelerator-tab-card ${isActive ? "active" : ""}`}
+                  onClick={() => setActiveAcceleratorTab(index)}
+                >
+                  <span className="accelerator-tab-text">{item.name}</span>
+
+                  {/* Mobile Accordion Content Drawer */}
+                  <div className="mobile-accelerator-content">
+                    {renderAcceleratorContent(item)}
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Desktop Content Display Area */}
+          <div className="desktop-accelerator-display-area">
+            {renderAcceleratorContent(accelerators[activeAcceleratorTab])}
+          </div>
+        </div>
+      </section>
+
+      {/* SAP CX Solutions Section */}
+      <section className="cx-solutions-section">
+        <div className="container cx-header-container">
+          <div className="cx-header-row">
+            <h2 className="cx-main-title">
+              SAP CX Solutions for Industry-Leading Results
+            </h2>
+            <p className="cx-main-desc">
+              By delivering customized solutions that improve customer
+              engagement, sales, CPQ, service, and marketing processes across
+              all touchpoints, Knack Systems can help you elevate customer
+              relationships and enhance your digital operations, ultimately
+              driving business growth and success.
+            </p>
+          </div>
+        </div>
+
+        {/* Full-bleed layout container where right image touches the right window edge */}
+        <div className="cx-solutions-full-container">
+          <div className="cx-solutions-grid">
+            {/* Left Vertical Tab Menu */}
+            <div className="cx-vertical-tabs-list">
+              {cxSolutions.map((item, index) => {
+                const isActive = activeCxTab === index;
+                return (
+                  <div key={item.id} className="cx-tab-item-wrapper">
+                    <button
+                      className={`cx-tab-button ${isActive ? "active" : ""}`}
+                      onClick={() => setActiveCxTab(index)}
+                    >
+                      <span>{item.name}</span>
+                      <span className="accordion-arrow">▼</span>
+                    </button>
+
+                    {/* Mobile Accordion Drawer */}
+                    <div className="cx-mobile-accordion-content">
+                      {renderCxContent(item)}
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            {/* Right Content & Edge-to-Edge Image Area */}
+            <div className="cx-desktop-content-area">
+              {renderCxContent(cxSolutions[activeCxTab])}
             </div>
           </div>
         </div>
