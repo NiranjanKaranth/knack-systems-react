@@ -410,6 +410,10 @@ function Home() {
   // Digital CX Accelerators State & Data
   const [activeAcceleratorTab, setActiveAcceleratorTab] = useState(0);
 
+  const handleAcceleratorClick = (index) => {
+    setActiveAcceleratorTab(activeAcceleratorTab === index ? null : index);
+  };
+
   const accelerators = [
     {
       id: 1,
@@ -684,6 +688,11 @@ function Home() {
   // SAP CX Solutions Vertical Tab State & Data
   const [activeCxTab, setActiveCxTab] = useState(0);
 
+  // Toggle function: if clicking the already open tab, close it (set to null), otherwise open it
+  const handleCxTabClick = (index) => {
+    setActiveCxTab(activeCxTab === index ? null : index);
+  };
+
   const cxSolutions = [
     {
       id: 1,
@@ -769,11 +778,15 @@ function Home() {
   const renderCxContent = (item) => (
     <div className="cx-content-panel">
       <div className="cx-text-column">
-        <h3 className="cx-panel-title">{item.title}</h3>
+        <h4 className="cx-panel-title">{item.title}</h4>
         {item.paragraphs.map((p, idx) => (
-          <p key={idx} className="cx-panel-desc">{p}</p>
+          <p key={idx} className="cx-panel-desc">
+            {p}
+          </p>
         ))}
-        <a href={item.link} className="orange-button cx-btn">{item.buttonText}</a>
+        <a href={item.link} className="orange-button cx-btn">
+          {item.buttonText}
+        </a>
       </div>
 
       <div className="cx-image-column">
@@ -783,7 +796,58 @@ function Home() {
       </div>
     </div>
   );
-  
+
+  const statsData = [
+    { id: 1, value: "27+", label: "years of SAP experience" },
+    { id: 2, value: "100+", label: "global customers" },
+    { id: 3, value: "300+", label: "completed CX projects" },
+    { id: 4, value: "400+", label: "SAP CX experts" },
+    { id: 5, value: "5", label: "global delivery centers" },
+  ];
+
+  const resourceCards = [
+    {
+      id: 1,
+      title:
+        "Agentic Product Enrichment: The Business Case for Faster NPI/NPL Launches",
+      description:
+        "Agentic product enrichment uses AI agents sharing brand and product context to generate launch-ready copy, imagery, and video — in every language and channel — in minutes, not weeks.",
+      linkText: "Read more",
+      linkUrl: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/Agentic-Product-Enrichment.jpg",
+    },
+    {
+      id: 2,
+      title:
+        "JDK 21 on SAP Commerce Cloud: What Changes, Who It Affects, How to Get There",
+      description:
+        "SAP has set a hard cutoff of August 31, 2026, after which new builds targeting Java 17 are blocked in the Cloud Portal.",
+      linkText: "Read more",
+      linkUrl: "#",
+      image:
+        "https://www.knacksystems.com/hubfs/SAP-Commerce-Cloud-JDK%2021-Upgrade.jpg",
+    },
+    {
+      id: 3,
+      title: "MCP for SAP: A CIO's Case Against Integration Sprawl",
+      description:
+        "A briefing for CIOs, VPs of IT, and enterprise architects running AI on SAP.",
+      linkText: "Read more",
+      linkUrl: "#",
+      image: "https://www.knacksystems.com/hubfs/SAP-for-MCP-AI-strategy.jpg",
+    },
+    {
+      id: 4,
+      title:
+        "SAP CX 2026: The Complete B2B Roadmap — What's Coming and What to Do",
+      description:
+        "Knack Systems breaks down SAP's 2026 CX roadmap — separating production-ready capabilities from roadmap promises, with a phased action plan for B2B teams. ",
+      linkText: "Read more",
+      linkUrl: "#",
+      image: "https://www.knacksystems.com/hubfs/SAP-CX-Roadmap-2026.jpg",
+    },
+  ];
 
   return (
     <div className="home-container">
@@ -1188,9 +1252,12 @@ function Home() {
                 <div
                   key={item.id}
                   className={`accelerator-tab-card ${isActive ? "active" : ""}`}
-                  onClick={() => setActiveAcceleratorTab(index)}
+                  onClick={() => handleAcceleratorClick(index)}
                 >
-                  <span className="accelerator-tab-text">{item.name}</span>
+                  <span className="accelerator-tab-text">
+                    {item.name}
+                    <span className="accordion-arrow mobile-arrow-none">▼</span>
+                  </span>
 
                   {/* Mobile Accordion Content Drawer */}
                   <div className="mobile-accelerator-content">
@@ -1201,9 +1268,13 @@ function Home() {
             })}
           </div>
 
-          {/* Desktop Content Display Area */}
+          {/* Desktop Content Display Area (falls back to index 0 if null on desktop) */}
           <div className="desktop-accelerator-display-area">
-            {renderAcceleratorContent(accelerators[activeAcceleratorTab])}
+            {renderAcceleratorContent(
+              accelerators[
+                activeAcceleratorTab !== null ? activeAcceleratorTab : 0
+              ],
+            )}
           </div>
         </div>
       </section>
@@ -1212,9 +1283,9 @@ function Home() {
       <section className="cx-solutions-section">
         <div className="container cx-header-container">
           <div className="cx-header-row">
-            <h2 className="cx-main-title">
+            <h3 className="cx-main-title">
               SAP CX Solutions for Industry-Leading Results
-            </h2>
+            </h3>
             <p className="cx-main-desc">
               By delivering customized solutions that improve customer
               engagement, sales, CPQ, service, and marketing processes across
@@ -1236,7 +1307,7 @@ function Home() {
                   <div key={item.id} className="cx-tab-item-wrapper">
                     <button
                       className={`cx-tab-button ${isActive ? "active" : ""}`}
-                      onClick={() => setActiveCxTab(index)}
+                      onClick={() => handleCxTabClick(index)}
                     >
                       <span>{item.name}</span>
                       <span className="accordion-arrow">▼</span>
@@ -1251,13 +1322,195 @@ function Home() {
               })}
             </div>
 
-            {/* Right Content & Edge-to-Edge Image Area */}
+            {/* Right Content & Edge-to-Edge Image Area (falls back to index 0 if null on desktop) */}
             <div className="cx-desktop-content-area">
-              {renderCxContent(cxSolutions[activeCxTab])}
+              {renderCxContent(
+                cxSolutions[activeCxTab !== null ? activeCxTab : 0],
+              )}
             </div>
           </div>
         </div>
       </section>
+
+      {/* knack-stats Section */}
+      <section className="knack-stats-section">
+        <div className="container knack-stats-container">
+          {/* Main Heading */}
+          <h3 className="knack-stats-main-title">
+            Knack Systems: Redefining Customer Experience with AI-Powered SAP CX
+          </h3>
+
+          {/* 5-Column Stats Grid */}
+          <div className="knack-stats-grid">
+            {statsData.map((stat) => (
+              <div key={stat.id} className="knack-stat-item">
+                <span className="knack-stat-value">{stat.value}</span>
+                <p className="knack-stat-label">{stat.label}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Sub-heading / Mission Statement */}
+          <div className="knack-stats-content-wrapper">
+            <h4 className="knack-stats-subtitle">
+              Leading the Way in CX Innovation. Creating Lasting Impact.
+            </h4>
+
+            <p className="knack-stats-description">
+              Knack Systems is a trusted SAP CX consulting partner for global
+              brands, with over 27 years of experience supporting digital
+              transformation across B2B, B2C, B2B2C, marketplace, and D2C
+              business models. We deliver SAP CX solutions and services
+              worldwide, combining deep domain expertise with AI-enabled
+              delivery and accelerators such as Knack Brava and SeasonOne.
+              Together, these capabilities enable organizations to navigate
+              industry complexity and deliver agile, scalable SAP CX experiences
+              across eCommerce, Sales, Service, Marketing, and Customer Data.
+            </p>
+
+            {/* Learn More Button */}
+            <div className="knack-stats-btn-container">
+              <a href="#" className="orange-button">
+                Learn More!
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* resource-center Section */}
+      <section className="resource-center-section">
+        <div className="container">
+          {/* Section Heading */}
+          <div className="resource-header">
+            <h3 className="resource-main-title">Resource Center</h3>
+          </div>
+
+          {/* 4-Column Cards Grid */}
+          <div className="resource-cards-grid">
+            {resourceCards.map((card) => (
+              <div key={card.id} className="resource-card-item">
+                <div className="resource-card-image-box">
+                  <img src={card.image} alt={card.title} />
+                </div>
+                <div className="resource-card-content">
+                  <h5 className="resource-card-title">{card.title}</h5>
+                  <p className="resource-card-desc">{card.description}</p>
+                  <a href={card.linkUrl} className="orange-button resource-btn">
+                    {card.linkText}
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* contact Section */}
+      <section className="contact-section">
+        <div className="container">
+          <div className="contact-grid-container">
+            {/* Left Side: Information & Reach Out */}
+            <div className="contact-left-content">
+              <h3 className="contact-main-title">
+                Reimagine Customer  Engagement Across Channels.
+              </h3>
+              <p className="contact-description">
+                At Knack Systems, we help teams work faster and serve customers
+                better with SAP CX and practical AI. Our experts guide you
+                through the right workflows for your industry so you get clear
+                decisions, cleaner processes and reliable outcomes.
+              </p>
+              <p className="contact-sub-desc">
+                Let’s talk about what you want to improve and how we can support
+                it.
+              </p>
+
+              <div className="contact-reach-out">
+                <span className="reach-out-label">
+                  You can also reach out to us at
+                </span>
+                <div className="contact-email-row">
+                  <span className="email-icon">✉</span>
+                  <a
+                    href="mailto:info@knacksystems.com"
+                    className="contact-email-link"
+                  >
+                    info@knacksystems.com
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Side: Dark Form Container */}
+            <div className="contact-right-form-box">
+              <h6 className="form-heading">We would love to hear from you.</h6>
+              <p className="form-subheading">
+                Fill out the form and let’s start the conversation!
+              </p>
+
+              <form
+                className="contact-form"
+                onSubmit={(e) => e.preventDefault()}
+              >
+                <div className="form-row">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      placeholder="First name*"
+                      required
+                      className="form-input"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      placeholder="Last name*"
+                      required
+                      className="form-input"
+                    />
+                  </div>
+                </div>
+
+                <div className="form-row">
+                  <div className="form-group">
+                    <input
+                      type="email"
+                      placeholder="Work Email*"
+                      required
+                      className="form-input"
+                    />
+                  </div>
+                  <div className="form-group">
+                    <input
+                      type="tel"
+                      placeholder="Phone number*"
+                      required
+                      className="form-input"
+                    />
+                  </div>
+                </div>
+
+                <div className="form-row full-width">
+                  <div className="form-group">
+                    <input
+                      type="text"
+                      placeholder="Company name*"
+                      required
+                      className="form-input"
+                    />
+                  </div>
+                </div>
+
+                <button type="submit" className="form-submit-btn">
+                  Let's Talk
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 }

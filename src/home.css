@@ -768,7 +768,7 @@
    ==================================================================== */
 
 .accelerators-section {
-  padding: 0 0 30px 0;
+  padding: 0 0 50px 0;
 }
 
 /* Header Row */
@@ -822,6 +822,11 @@
   border-radius: 8px;
   text-align: center;
   width: -webkit-fill-available;
+}
+
+.accelerator-tab-card:hover .accelerator-tab-text {
+  color: #ffffff;
+  background-color: #e86800;
 }
 
 .accelerator-tab-card.active .accelerator-tab-text {
@@ -933,13 +938,17 @@
   margin: 0 0 10px 0;
 }
 
+.mobile-arrow-none {
+  display: none;
+}
+
 /* Content Image */
 .accelerator-image-wrapper {
   width: 100%;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .accelerator-image-wrapper img {
@@ -967,20 +976,8 @@
 
 .cx-header-row {
   max-width: 950px;
-}
-
-.cx-main-title {
-  font-size: 2.3rem;
-  font-weight: 700;
-  color: #111111;
-  margin-bottom: 20px;
-  line-height: 1.2;
-}
-
-.cx-main-desc {
-  font-size: 1rem;
-  color: #555555;
-  line-height: 1.6;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Full Bleed Layout Structure */
@@ -998,8 +995,8 @@
 .cx-vertical-tabs-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  padding: 0 15px;
+  gap: 30px;
+  padding: 0 20px;
 }
 
 .cx-tab-item-wrapper {
@@ -1008,13 +1005,13 @@
 }
 
 .cx-tab-button {
-  background-color: #222222;
+  background-color: #444;
   color: #ffffff;
   border: none;
-  padding: 18px 22px;
-  text-align: left;
-  font-size: 1rem;
-  font-weight: 600;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
   border-radius: 6px;
   cursor: pointer;
   display: flex;
@@ -1023,14 +1020,23 @@
   transition: background-color 0.3s ease;
 }
 
+.cx-tab-button:hover {
+  background-color: #e86800;
+  color: #fff;
+}
+
 .cx-tab-button.active {
-  background-color: #222222;
+  background-color: #e86800;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 .accordion-arrow {
-  font-size: 0.75rem;
+  font-size: 12px;
   transition: transform 0.3s ease;
+}
+
+.cx-tab-button.active .accordion-arrow {
+  transform: rotate(180deg);
 }
 
 /* Mobile Accordion Content Drawer */
@@ -1048,7 +1054,6 @@
   max-height: 3000px;
   opacity: 1;
   padding: 30px 20px;
-  margin-top: 10px;
 }
 
 .cx-desktop-content-area {
@@ -1069,26 +1074,11 @@
 }
 
 .cx-panel-title {
-  font-size: 1.6rem;
-  font-weight: 700;
-  color: #111111;
-  margin-bottom: 15px;
-  line-height: 1.3;
+  text-align: left !important;
 }
 
 .cx-second-block {
   margin-top: 25px;
-}
-
-.cx-panel-desc {
-  font-size: 0.95rem;
-  color: #555555;
-  line-height: 1.6;
-  margin-bottom: 15px;
-}
-
-.cx-btn {
-  margin-top: 15px;
 }
 
 .cx-image-column {
@@ -1111,6 +1101,273 @@
 
 .cx-secondary-img {
   margin-top: 10px;
+}
+
+/* =================================================================
+   Knack Systems Stats & About Section Styles
+   ==================================================================== */
+.knack-stats-section {
+  text-align: center;
+  background-image: url(https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 80px 0;
+  position: relative;
+}
+
+.knack-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.knack-stat-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.knack-stat-value {
+  font-size: 32px;
+  font-weight: 600;
+  color: #e86800;
+}
+
+.knack-stat-label {
+  max-width: 150px;
+}
+
+.knack-stats-content-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.knack-stats-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* =================================================================
+   Resource Center Section Styles
+   ==================================================================== */
+.resource-center-section {
+  padding: 80px 0;
+}
+
+.resource-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.resource-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.resource-card-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  /* Box shadow for the entire card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card-item:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.resource-card-image-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.resource-card-image-box img {
+  object-fit: cover;
+}
+
+.resource-card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.resource-card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.resource-card-content {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.resource-card-desc {
+  flex-grow: 1;
+}
+
+.resource-btn {
+  width: fit-content;
+}
+
+/* =================================================================
+   Contact & Lead Capture Section Styles (Container Centered)
+   ==================================================================== */
+.contact-section {
+  background-color: #f8f9fa;
+  padding: 80px 0;
+}
+
+.contact-grid-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  gap: 50px;
+  overflow: hidden;
+}
+
+/* Left Content Side */
+.contact-left-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-main-title {
+  text-align: left !important;
+}
+
+.contact-reach-out {
+  display: flex;
+  flex-direction: column;
+}
+
+.reach-out-label {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.contact-email-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.email-icon {
+  color: #e86800;
+  font-size: 18px;
+}
+
+.contact-email-link {
+  font-weight: 600;
+  color: #e86800 !important;
+}
+
+/* Right Dark Form Side */
+.contact-right-form-box {
+  background-color: #222;
+  padding: 50px 30px;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.form-heading {
+  color: #ffffff !important;
+  text-align: center;
+}
+
+.form-subheading {
+  color: #fff !important;
+  text-align: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.form-row.full-width {
+  grid-template-columns: 1fr;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-input {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 14px;
+  color: #222;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-input::placeholder {
+  color: #777777;
+}
+
+.form-input:focus {
+  border-color: #e86800;
+}
+
+.form-submit-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1px solid #e86800;
+  border-radius: 4px;
+  padding: 10px 25px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.form-submit-btn:hover {
+  background-color: #e86800;
+  border-color: #e86800;
+  color: #ffffff;
 }
 
 
@@ -1379,7 +1636,7 @@
   .accelerators-header-row {
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
   }
 
   .accelerators-title-col {
@@ -1500,21 +1757,21 @@
     display: grid;
     grid-template-columns: 320px 1fr;
     align-items: center;
-    gap: 60px;
+    position: relative;
+    gap: 0px;
   }
 
   .cx-vertical-tabs-list {
-    padding-left: calc((100vw - 1200px) / 2 + 15px);
-    /* Aligns with container left edge */
-    gap: 8px;
+    padding-left: 25px;
+    gap: 10px;
+    z-index: 2;
+    margin-right: -60px;
   }
 
   .cx-tab-button {
     background-color: transparent;
-    color: #333333;
-    padding: 20px 25px;
-    border-radius: 6px 0 0 6px;
-    font-size: 1.05rem;
+    color: #444;
+    text-align: left;
   }
 
   .cx-tab-button.active {
@@ -1524,7 +1781,6 @@
 
   .cx-tab-button .accordion-arrow {
     display: none;
-    /* Hide accordion arrow on desktop vertical list */
   }
 
   /* Disable mobile accordion drawer behavior on desktop */
@@ -1535,21 +1791,43 @@
   .cx-desktop-content-area {
     display: block;
     background-color: #ffffff;
-    padding: 50px 60px 50px 50px;
+    padding: 50px 60px 50px 80px;
     border-radius: 12px 0 0 12px;
     box-shadow: -5px 10px 30px rgba(0, 0, 0, 0.04);
+    z-index: 1;
   }
 
   /* Full-bleed right edge docking */
   .cx-desktop-content-area .cx-content-panel {
     display: grid;
-    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-columns: 1fr;
     gap: 50px;
     align-items: center;
   }
 
-  .cx-panel-title {
-    font-size: 1.8rem;
+  .knack-stats-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .knack-stat-value {
+    font-size: 32px;
+  }
+
+  .resource-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact-section {
+    padding: 0;
+  }
+
+  .contact-grid-container {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -1624,12 +1902,24 @@
     font-size: 18px;
   }
 
-  .accelerator-tab-card {
-    padding: 20px;
-  }
-
   .accelerators-tabs-container {
     gap: 20px;
+  }
+
+  .cx-desktop-content-area .cx-content-panel {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cx-vertical-tabs-list {
+    padding-left: 32px;
+  }
+
+  .knack-stat-value {
+    font-size: 36px;
+  }
+
+  .resource-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
@@ -1678,6 +1968,14 @@
 
   .accelerators-tabs-container {
     gap: 30px;
+  }
+
+  .cx-vertical-tabs-list {
+    padding-left: 75px;
+  }
+
+  .knack-stat-value {
+    font-size: 42px;
   }
 }
 
@@ -1730,6 +2028,10 @@
   }
 
   .cx-vertical-tabs-list {
-    padding-left: calc((100vw - 1320px) / 2 + 15px);
+    padding-left: 60px;
+  }
+
+  .knack-stat-value {
+    font-size: 46px;
   }
 }
