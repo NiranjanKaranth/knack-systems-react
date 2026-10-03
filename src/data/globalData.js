@@ -965,7 +965,8 @@ export const globalData = {
   servicePage: {
     hero: {
       title: "Enable Service Transformation",
-      subtitle: "Invest in customer service and field service to improve experiences and differentiate your brand",
+      subtitle:
+        "Invest in customer service and field service to improve experiences and differentiate your brand",
       bgImage:
         "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/lob/lob-service2.png",
     },
@@ -985,7 +986,8 @@ export const globalData = {
         { text: "field service", link: "/line-of-business/service" },
         " and account management, Knack Systems has helped customers leverage technology to create more refreshing, omni-channel customer experiences. As we have done for multiple customers across the Entertainment, Manufacturing, CPG, and Life-Sciences industries, Knack Systems will help you grow and retain more customers through actionable insights, faster and more accurate resolutions, and proactive support.",
       ],
-      intro2: "Combining our business process expertise with the deployment of AI-backed ticketing applications, knowledge-ware, customer feedback platforms, analytics, and more, we can strengthen all areas of your service experience to include your call center, order desk, technical support, and maintenance/repair process.",
+      intro2:
+        "Combining our business process expertise with the deployment of AI-backed ticketing applications, knowledge-ware, customer feedback platforms, analytics, and more, we can strengthen all areas of your service experience to include your call center, order desk, technical support, and maintenance/repair process.",
       cards: [
         {
           title:
@@ -1024,7 +1026,8 @@ export const globalData = {
   marketingPage: {
     hero: {
       title: "Captivate Customers with Connected Contextual Marketing",
-      subtitle: "Tailor brand experiences by understanding your users and their priorities to offer them individualized content.",
+      subtitle:
+        "Tailor brand experiences by understanding your users and their priorities to offer them individualized content.",
       bgImage:
         "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/LOB-Marketing2.jpg",
     },
@@ -1041,13 +1044,14 @@ export const globalData = {
         "Employ real-time business understanding to facilitate quick analysis and certain decision making",
         "Power extra revenue and provide customers with the liberty to find, connect, and purchase",
       ],
-      image:
-        "https://www.knacksystems.com/hubfs/lob-Overview1.jpg",
+      image: "https://www.knacksystems.com/hubfs/lob-Overview1.jpg",
     },
     howWeCanHelp: {
       title: "How we can help",
-      intro1: "With over two decades of experience with intricate customer experience implementations, we wholly comprehend the full-scope omnichannel customer journey and the way in which marketing work best while effectively upholding the sales, service, and ecommerce functions.",
-      intro2: "When you work with Knack Systems, you can be assured of proven best-practice approaches and skillful implementations to help you realize the best revenue impact with your marketing technology. Our team helps businesses establish customer trust by safeguarding and ensuring better transparency and data management.",
+      intro1:
+        "With over two decades of experience with intricate customer experience implementations, we wholly comprehend the full-scope omnichannel customer journey and the way in which marketing work best while effectively upholding the sales, service, and ecommerce functions.",
+      intro2:
+        "When you work with Knack Systems, you can be assured of proven best-practice approaches and skillful implementations to help you realize the best revenue impact with your marketing technology. Our team helps businesses establish customer trust by safeguarding and ensuring better transparency and data management.",
       cards: [
         {
           title:
@@ -1078,6 +1082,256 @@ export const globalData = {
         "User training",
         "Advanced trainings on any selected SAP Marketing Cloud module",
         "Development of any kind of personalized solution leveraging SAP Marketing Cloud",
+      ],
+    },
+  },
+
+  services: {
+    hero: {
+      title: "Our Services",
+      subtitle:
+        "From strategic consulting to continuous support at scale, we work across the full digital transformation spectrum to give you the right services at the right time.",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/services/servics.png",
+    },
+    lobList: [
+      {
+        title: "Strategy & Planning",
+        text: "Knack Systems has worked on numerous technological transformation projects. Our extensive sector knowledge and experience implementing innovative technologies, including the SAP Customer Experience Suite, can help bring your business into a more tech-filled future. We assess your current operations, identify gaps and opportunities, and make recommendations across technology and processes.",
+        link: "/services/strategy-planning",
+        image: "https://www.knacksystems.com/hubfs/services-strategy.png",
+      },
+      {
+        title: "Implementation",
+        text: "Our implementation team draws on field-tested approaches to engineer, develop, and launch. Our services in this area encompass systems integration, application development, platform integration, architecture planning, performance analysis, and tuning. Speed up your timeline and optimize value. Knack Systems' specialists provide a proven methodology to deliver on your desired business outcomes.",
+        link: "/services/implementation",
+        image: "https://www.knacksystems.com/hubfs/implementation.png",
+      },
+      {
+        title: "Solution Design",
+        text: "Our Solution Design Services help you understand your existing technology strengths, gaps, and your digital business goals, on the basis of which we plot out a realistic framework toward higher enterprise efficiency, lower total cost of ownership, and smarter governance. With over two decades of Enterprise experience, Knack Systems’ expert technologists understand your industry workflows, enterprise applications, functionality, and execution platforms.",
+        link: "/services/solution-design",
+        image:
+          "https://www.knacksystems.com/hubfs/knack-systems/solution-design.png",
+      },
+      {
+        title: "Rollout & Adoption",
+        text: "Our roll-out planning approaches and capabilities in management help you to effectively manage the high number of changes happening during the implementation roll-out phase. Knack Systems has developed an adoption-focused training methodology that truly delivers value to the end-user and your business.",
+        link: "/services/rollout-adoption",
+        image: "https://www.knacksystems.com/hubfs/rollout.png",
+      },
+      {
+        title: "Application Managed Services and Operations",
+        text: "Our Applications Services help you evolve, oversee, and update apps to deliver digital services and enhance business results. Knack Systems' services support your SAP needs with proactive maintenance, optimization, modernization, transition, and more.",
+        link: "/services/managed-services",
+        image: "https://www.knacksystems.com/hubfs/ams.png",
+      },
+    ],
+  },
+
+  ourWorks: {
+    hero: {
+      title: "Customer Stories",
+      subtitle: "Winning Partnership for Digital Transformation",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/hb/Our-Work-banner.jpg",
+    },
+    worksList: [
+      {
+        title: "Electrolux",
+        category: "Consumer Brands",
+        text: "Electrolux transformed from zero digital commerce presence to an enterprise-grade, scalable e-commerce foundation, leveraging SAP Commerce Cloud and SAP ERP integration to enable unified, future-ready customer experiences globally at scale.",
+        link: "/our-works/electrolux",
+        image: "https://www.knacksystems.com/hubfs/Case-Studies/electrolux.png",
+      },
+      {
+        title: "Industrial Manufacturing Company",
+        category: "Manufacturing",
+        text: "A multi-billion-dollar industrial manufacturer modernized customer service with SAP Service Cloud V2 and B2B self-service, unifying CSRs, quality teams, sales, and distributors through omnichannel case management, real-time collaboration, and seamless SAP integrations.",
+        link: "/our-works/industrial-manufacturing",
+        image:
+          "https://www.knacksystems.com/hubfs/Case-Studies/Industrial-Manufacturing.png",
+      },
+      {
+        title: "Nutraceuticals and Dietary Supplements",
+        category: "Life Sciences",
+        text: "A leading nutraceuticals brand modernized its B2B e-commerce with SAP Commerce Cloud and SAP S/4HANA, delivering a practitioner-centric platform that drove a 71% increase in order volume, 10x faster releases, real-time integration, and scalable, always-on performance.",
+        link: "/our-works/nutraceuticals",
+        image:
+          "https://www.knacksystems.com/hubfs/Case-Studies/Nutraceuticals-Dietary-Supplements.png",
+      },
+      {
+        title: "Transportation Equipment Manufacturing",
+        category: "Building Materials",
+        text: "A global transportation equipment manufacturer transformed sales and quoting with SAP Sales Cloud V2 and SAP CPQ, delivering real-time pipeline visibility, guided selling, faster and more accurate quotes, and a unified sales experience across rail and infrastructure business units.",
+        link: "/our-works/transportation-equipment",
+        image:
+          "https://www.knacksystems.com/hubfs/Case-Studies/Transportation-Equipment-Manufacturing.png",
+      },
+      {
+        title: "Plastics Manufacturing",
+        category: "Chemical",
+        text: "A multi-billion-dollar global plastics manufacturer transformed sales and CPQ with SAP CPQ and SAP Analytics Cloud, achieving 95% quote accuracy, 90% faster time-to-quote, and data-driven deal analysis across complex, multi-year manufacturing contracts.",
+        link: "/our-works/plastics-manufacturing",
+        image:
+          "https://www.knacksystems.com/hubfs/Case-Studies/Plastics-Manufacturing.png",
+      },
+      {
+        title: "Sporting Goods Company",
+        category: "Consumer Brands",
+        text: "A leading sporting goods brand modernized its Pro-shop program with SAP Commerce Cloud and Knack SeasonOne B2B2C, enabling 50,000 orders in three weeks, scalable microsites, automated ordering, and a unified digital experience for millions of golfers.",
+        link: "/our-works/sporting-goods",
+        image:
+          "https://www.knacksystems.com/hubfs/Case-Studies/Sporting-Goods-Company.png",
+      },
+      {
+        title: "Woodgrain",
+        category: "Building Materials",
+        text: "Enabled Woodgrain to digitally transform their CX processes by leveraging SAP Sales Cloud and SAP Service Cloud.",
+        link: "/our-works/woodgrain",
+        image: "https://www.knacksystems.com/hubfs/woodgrain-success-story.jpg",
+      },
+    ],
+  },
+
+  insights: {
+    hero: {
+      title: "The Latest from Knack Systems",
+      subtitle: "Blogs, webinars, news, and events",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/insights-news.png",
+    },
+    newsRoom: [
+      {
+        text1:
+          "Woodbridge, NJ – August 20, 2025 — Knack Systems, an SAP partner with expertise in SAP Customer Experience, has deepened its partnership with SAP to deliver Knack Brava. The ordering and collaboration tool is designed to support SAP Cloud ERP users in accelerating their adoption of SAP B2B Self-Service Portal.",
+        text2:
+          "The SAP B2B Self-Service Portal solution allows companies to provide their B2B customers with real-time access to key post-sales information, including order status, delivery timelines, invoice details, and payment visibility, with minimal IT effort and no need for custom integration. Organizations can go live quickly, reduce support costs, and scale toward full-featured B2B e-commerce at their own pace without disrupting existing ERP investments.",
+        image:
+          "https://www.knacksystems.com/hubfs/ks-website-2025/pr-b2b-self-service-portal.png",
+        link: "/news/knack-brava-launch",
+      },
+    ],
+    events: [
+      {
+        title:
+          "Knack Systems at SAP Sapphire, May 12–13, 2026, in Orlando, Florida",
+        image:
+          "https://www.knacksystems.com/hubfs/ks-website-2025/Sapphire-2026.png",
+      },
+    ],
+    blogs: [
+      {
+        id: 1,
+        title:
+          "Agentic Product Enrichment: The Business Case for Faster NPI/NPL Launches",
+        description:
+          "Agentic product enrichment uses AI agents sharing brand and product context to generate launch-ready copy, imagery, and video — in every language and channel — in minutes, not weeks.",
+        linkText: "Read more",
+        linkUrl: "#",
+        image:
+          "https://www.knacksystems.com/hubfs/Agentic-Product-Enrichment.jpg",
+      },
+      {
+        id: 2,
+        title:
+          "JDK 21 on SAP Commerce Cloud: What Changes, Who It Affects, How to Get There",
+        description:
+          "SAP has set a hard cutoff of August 31, 2026, after which new builds targeting Java 17 are blocked in the Cloud Portal.",
+        linkText: "Read more",
+        linkUrl: "#",
+        image:
+          "https://www.knacksystems.com/hubfs/SAP-Commerce-Cloud-JDK%2021-Upgrade.jpg",
+      },
+      {
+        id: 3,
+        title: "MCP for SAP: A CIO's Case Against Integration Sprawl",
+        description:
+          "A briefing for CIOs, VPs of IT, and enterprise architects running AI on SAP.",
+        linkText: "Read more",
+        linkUrl: "#",
+        image: "https://www.knacksystems.com/hubfs/SAP-for-MCP-AI-strategy.jpg",
+      },
+      {
+        id: 4,
+        title:
+          "SAP CX 2026: The Complete B2B Roadmap — What's Coming and What to Do",
+        description:
+          "Knack Systems breaks down SAP's 2026 CX roadmap — separating production-ready capabilities from roadmap promises, with a phased action plan for B2B teams. ",
+        linkText: "Read more",
+        linkUrl: "#",
+        image: "https://www.knacksystems.com/hubfs/SAP-CX-Roadmap-2026.jpg",
+      },
+    ],
+    demand: [
+      {
+        id: 1,
+        title: "Revenue Growth Through Sales & Service Process Optimization",
+        linkText: "View Recording",
+        linkUrl: "#",
+        image: "https://www.knacksystems.com/hubfs/woodgrain-webinar.png",
+      },
+      {
+        id: 2,
+        title: "How to cut down quote-to-order time from days to minutes",
+        linkText: "View Recording",
+        linkUrl: "#",
+        image:
+          "https://www.knacksystems.com/hubfs/knack-systems/insights-webinar-1.png",
+      },
+      {
+        id: 3,
+        title:
+          "Overcoming challenges faced in B2B Commerce to better focus on the global market",
+        linkText: "View Recording",
+        linkUrl: "#",
+        image:
+          "https://www.knacksystems.com/hubfs/knack-systems/insights-webinar-2.png",
+      },
+      {
+        id: 4,
+        title: "Engaging with customers more intelligently with SAP C/4HANA",
+        linkText: "View Recording",
+        linkUrl: "#",
+        image:
+          "https://www.knacksystems.com/hubfs/knack-systems/insights-webinar-3.png",
+      },
+    ],
+  },
+  company: {
+    hero: {
+      title: "Knack Systems: Driven by Expertise, Powered by Innovation",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/About-Us-banner.png",
+    },
+    aboutSection: {
+      title: "About Knack Systems",
+      paragraphs: [
+        "Knack Systems is a global customer experience services company, delivering consulting and technology services and solutions to customer-focused organizations across industries since 1998.",
+        "We help leading brands (Fortune 100 to mid-market leaders) to deliver successful customer, employee, and partner channel experiences that redefine their businesses.",
+        "Knack Systems is a premium SAP consulting partner dedicated to driving digital transformation across industries by leveraging best-of-breed SAP solutions. With over 350+ SAP-certified industry experts and five global delivery centers, Knack Systems provides a wide array of services to customers for Commerce, CPQ, Sales, and Service (Customer and Field Service) line of businesses. Knack Systems has been successfully delivering its services since 1998.",
+        "SAP recognizes and acknowledges Knack Systems’ expertise through its strong partnership status, which includes SAP Recognized Expertise® in Sales, Service, and Marketing Cloud Solutions, SAP Gold Partner, Co-Innovation Partner, and Value Added Reseller (VAR) for SAP CX solutions. Knack Systems provides end-to-end services in SAP transformation programs, including Digital Strategy & Planning, Implementation, Rollout & Adoption, and Digital Application Support.",
+      ],
+    },
+    quickFacts: {
+      title: "Quick Facts",
+      facts: [
+        { id: 1, title: "1998", subtitle: "Founded", bgClass: "gray-bg" },
+        { id: 2, title: "SAP", subtitle: "Focused", bgClass: "white-bg" },
+        { id: 3, title: "CX", subtitle: "Expertise", bgClass: "gray-bg" },
+        {
+          id: 4,
+          title: "CX Focus",
+          subtitle: "Commerce | Sales | CPQ | Service",
+          bgClass: "white-bg",
+        },
+        { id: 5, title: "Global", subtitle: "Customers", bgClass: "gray-bg" },
+        {
+          id: 6,
+          title: "2019",
+          subtitle: "Acquired Bridge-X",
+          bgClass: "white-bg",
+        },
       ],
     },
   },

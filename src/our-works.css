@@ -1,0 +1,98 @@
+/* =================================================================
+   Our Works Page Layout Styles
+   ==================================================================== */
+.works-section {
+    padding: 80px 0;
+}
+
+/* Tab Menu Styles */
+.works-tabs-menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.works-tab-btn {
+    background: transparent;
+    border: none;
+    font-size: 16px;
+    color: #444444;
+    font-weight: 500;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.works-tab-btn:hover {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+.works-tab-btn.active {
+    background-color: #111111;
+    color: #ffffff;
+}
+
+/* 2-Column Grid Layout */
+.works-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.works-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.works-image-wrapper {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.works-image-wrapper img {
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.works-content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    align-items: flex-start;
+}
+
+.works-content h3 {
+    text-align: left !important;
+}
+
+.works-cta-btn {
+    margin-top: auto;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 30px;
+    }
+}
+
+/* Small Laptops (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {}
+
+/* Standard Desktop (min-width: 1280px) */
+@media only screen and (min-width: 1280px) {}
+
+/* Large Desktop (min-width: 1440px) */
+@media only screen and (min-width: 1440px) {}

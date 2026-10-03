@@ -1,0 +1,194 @@
+/* =================================================================
+   Resource Center Section Styles
+   ==================================================================== */
+.blogs-section {
+  padding: 80px 0;
+}
+
+.blogs-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.blogs-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.blogs-card-item {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  /* Box shadow for the entire card */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blogs-card-item:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+.blogs-card-image-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.blogs-card-image-box img {
+  object-fit: cover;
+}
+
+.blogs-card-title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  min-height: auto;
+  overflow: hidden;
+  font-family: "Roboto Serif", serif;
+}
+
+.blogs-card-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  min-height: auto;
+  overflow: hidden;
+}
+
+.blogs-card-content {
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blogs-card-desc {
+  flex-grow: 1;
+}
+
+.blogs-btn {
+  margin-top: auto;
+  width: fit-content;
+}
+
+.demand-card-title {
+  font-family: "Roboto Serif", serif;
+}
+
+.demand-section {
+  background-color: #f6f6f6;
+  padding: 80px 0;
+}
+
+.button-parent{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.button-parent .black-button{
+  border-radius: 3px;
+  background-color: #000 !important;
+}
+
+.button-parent .black-button:hover{
+  background-color: #e86800 !important;
+}
+
+/* =================================================================
+   Insights & News Page Layout Styles
+   ==================================================================== */
+.insights-section {
+  padding: 80px 0;
+}
+
+/* 2-Column Grid Layout */
+.insights-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+}
+
+/* Main Column Container */
+.insights-card {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Column Header Styles (News Room / Events) */
+.insights-title h3 {
+  text-align: left;
+}
+
+/* Individual News/Event Card Item */
+.insights-news-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Image Wrapper */
+.insights-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.insights-image-wrapper img {
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Card Content Flex Styling */
+.insights-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.insights-content h4 {
+  font-weight: 400;
+  text-align: left !important;
+  margin: 0;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .blogs-cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .insights-grid {
+    grid-template-columns: 7fr 3fr;
+    gap: 30px;
+  }
+}
+
+/* Small Laptops (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+  .blogs-cards-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Standard Desktop (min-width: 1280px) */
+@media only screen and (min-width: 1280px) {}
+
+/* Large Desktop (min-width: 1440px) */
+@media only screen and (min-width: 1440px) {}

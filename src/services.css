@@ -1,0 +1,80 @@
+/* =================================================================
+   Services Page Layout Styles
+   ==================================================================== */
+.services-section {
+  padding: 80px 0;
+}
+
+.services-intro-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto 50px auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.services-card {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services-card:hover {
+  /* transform: translateY(-5px); */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Position the 5th card alone on the last row */
+.services-card.single-item-last {
+  grid-column: 1 / -1;
+  max-width: 600px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.services-image-wrapper {
+  width: 100%;
+  overflow: hidden;
+}
+
+.services-image-wrapper img {
+  object-fit: cover;
+}
+
+.services-content {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+  align-items: center;
+}
+
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Small Laptops (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {}
+
+/* Standard Desktop (min-width: 1280px) */
+@media only screen and (min-width: 1280px) {}
+
+/* Large Desktop (min-width: 1440px) */
+@media only screen and (min-width: 1440px) {}

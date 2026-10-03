@@ -24,6 +24,10 @@ import B2CCommerce from "./pages/line-of-business-pages/b2c-commerce";
 import Sales from "./pages/line-of-business-pages/sales";
 import Service from "./pages/line-of-business-pages/service";
 import Marketing from "./pages/line-of-business-pages/marketing";
+import Services from "./pages/services";
+import OurWorksPage from "./pages/our-works";
+import InsightsNews from "./pages/insights-and-news";
+import Company from "./pages/company";
 
 function App() {
   return (
@@ -53,6 +57,10 @@ function App() {
           <Route path="/line-of-business/Sales" element={<Sales />} />
           <Route path="/line-of-business/Service" element={<Service />} />
           <Route path="/line-of-business/Marketing" element={<Marketing />} />
+          <Route path="/Services" element={<Services />} />
+          <Route path="/our-works" element={<OurWorksPage />} />
+          <Route path="/insights-and-news" element={<InsightsNews />} />
+          <Route path="/company" element={<Company />} />
         </Routes>
 
         <Footer />
