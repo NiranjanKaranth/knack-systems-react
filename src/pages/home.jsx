@@ -1148,26 +1148,29 @@ function Home() {
       </section>
 
       {/* Our SAP-Focused Services Section */}
+      {/* SAP-Focused Services Section */}
       <section className="sap-services-section">
         {/* Desktop Left Full-Bleed Content Box */}
-        <div
-          className="desktop-only-content"
-          style={{
-            backgroundImage: `url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg')`,
-          }}
-        >
-          <div className="container">
-            <h5 className="sap-content-title">
-              {sapServices[activeServiceTab].title}
-            </h5>
-            <a
-              href={sapServices[activeServiceTab].link}
-              className="orange-button sap-content-btn"
-            >
-              {sapServices[activeServiceTab].buttonText}
-            </a>
+        {activeServiceTab !== null && (
+          <div
+            className="desktop-only-content"
+            style={{
+              backgroundImage: `url('https://www.knacksystems.com/hubfs/ks-website-2025/Redefining-Customer-Experience.jpg')`,
+            }}
+          >
+            <div className="container">
+              <h5 className="sap-content-title">
+                {sapServices[activeServiceTab].title}
+              </h5>
+              <a
+                href={sapServices[activeServiceTab].link}
+                className="orange-button sap-content-btn"
+              >
+                {sapServices[activeServiceTab].buttonText}
+              </a>
+            </div>
           </div>
-        </div>
+        )}
 
         <div className="container">
           <div className="sap-services-header">
@@ -1192,7 +1195,10 @@ function Home() {
                   <div
                     key={service.id}
                     className={`sap-tab-item ${isActive ? "active" : ""}`}
-                    onClick={() => setActiveServiceTab(index)}
+                    onClick={() => {
+                      // Toggle active state: if already active, set to null to close it; otherwise set to index
+                      setActiveServiceTab(isActive ? null : index);
+                    }}
                   >
                     <div className="sap-tab-header">
                       <span className="sap-tab-name">{service.name}</span>
@@ -1413,7 +1419,7 @@ function Home() {
             {/* Left Side: Information & Reach Out */}
             <div className="contact-left-content">
               <h3 className="contact-main-title">
-                Reimagine Customer  Engagement Across Channels.
+                Reimagine Customer Engagement Across Channels.
               </h3>
               <p className="contact-description">
                 At Knack Systems, we help teams work faster and serve customers
@@ -1510,7 +1516,6 @@ function Home() {
           </div>
         </div>
       </section>
-
     </div>
   );
 }

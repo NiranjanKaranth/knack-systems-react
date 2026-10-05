@@ -44,6 +44,156 @@
     background-color: #ffffff;
 }
 
+/* =================================================================
+   Why Knack Systems Section Styles
+   ================================================================- */
+.why-ks-section {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+.why-knack-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.why-knack-image-box img {
+    display: block;
+    object-fit: contain;
+}
+
+.why-knack-content h3 {
+    text-align: left !important;
+}
+
+.why-knack-content ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.why-knack-content li {
+    font-size: 16px;
+    color: #444444;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.why-knack-content li:last-child {
+    margin-bottom: 0;
+}
+
+/* =================================================================
+   Vision & Mission Section Styles
+   ================================================================- */
+.vision-mission-section {
+    padding: 80px 0;
+    background-color: #f7f7f7;
+}
+
+.vision-mission-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+}
+
+.vision-mission-card {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.vm-icon-box {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vm-icon-box img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* =================================================================
+   Our Growth Path Section Styles
+   ================================================================- */
+.growth-path-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.growth-timeline-wrapper {
+    /* max-width: 1000px; */
+    /* margin: 0 auto; */
+    position: relative;
+}
+
+.growth-timeline-track {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.growth-node-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.growth-node-btn {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    border: none;
+    color: #444;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 1px 12px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.growth-node-btn:hover {
+    border-color: #e86800;
+    color: #e86800;
+}
+
+.growth-node-btn.active {
+    background-color: #e86800;
+    color: #ffffff;
+}
+
+/* Mobile Accordion Content (Hidden by default on desktop) */
+.mobile-accordion-p-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    width: 100%;
+}
+
+/* Desktop Content Box Display */
+.growth-content-display {
+    display: none;
+    color: #444444;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.growth-node-container.active-mobile .mobile-accordion-p-content,
+.growth-node-container:has(.growth-node-btn.active) .mobile-accordion-p-content {
+    max-height: 200px;
+    margin-top: 30px;
+}
+
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
@@ -58,10 +208,67 @@
     .facts-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .why-knack-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .vision-mission-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .growth-timeline-track {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        gap: 0px;
+    }
+
+    /* Connecting dotted line behind circles */
+    .growth-timeline-track::before {
+        content: "";
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        right: 40px;
+        height: 1px;
+        border-top: 1px dashed #d0d0d0;
+        z-index: 1;
+    }
+
+    .growth-node-container {
+        position: relative;
+        z-index: 2;
+    }
+
+    .growth-node-btn {
+        width: 80px;
+        height: 80px;
+    }
+
+    /* Hide mobile accordion content blocks on desktop */
+    .mobile-accordion-p-content {
+        display: none !important;
+    }
+
+    /* Show main desktop content display area */
+    .growth-content-display {
+        display: block;
+    }
 }
 
 /* Small Laptops (min-width: 1024px) */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+    .growth-timeline-track::before {
+        top: 50px;
+    }
+
+    .growth-node-btn {
+        width: 100px;
+        height: 100px;
+    }
+}
 
 /* Standard Desktop (min-width: 1280px) */
 @media only screen and (min-width: 1280px) {}

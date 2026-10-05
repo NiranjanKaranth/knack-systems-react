@@ -1334,5 +1334,72 @@ export const globalData = {
         },
       ],
     },
+    whyKnack: {
+      title: "Why Knack Systems",
+      image:
+        "https://www.knacksystems.com/hubfs/knack-systems/lob/lob-about.png",
+      points: [
+        "SAP-focused company",
+        "Diversified experience in multiple industries allows us to share best practices with our customers and recommend proven solutions for industries, including CPG, Apparel, Fashion/Retail, Wholesale Distribution, Chemicals, Industrial Manufacturing",
+        "100+ CX and ERP Projects Globally, including North America, AMEA, and India",
+        "400+ CX and ERP Experts across SAP CX – Sales, Service, Commerce, Marketing, FSM, CPQ, SAP ECC, and S/4HANA",
+        "Innovations: SeasonOne for Consumer Brands; B2B - Sales Assisted Commerce; B2B RDS; CPQ RDS",
+        "End-to-End SAP C/4HANA to ERP integration experience",
+        "SAP CX Solution Extension partner that runs and manages a fully integrated SAP CX landscape for rapid prototyping, design, demos, and co-innovation in our CX Center of Excellence.",
+      ],
+    },
+    visionMission: {
+      vision: {
+        title: "Vision",
+        icon: "https://www.knacksystems.com/hubfs/knack-systems/mission-icon.png",
+        iconTitle: "Vision Icon",
+        description:
+          "Our vision is to be a trailblazer in the advancement of the future workplace and its processes. We constantly work toward demonstrating tomorrow’s offerings and solutions to today’s organizations, enabling lasting value for partners and surpassing expectations of consumers.",
+      },
+      mission: {
+        title: "Mission",
+        icon: "https://www.knacksystems.com/hubfs/knack-systems/vision-icon.png",
+        iconTitle: "Mission Icon",
+        description:
+          "At Knack Systems, our mission has always been to help our customers perform business with greater efficiency and competency. Through everything we do, we help brands acclimate to the fresh challenges of the digital era by leveraging the latest solutions in the market.",
+      },
+    },
+    growthPath: {
+      title: "Our Growth Path",
+      milestones: [
+        {
+          year: "1998",
+          description: "Founded as a company that specializes in SAP ERP."
+        },
+        {
+          year: "2003",
+          description: "Became an SAP CRM Implementation partner"
+        },
+        {
+          year: "2004",
+          description: "Became SAP’s Commerce implementation partner"
+        },
+        {
+          year: "2011",
+          description: "Became an SAP Cloud for Customer (now SAP C/4HANA) partner"
+        },
+        {
+          year: "2015",
+          description: "Migrated to the new HANA Database"
+        },
+        {
+          year: "2017",
+          description: "Became an SAP S/4 HANA Implementation Partner"
+        },
+        {
+          year: "2018",
+          description: "Became an SAP S/4HANA Public Cloud Lighthouse Partner"
+        },
+        {
+          year: "2019",
+          description: "Acquired Bridge-X Technologies. With this acquisition, Knack Systems significantly strengthened its digital transformation capabilities, expanded its ecommerce services business, which is already trusted and relied upon by multiple customers across industries, and helped its customers with end-to-end engagement while combining every touch-point between a company, its channel partners, and customers."
+        }
+      ]
+    },
   },
 };

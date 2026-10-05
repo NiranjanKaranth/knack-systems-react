@@ -1204,6 +1204,7 @@
   -webkit-box-orient: vertical;
   min-height: auto;
   overflow: hidden;
+  font-family: "Roboto Serif", serif;
 }
 
 .resource-card-desc {
