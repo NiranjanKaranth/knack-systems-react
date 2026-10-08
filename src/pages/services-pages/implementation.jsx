@@ -6,11 +6,11 @@ import { globalData } from "../../data/globalData";
 import "../../services.css";
 import "../../data/common.css";
 
-function StrategyPlanning() {
-  const pageData = globalData.strategy;
+function Implementation() {
+  const pageData = globalData.implementation;
 
   return (
-    <div className="strategy-landing-page">
+    <div className="implementation-landing-page">
       {/* 1. Global Hero Banner Module */}
       <GlobalHero
         title={pageData.hero?.title}
@@ -54,12 +54,28 @@ function StrategyPlanning() {
       <section className="services-offerings-section">
         <div className="container">
           <h3 className="section-title">{pageData.offeringsTitle}</h3>
-          <div className="offerings-grid">
+          <div className="offerings-grid row-grid">
             {pageData.offerings?.map((item, index) => (
               <div className="offering-card" key={index}>
                 <h4>{item.title}</h4>
                 <div className="card-divider"></div>
-                <p>{item.description}</p>
+                <p className="offering-inline-description">
+                  {item.descriptionParts
+                    ? item.descriptionParts.map((part, pIndex) =>
+                        typeof part === "string" ? (
+                          part
+                        ) : (
+                          <Link
+                            to={part.path}
+                            className="inline-tag-link"
+                            key={pIndex}
+                          >
+                            {part.label}
+                          </Link>
+                        ),
+                      )
+                    : item.description}
+                </p>
               </div>
             ))}
           </div>
@@ -72,4 +88,4 @@ function StrategyPlanning() {
   );
 }
 
-export default StrategyPlanning;
+export default Implementation;

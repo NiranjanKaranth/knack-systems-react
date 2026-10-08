@@ -1298,6 +1298,7 @@ export const globalData = {
       },
     ],
   },
+
   company: {
     hero: {
       title: "Knack Systems: Driven by Expertise, Powered by Innovation",
@@ -1369,37 +1370,384 @@ export const globalData = {
       milestones: [
         {
           year: "1998",
-          description: "Founded as a company that specializes in SAP ERP."
+          description: "Founded as a company that specializes in SAP ERP.",
         },
         {
           year: "2003",
-          description: "Became an SAP CRM Implementation partner"
+          description: "Became an SAP CRM Implementation partner",
         },
         {
           year: "2004",
-          description: "Became SAP’s Commerce implementation partner"
+          description: "Became SAP’s Commerce implementation partner",
         },
         {
           year: "2011",
-          description: "Became an SAP Cloud for Customer (now SAP C/4HANA) partner"
+          description:
+            "Became an SAP Cloud for Customer (now SAP C/4HANA) partner",
         },
         {
           year: "2015",
-          description: "Migrated to the new HANA Database"
+          description: "Migrated to the new HANA Database",
         },
         {
           year: "2017",
-          description: "Became an SAP S/4 HANA Implementation Partner"
+          description: "Became an SAP S/4 HANA Implementation Partner",
         },
         {
           year: "2018",
-          description: "Became an SAP S/4HANA Public Cloud Lighthouse Partner"
+          description: "Became an SAP S/4HANA Public Cloud Lighthouse Partner",
         },
         {
           year: "2019",
-          description: "Acquired Bridge-X Technologies. With this acquisition, Knack Systems significantly strengthened its digital transformation capabilities, expanded its ecommerce services business, which is already trusted and relied upon by multiple customers across industries, and helped its customers with end-to-end engagement while combining every touch-point between a company, its channel partners, and customers."
-        }
-      ]
+          description:
+            "Acquired Bridge-X Technologies. With this acquisition, Knack Systems significantly strengthened its digital transformation capabilities, expanded its ecommerce services business, which is already trusted and relied upon by multiple customers across industries, and helped its customers with end-to-end engagement while combining every touch-point between a company, its channel partners, and customers.",
+        },
+      ],
+    },
+  },
+
+  strategy: {
+    hero: {
+      title: "Our Strategy and Planning Services",
+      subtitle: "We help you execute successful customer experience strategies",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/services/services-strategy.png",
+    },
+    overview: {
+      title: "Overview",
+      description1:
+        "Whether your objectives are to inform, persuade, sell, or reassure, you need a clear understanding of the current touch-points and footprints in your customers' and prospects' experience journey, be aware of the gaps, and know how to close those gaps between expectations and reality.",
+      description2:
+        "Strategic Planning takes on the role of your road map, paving the way and connecting every facet of your engagement with key audiences from awareness about your company, solution, or service to outlining processes, using robust technologies.",
+      image:
+        "https://www.knacksystems.com/hubfs/knack-systems/services/services-strategy-overview.png",
+    },
+    howCanWeHelp: {
+      title: "How Can We Help?",
+      paragraphs: [
+        "Our Industry, Business Process, and Technology experts will work with your C-suite executives, including but not limited to CEO, CSO, COO, CDO, CMO, Brand, Strategy, IT leaders, and customer experience champions to develop an IT strategy that is aligned with your business goals and makes the most of your IT budget while addressing current and future technology needs.",
+        "Our services are customized, so we can assure you that we'll build a strategic plan tailored specifically to your company's needs and in line with the industry standards and best practices to ensure your success.",
+        "We know how to make sure that your Customer Experience (CX) investments are improving your customers' journey and your top and bottom lines.",
+      ],
+    },
+    offeringsTitle: "Our Strategy And Planning Services Offerings",
+    offerings: [
+      {
+        title: "Project Discovery",
+        description:
+          "We work with your implementation team members and primary business stakeholders to completely understand your business goals and requirements. We get started with the work only after all stakeholders are in agreement with the extent of detail and completeness of the business requirements.",
+      },
+      {
+        title: "Business Requirements Analysis",
+        description:
+          "Get the expert guidance you need to understand the customer's constantly evolving buying journey, CX landscape, and requirements. Give your team a chance to work with someone who fully understands and factors these variables into the planning process to make it very specific to your business requirements.",
+      },
+      {
+        title: "Technology Landscape Analysis",
+        description:
+          "Based on a thorough understanding of your business requirements, our architects will further analyze your technology landscape and needs. On the basis of the technology selection, we will propose the best approach to add them into your technology landscape.",
+      },
+      {
+        title: "Prioritizing Based on Need and Value",
+        description:
+          "In working with your stakeholders, we help you identify, prioritize, and focus on your critical business requirements first so that you are ready to make the most of your CX investments.",
+      },
+      {
+        title: "Goal Setting: Getting your roadmap ready for success",
+        description:
+          "We convert a good strategy and planning into a road-map, which can withstand the scrutiny of ROI analysis and maintain momentum through performance measurement and achievable goals.",
+      },
+      {
+        title: "Customer Experience Architecture",
+        description:
+          "Knack Systems' team of solution architects have served varied industries and bring with them experience of several years of developing and successfully delivering a solid customer experience architecture for our large global customers.",
+      },
+    ],
+  },
+
+  implementation: {
+    hero: {
+      title: "Customer Experience and E-Commerce Implementation Services",
+      subtitle: "We help you execute successful customer experience strategies",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/industry/services-implementation.png",
+    },
+    overview: {
+      title: "Overview",
+      description1:
+        "When you’re ready to deploy a customer-centric digital transformation solution, selecting the best software is only one part of the equation. Deploying any kind of enterprise software is an elaborate task and an effective project also relies on discovering the perfect implementation partner. It makes sense to choose a seasoned implementation partner, one that has plenty of experience, expertise, and an excellent track record in such digital transformation deployments, whether it is for your customers, partners, or employees in your industry.",
+      description2:
+        "An experienced partner will not just bring in methodologies and tools that are proven and unique, but also engage a team of highly skilled consultants with extensive knowledge of every facet of a customer experience solution implementation. This becomes pivotal for the implementation as it spans numerous functional areas and often requires integration with multiple operational systems, deep industry process experience to map the industry-specific requirements, processes that are unique to your business, chosen solutions and other platforms, and the system's business uses. There’s no stock approach to fashioning technology solutions. Knack Systems' track record shows how we are invested in the success of our clients’ solution and our ability to provide custom solutions and accelerators to solve specific customer business problems.",
+      image:
+        "https://www.knacksystems.com/hubfs/knack-systems/industry/services-implementation-overview.png",
+    },
+    howCanWeHelp: {
+      title: "WHAT SETS US APART",
+      paragraphs: [
+        "Knack Systems has been a preferred choice and a trusted partner for several global brands across industries to support their digital transformation initiatives.",
+        "Our implementation team consists of highly skilled technical, functional, and integration experts with cross industry experience that uses implementation project framework leveraging SAP Activate methodology to deliver successful implementation.",
+        "For us, every project starts with a plan based around your goals. This guarantees that we can implement on schedule and on budget. Polished over two decades, our approaches minimize risk and optimize the value of your SAP investment.",
+        "Our SAP and industry experts constantly collaborate with each other and with you. This transfer of knowledge where we ‘train your key users’ is vital to each project’s success and adoption.",
+      ],
+    },
+    offeringsTitle: "Our Implementation Services Offerings",
+    offerings: [
+      {
+        title: "Customer Experience Solution Architecture",
+        description:
+          "Knack Systems’ team of solution architects comes with experience gained from various industries and several years of developing and successfully delivering CX solution architecture for connected SAP and non-SAP applications.",
+      },
+      {
+        title: "Industry Alignment",
+        descriptionParts: [
+          "Knack Systems delivers solutions for ",
+          { label: "Commerce", path: "/services/commerce" },
+          ", ",
+          { label: "CPQ", path: "/services/cpq" },
+          ", ",
+          { label: "Sales", path: "/services/sales" },
+          ", and ",
+          { label: "Service", path: "/services/service" },
+          " that are customized and aligned with your industry and business needs.",
+        ],
+      },
+      {
+        title: "One-Stop Shop for All Business Needs",
+        description:
+          "Knack Systems is your one-stop-shop for all facets of design, development, and configuration of platform modules based on your business needs.",
+      },
+      {
+        title: "Back-End and Third-Party Integration",
+        description:
+          "Knack Systems specializes in custom integrations to your back-end and other third-party applications for seamless flow of information between various complex systems.",
+      },
+      {
+        title: "Reporting and Dashboard",
+        description:
+          "We deliver out-of-the-box and custom reports and a dashboard that allows detailed analysis for your business and helps in faster decision making.",
+      },
+      {
+        title: "Role-Based Functioning & Security",
+        description:
+          "We leverage best practices to configure solutions and, based on your requirements, create the optimal setting in the administration environment for role-based functioning and security.",
+      },
+      {
+        title: "Support During Re-Platforming",
+        description:
+          "Knack Systems supports companies with data migration from legacy systems, data quality analysis and cleansing, and uploading during re-platforming.",
+      },
+      {
+        title: "Detailed Quality Testing",
+        description:
+          "We monitor your application performance for load time and interface look and feel during a detailed quality testing process. Based on the testing results, we will continue to optimize the system.",
+      },
+      {
+        title: "Mobile-First Approach",
+        description:
+          "All our cloud services implementation services focus on a mobile-first approach and ensure that the deployed solutions are optimized for mobile engagement.",
+      },
+    ],
+  },
+
+  solution: {
+    hero: {
+      title: "Solution Design Services",
+      subtitle: "Designing your digital future",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/Solution-design.png",
+    },
+    overview: {
+      title: "Overview",
+      description1:
+        "For brands similar to yours, the flow of information between various divisions of your business is growing increasingly complex. Your business depends on processes that involve sophisticated analyses of real-time customer information and the coordination of systems spanning the front office and back office.",
+      description2:
+        "Often, behind the scenes, complex integrated workflows create numerous challenges. Firms need long-term strategies that take into account the capabilities of current systems, opportunities for consolidation and reorganization, and a robust solution and integration architecture for how to reach these goals within a specific budget and timeline. Commercial off-the-shelf consulting services often lack the long-term support and expertise that customers require.",
+      image:
+        "https://www.knacksystems.com/hubfs/knack-systems/services/service-solution-design-overview.png",
+    },
+    howCanWeHelp: {
+      title: "How Can We Help?",
+      paragraphs: [
+        "Our Solution Design Services help you understand your existing technology strengths, gaps, and your digital business goals, on the basis of which we plot out a realistic framework toward higher enterprise efficiency, lower total cost of ownership, and smarter governance.",
+        "With over two decades of Enterprise experience, Knack Systems’ expert technologists understand your industry workflows and the finer nuances of existing connections to enterprise applications, functionality, and execution platforms. We conduct deep analysis of the current state of digital applications and provide targeted recommendations to achieve a future state that aligns with specific digital objectives. Based on industry best practices, our recommendations are documented in the form of a detailed solution and integration architecture that outlines feasible road-maps for phased implementations, functional requirements, technical specifications, user flows and experience design, and industry solutions.",
+      ],
+    },
+    offeringsTitle: "Our Solution Design Services Offerings",
+    offerings: [
+      {
+        title: "Solution Architecture",
+        description:
+          "Knack Systems’ team of solution architects comes from varied industries experience and several years of designing and successfully delivering CX solution architecture that enables all IT platforms to upgrade without negatively impacting other connected SAP or non-SAP applications for our mid-to-large-sized global customers.",
+      },
+      {
+        title: "Integration Architecture",
+        description:
+          "We can help you become a truly digital enterprise by meeting today’s multi-fold integration challenges. To engineer business solutions, these integration obstacles ought to be sorted effectively. We help you define the integration architecture, strategy, and road-map tailored to your organizational needs.",
+      },
+      {
+        title: "User/Customer Experience",
+        description:
+          "We create exceptional user experiences by applying a user-centric approach while bringing together concepts from information architecture and UI design processes while keeping with trends and global usability guidelines to deliver great experiences.",
+      },
+      {
+        title: "Industry Solutions",
+        description:
+          "Knack Systems has market-leading SAP Customer Experience capabilities, including Commerce, Sales, CPQ, and Service, and a proven track record with Consumer and Industrial brands with complex business models, by leveraging industry accelerators and a proven process-driven approach.",
+      },
+    ],
+  },
+
+  rollOut: {
+    hero: {
+      title: "Roll-Out and Adoption Services",
+      subtitle:
+        "We have the strategies ready to help you ensure successful rollout and user adoption",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/services/services-rollout1.png",
+    },
+    overview: {
+      title: "Overview",
+      description1:
+        "The key hurdles for global roll-out come in two complex areas: deciding on whether you want to expand in a ‘big-bang manner’ or ‘a phased manner’ and on how you can ensure product/service adaptability to local markets. Testing out these parameters is critical for a successful global roll-out, as both require extra efforts and expenditure. Let your first attempt be the best, setting the stage to easily execute future strategies.",
+      description2:
+        "The soundness of the first step determines the success of the international roll-out strategy. Therefore, be sure of your next move. While your first steps are critical, there is no way they can be comprehensive or seamless at all times. Hence, there need to be some scope for localization, where tweaks to the strategy can be performed depending on the field of implementation.",
+      description3:
+        "The steps you take after the roll-out are also crucial for the success of the international roll-out strategy. What's more, this determines the success of the complete process from the perspective of end user experience, business continuity, productivity, and so on.",
+      image:
+        "https://www.knacksystems.com/hubfs/knack-systems/services/services-rollout-overview1.png",
+    },
+    howCanWeHelp: {
+      title: "What Sets Us Apart",
+      paragraphs: [
+        "Knack Systems has extensive experience delivering global roll-out strategies. Our roll-out and adoption services include template roll-out to geographies, process mapping country extensions, configuring country extensions, custom developments for country extensions, additional module roll-outs, training & development, and deployment through change management.",
+      ],
+    },
+    offeringsTitle: "Our Rollout & Adoption Services",
+    offerings: [
+      {
+        title: "Change Management",
+        description:
+          "We help you understand each instance of change for your stakeholder groups and the impact of that change. By documenting and brainstorming about each change, your implementation has the potential to be truly successful across the board with targeted training and communications.",
+      },
+      {
+        title: "User Training",
+        description:
+          "We believe not just in building perfect solutions but also in ensuring that they get adopted. We’re specialized in creating user adoption training plans that can help you identify an effective strategy for maximizing end-user adoption.",
+      },
+      {
+        title: "On-Boarding and Business Support",
+        description:
+          "We develop tailored onboarding plans in collaboration with you. These plans are designed to help you reach your most important goals, faster.",
+      },
+    ],
+  },
+
+  application: {
+    hero: {
+      title: "Application Support and Operation Services",
+      subtitle:
+        "Get the most from your system investment and enable constant improvement",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/services/ams.png",
+    },
+    overview: {
+      title: "Overview",
+      description1:
+        "For over two decades, Knack Systems' SAP Application Management services have been helping customer organizations smoothly manage enterprise applications. Irrespective of your business size, we are armed with the most adaptable and unrivaled support at a reduced cost – enabling your business to concentrate your resources on what really matters.",
+      description2:
+        "Knack Systems' SAP Application Management Services (AMS) support a round-the-clock operation with functional and technical expertise leveraging an efficient, onsite, onshore, and offshore delivery model. Our streamlined delivery processes help enhance SAP solution-based landscapes, ensure uninterrupted business operations, and enable an ongoing productivity improvement in your organization.",
+      image:
+        "https://www.knacksystems.com/hubfs/knack-systems/services/ams-overview.png",
+    },
+    howCanWeHelp: {
+      title: "How Can We Help?",
+      paragraphs: [
+        "Knack Systems’ Application Support and Operations Services are built on complete lifecycle, faultless business and technology solutions across key consulting and application management areas and the right mix of industry, technology, and processes. We have been a pivotal SAP partner, taking on multiple roles since 1998. Our linear comprehensive associations with the SAP leadership help us to drive the marketplace by inspiring and adapting ahead of time with SAP’s solution strategy and roadmap.",
+      ],
+    },
+    offeringsTitle: "Our Application Support And Operations Services",
+    offerings: [
+      {
+        title: "Application Support",
+        description:
+          "Our services include basic configuration management, workflow design and improvement, user interface adjustments, performance monitoring, integration support, code deployment, 24/7 support, and application patching.",
+      },
+      {
+        title: "Enhancements and New Capabilities",
+        description:
+          "Our services include ongoing strategy planning, business process refinement, integration and system optimization, code review, load testing, and performance tuning.",
+      },
+      {
+        title: "Upgrade",
+        description:
+          "We provide the full spectrum of upgrade services. Whether your need is to re-platform or to upgrade to a latest version - Functional and Technical, we do it all with finesse.",
+      },
+      {
+        title: "Site Operations",
+        description:
+          "Our site operations services encompass a broad array of channels, including e-commerce platforms, official brand websites, social media platforms, and omni-channels. The integration between these channels ensure seamless and consistent consumer experience and high operational efficiency.",
+      },
+    ],
+  },
+
+  applicationManagedServices: {
+    banner: {
+      subtitle: "Application Managed Services for SAP Commerce",
+      title: "Enabling Business Continuity & Powering Operational Efficiency",
+      buttonText: "Talk to our Experts",
+      buttonLink: "/contact-us",
+      image:
+        "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/commerce-ams.png",
+    },
+    credibility: {
+      title: "Our Application Managed Services credibility you can count on.",
+      stats: [
+        {
+          value: "24/7",
+          description: "Global coverage with proactive & reactive support",
+        },
+        {
+          value: "98%",
+          description: "SLA Compliance to meet support expectations",
+        },
+        {
+          value: "200+",
+          description: "SAP e-commerce managed care specialists",
+        },
+        {
+          value: "20+",
+          description: "Years of B2B & B2C e-commerce expertise",
+        },
+      ],
+    },
+    growthStories: {
+      sectionTitle: "Featured Growth Stories",
+      heading: "We mitigate an issue even before you can notice one.",
+      descriptionParagraphs: [
+        "Given the changing commerce technology landscape, the need for Application Managed Services for SAP Commerce is greater than ever before.",
+        "Knack Systems is here for you with 24/7 SLA-based Application Managed Services for SAP Commerce platforms. Our expert e-commerce SAP Managed Services specialists help prevent disruptions in ongoing operations with well-defined processes and increased efficiency.",
+        "Ready to maximize ROI on SAP Commerce applications? Talk to our experts!",
+      ],
+      stories: [
+        {
+          brandImage: "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/ConsumerAppliance-Brand.png",
+          goal: "Needed support services to manage B2B & B2C storefronts",
+          revenue: "Over a Billion Dollar",
+          revenueSubtext: "IN DIGITAL ANNUAL REVENUE",
+          clientDuration: "6+ Years",
+          servicesOffered:
+            "SLA-based support, brand storefronts rollout & continuous improvement",
+        },
+        {
+          brandImage: "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/Beverage-Distribution-Brand.png",
+          goal: "Managed support for B2B commerce digital channel",
+          revenue: "100 Million Dollars",
+          revenueSubtext: "IN DIGITAL ANNUAL REVENUE",
+          clientDuration: "2+ Years",
+          servicesOffered:
+            "SLA-based support, market rollout, & continuous improvement for SAP Commerce Cloud",
+        },
+      ],
     },
   },
 };

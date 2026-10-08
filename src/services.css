@@ -58,6 +58,222 @@
   align-items: center;
 }
 
+.services-help-section {
+  padding: 80px 0;
+  background-color: #fbfbfb;
+  text-align: center;
+}
+
+.services-offerings-section {
+  padding: 80px 0;
+}
+
+.offerings-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.offering-card {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  display: flex;
+  flex-direction: column;
+}
+
+.offering-card h4 {
+  margin: 0;
+}
+
+.card-divider {
+  width: 100px;
+  height: 2px;
+  background-color: #e86800;
+  margin: 10px auto 30px auto;
+}
+
+.offering-card p {
+  text-align: center;
+}
+
+/* Overview Section */
+.overview-section {
+  padding: 80px 0;
+}
+
+.overview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  align-items: center;
+}
+
+.overview-img-wrapper {
+  flex: 1;
+}
+
+.overview-img-wrapper img {
+  display: block;
+}
+
+.inline-tag-link {
+  text-decoration: underline !important;
+}
+
+.ams-page-wrapper {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.ams-hero-banner {
+  padding: 80px 0;
+  background-color: #fafbfc;
+}
+
+.ams-banner-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.ams-banner-content {
+  width: 100%;
+}
+
+.ams-banner-subtitle {
+  display: inline-block;
+  background-color: #f3f3f3;
+  padding: 10px 15px;
+  border-radius: 8px;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 30px;
+}
+
+.ams-cta-button {
+  border-radius: 30px;
+}
+
+.ams-banner-image-wrapper {
+  width: 100%;
+}
+
+.ams-banner-image-wrapper img {
+  display: block;
+}
+
+/* 2. Credibility Section (Mobile: Stacks metrics vertically in a card box) */
+.ams-credibility-section {
+  padding: 80px 0;
+}
+
+.ams-credibility-card-wrapper {
+  background-color: #f3f3f3;
+  border-radius: 16px;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.ams-stat-item {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.ams-stat-item:last-child {
+  padding-right: 0;
+}
+
+.ams-stat-value {
+  font-size: 40px !important;
+  line-height: 50px !important;
+}
+
+/* 3. Featured Growth Stories Section (Mobile First) */
+.ams-growth-title {
+  text-align: left !important;
+}
+
+.ams-growth-grid {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.ams-growth-info {
+  flex: 1;
+  max-width: 450px;
+  position: sticky;
+  top: 40px;
+  width: 100%;
+}
+
+.ams-growth-cards-wrapper {
+  flex: 1.3;
+  flex-direction: column;
+  gap: 30px;
+  display: flex;
+  width: 100%;
+}
+
+.ams-inline-cta {
+  font-weight: 600;
+  text-decoration: underline !important;
+}
+
+.ams-story-card {
+  background-color: #f8f9fa;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  flex: 1;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.ams-story-brand img {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.ams-story-brand h4 {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.ams-story-revenue-box {
+  margin-bottom: 30px;
+}
+
+.ams-story-revenue {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  color: #e86800;
+  line-height: 40px;
+  margin-bottom: 30px;
+}
+
+.ams-story-rev-sub {
+  font-size: 18px !important;
+  line-height: 28px !important;
+  font-weight: 600;
+}
+
+
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
@@ -68,13 +284,124 @@
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .offerings-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .row-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .overview-text {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .ams-banner-container {
+    flex-direction: row;
+    text-align: left;
+    justify-content: space-between;
+  }
+
+  .ams-banner-content {
+    max-width: 550px;
+  }
+
+  .ams-banner-image-wrapper {
+    max-width: 600px;
+  }
+
+  .ams-credibility-card-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .ams-stat-item {
+    position: relative;
+  }
+
+  .ams-stat-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 160px;
+    width: 1px;
+    background-color: #e5e7eb;
+  }
+
+  .ams-stat-value {
+    font-size: 40px !important;
+    line-height: 50px !important;
+  }
+
+  .ams-growth-info {
+    max-width: 100%;
+  }
+
+  .ams-story-revenue {
+    font-size: 32px;
+    line-height: 42px;
+  }
+
+  .ams-growth-cards-wrapper {
+    flex-direction: row;
+  }
 }
 
 /* Small Laptops (min-width: 1024px) */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  .ams-growth-grid {
+    flex-direction: row;
+  }
+
+  .ams-stat-value {
+    font-size: 48px !important;
+    line-height: 58px !important;
+  }
+
+  .ams-credibility-card-wrapper {
+    gap: 30px;
+    padding: 30px;
+  }
+
+  .ams-growth-info {
+    max-width: 450px;
+  }
+
+  .ams-story-revenue {
+    font-size: 34px;
+    line-height: 44px;
+  }
+}
 
 /* Standard Desktop (min-width: 1280px) */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+  .ams-stat-value {
+    font-size: 50px !important;
+    line-height: 60px !important;
+  }
+
+  .ams-story-revenue {
+    font-size: 36px;
+    line-height: 46px;
+  }
+}
 
 /* Large Desktop (min-width: 1440px) */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+  .ams-stat-value {
+    font-size: 52px !important;
+    line-height: 62px !important;
+  }
+
+  .ams-story-revenue {
+    font-size: 38px;
+    line-height: 48px;
+  }
+}

@@ -136,12 +136,7 @@
 
 .lob-overview-img-wrapper {
   flex: 1;
-  min-width: 300px;
-}
-
-.lob-overview-text {
-  flex: 1.5;
-  min-width: 300px;
+  /* min-width: 300px; */
 }
 
 .lob-overview-text h2 {
@@ -269,7 +264,7 @@
   margin-bottom: 30px;
 }
 
-.commerce{
+.commerce {
   margin-bottom: 0px;
 }
 
@@ -336,16 +331,16 @@
   color: #fff;
 }
 
-.lob-overview-text ul{
+.lob-overview-text ul {
   list-style-type: disc;
   padding-left: 30px;
 }
 
-.lob-overview-text ul li{
+.lob-overview-text ul li {
   margin-bottom: 15px;
 }
 
-.lob-overview-text ul li:last-child{
+.lob-overview-text ul li:last-child {
   margin-bottom: 0;
 }
 
@@ -370,6 +365,11 @@
   .lob-services-content {
     grid-template-columns: repeat(2, 1fr);
     gap: 30px;
+  }
+
+  .lob-overview-text {
+    flex: 1.5;
+    min-width: 300px;
   }
 
   .solutions-content {

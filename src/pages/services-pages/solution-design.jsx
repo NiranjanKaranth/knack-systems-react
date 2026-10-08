@@ -6,11 +6,11 @@ import { globalData } from "../../data/globalData";
 import "../../services.css";
 import "../../data/common.css";
 
-function StrategyPlanning() {
-  const pageData = globalData.strategy;
+function SolutionDesign() {
+  const pageData = globalData.solution;
 
   return (
-    <div className="strategy-landing-page">
+    <div className="solution-design-landing-page">
       {/* 1. Global Hero Banner Module */}
       <GlobalHero
         title={pageData.hero?.title}
@@ -72,4 +72,4 @@ function StrategyPlanning() {
   );
 }
 
-export default StrategyPlanning;
+export default SolutionDesign;

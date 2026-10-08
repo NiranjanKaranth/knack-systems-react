@@ -6,11 +6,11 @@ import { globalData } from "../../data/globalData";
 import "../../services.css";
 import "../../data/common.css";
 
-function StrategyPlanning() {
-  const pageData = globalData.strategy;
+function RollOutAdoption() {
+  const pageData = globalData.rollOut;
 
   return (
-    <div className="strategy-landing-page">
+    <div className="solution-design-landing-page">
       {/* 1. Global Hero Banner Module */}
       <GlobalHero
         title={pageData.hero?.title}
@@ -26,6 +26,7 @@ function StrategyPlanning() {
             <div className="overview-text">
               <p>{pageData.overview.description1}</p>
               <p>{pageData.overview.description2}</p>
+              <p>{pageData.overview.description3}</p>
             </div>
             <div className="overview-img-wrapper">
               <img
@@ -54,7 +55,7 @@ function StrategyPlanning() {
       <section className="services-offerings-section">
         <div className="container">
           <h3 className="section-title">{pageData.offeringsTitle}</h3>
-          <div className="offerings-grid">
+          <div className="offerings-grid row-grid">
             {pageData.offerings?.map((item, index) => (
               <div className="offering-card" key={index}>
                 <h4>{item.title}</h4>
@@ -72,4 +73,4 @@ function StrategyPlanning() {
   );
 }
 
-export default StrategyPlanning;
+export default RollOutAdoption;

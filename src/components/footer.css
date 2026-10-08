@@ -75,7 +75,7 @@
 .icon-row {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 13px;
 }
 
 .social-icon {
@@ -188,6 +188,10 @@
     .footer-bottom-container {
         flex-direction: row;
         align-items: center;
+    }
+
+    .icon-row {
+        gap: 15px;
     }
 }
 
