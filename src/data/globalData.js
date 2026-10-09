@@ -1730,7 +1730,8 @@ export const globalData = {
       ],
       stories: [
         {
-          brandImage: "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/ConsumerAppliance-Brand.png",
+          brandImage:
+            "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/ConsumerAppliance-Brand.png",
           goal: "Needed support services to manage B2B & B2C storefronts",
           revenue: "Over a Billion Dollar",
           revenueSubtext: "IN DIGITAL ANNUAL REVENUE",
@@ -1739,13 +1740,151 @@ export const globalData = {
             "SLA-based support, brand storefronts rollout & continuous improvement",
         },
         {
-          brandImage: "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/Beverage-Distribution-Brand.png",
+          brandImage:
+            "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/Beverage-Distribution-Brand.png",
           goal: "Managed support for B2B commerce digital channel",
           revenue: "100 Million Dollars",
           revenueSubtext: "IN DIGITAL ANNUAL REVENUE",
           clientDuration: "2+ Years",
           servicesOffered:
             "SLA-based support, market rollout, & continuous improvement for SAP Commerce Cloud",
+        },
+      ],
+    },
+    supportOverview: {
+      title: "24/7 SLA-compliant Application Managed Services for SAP Commerce",
+      description:
+        "To help businesses keep pace with changes, Knack Systems provides 24/7 SLA-compliant Application Managed Services for SAP Commerce platforms. To support our valued customers’ growing businesses, we have a notable global presence to assist businesses 24/7 in North America with a dedicated delivery center from India.",
+      supportTitle: "Our competent & committed support includes:",
+      features: [
+        "Global 24/7 Helpdesk",
+        "L1 and L2 Support Systems",
+        "24/7 Proactive & Reactive Support",
+        "Managed care for full Range of Digital Models (B2B, B2C, B2B2C & Marketplace) for SAP Commerce Cloud / Customer Portal, CPI, Data Hub",
+        "Defects Resolution",
+      ],
+      image:
+        "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/commerce-ams-feature1.png",
+    },
+    continuousImprovements: {
+      title:
+        "Continuous Improvements to take e-commerce growth to the next level",
+      description:
+        "From implementing SAP CCv2 upgrades to integrating new features, 'Continuous Improvements' are a key aspect of Knack Systems' Application Managed Services for SAP Commerce platforms. We enable our valued customers to win more business by helping them venture into a new market, make UI improvements, and continuously roll out new features. And most importantly, help stay ahead of the competition.",
+      supportTitle: "Enhancement Services Covered:",
+      leftFeatures: [
+        { type: "simple", text: "SAP CCv2 Upgrades" },
+        {
+          type: "nested",
+          text: "Headless Commerce support",
+          subItems: ["Spartacus Framework support", "UI based support"],
+        },
+        { type: "simple", text: "Security Patches Maintenance" },
+      ],
+      rightFeatures: [
+        { type: "simple", text: "Test Automation" },
+        { type: "simple", text: "Load-balancing" },
+        {
+          type: "simple",
+          text: "Integrations (ERP systems with Hybris & many more)",
+        },
+        { type: "simple", text: "Site & Server" },
+      ],
+      image:
+        "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/commerce-ams-feature2.png",
+    },
+    integrationSection: {
+      title: "SAP Commerce Cloud Integration",
+      description:
+        "Gain an edge in the eCommerce market with advantages including automation of critical business activities, enhancing customer service, and connecting processes across your business functions with the right kind of integrations.",
+      cards: [
+        "ERP and other 3rd-party systems with Hybris",
+        "Social media",
+        "Accounts and invoice",
+        "Analytics",
+        "Campaigns",
+        "Email",
+        "Data hub",
+        "CMS",
+      ],
+    },
+    ecommerceProcesses: {
+      title: "E-commerce Processes We Support",
+      subtitle:
+        "We manage every single aspect of e-commerce for businesses like yours",
+      processes: [
+        "Content Management System (CMS)",
+        "Cancelations",
+        "Order Fulfillment and Management",
+        "Payment and Distribution Management",
+        "Returns Management",
+        "Content, Catalog, and Campaign Management",
+        "Users and Promotions Management",
+        "Accounting and Reconciliation Automation",
+      ],
+    },
+
+    unsureWhereToBegin: {
+      title: "Unsure of Where to Begin?",
+      description:
+        "As a CTO of your organization, you could help free up your IT teams to focus on innovation rather than being stuck with tasks backlog, security concerns, and user dissatisfaction. Knack Systems’ Application Managed Services for SAP Commerce has it all covered for you with 24/7 SLA-based support.",
+      meetingTitle: "Book a meeting with our industry experts:",
+      points: [
+        "To take a deep analysis of your e-commerce application",
+        "To find the right-sized plan",
+        "To future-proof your e-commerce application portfolio",
+        "To take stock of ROI realization for your commerce portal",
+      ],
+      image:
+        "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/commerce-cta.png",
+      scheduleButtonText: "Schedule a call",
+      scheduleButtonLink: "/contact-us",
+      brochureButtonText: "Download Brochure",
+      brochureButtonLink: "/brochure",
+    },
+
+    relatedServices: {
+      title: "Related Services",
+      services: [
+        {
+          title: "Strategy and Planning",
+          description:
+            "To build a strategic plan tailored specifically to your company's needs in accordance with the best practices to ensure your success",
+          buttonText: "Learn more",
+          buttonLink: "/services/strategy-and-planning",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/service-1.png",
+          cardClass: "card-yellow",
+        },
+        {
+          title: "Implementation Services",
+          description:
+            "To support digital transformation initiatives by leveraging the SAP Activate methodology to deliver successful implementation",
+          buttonText: "Learn more",
+          buttonLink: "/services/implementation",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/service-2.png",
+          cardClass: "card-cyan",
+        },
+        {
+          title: "Integrated Services",
+          description:
+            "To help you understand your existing technology strengths, gaps, & digital business goals for enterprise efficiency & smarter governance",
+          buttonText: "Learn more",
+          buttonLink: "/services/integrated-services",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/wp/service-3.png",
+          cardClass: "card-neutral",
+        },
+        {
+          title: "Upgrade & Rollouts",
+          description:
+            "To make global roll-outs successful from the perspective of end-user experience, business continuity, productivity, and accelerated growth",
+          buttonText: "Learn more",
+          buttonLink: "/services/upgrade-rollouts",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/service-4.png",
+          cardClass: "card-neutral",
         },
       ],
     },

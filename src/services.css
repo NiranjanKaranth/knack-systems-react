@@ -273,6 +273,415 @@
   font-weight: 600;
 }
 
+/* Support Overview Section (Mobile First) */
+.ams-support-overview-section {
+  padding: 80px 0;
+}
+
+.ams-support-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+.ams-support-image-wrapper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.ams-support-image-wrapper img {
+  display: block;
+}
+
+.ams-support-content {
+  width: 100%;
+}
+
+.ams-support-title {
+  text-align: left !important;
+}
+
+.ams-support-subheading {
+  text-align: left !important;
+}
+
+.ams-support-list {
+  list-style-type: disc !important;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ams-support-list li {
+  font-size: 16px;
+  color: #444444;
+  line-height: 26px;
+}
+
+.ams-sub-list {
+  margin-top: 15px;
+}
+
+.ams-sub-list li:first-child {
+  margin-bottom: 15px;
+}
+
+.list2 ul:last-child li:first-child {
+  margin-top: 15px;
+}
+
+/* SAP Commerce Cloud Integration Section */
+.ams-integration-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.ams-integration-header {
+  margin-bottom: 50px;
+}
+
+.ams-carousel-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.ams-carousel-track {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  width: 100%;
+}
+
+.ams-carousel-slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.ams-integration-card {
+  background-color: #12222d;
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 40px 20px;
+  min-height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(7, 6, 6, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.ams-integration-card h6 {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* Pagination Dots */
+.ams-pagination-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.ams-pagination-dots .dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  border: 1px solid #12222d;
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ams-pagination-dots .dot.active {
+  background-color: #12222d;
+}
+
+/* E-commerce Processes We Support Section */
+.ams-processes-section {
+  background-color: #0b161e;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.ams-processes-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ams-processes-title {
+  color: #ffffff !important;
+}
+
+.ams-processes-subtitle {
+  color: #ffffff !important;
+}
+
+.ams-processes-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.ams-process-card {
+  background-color: #12222d;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.ams-process-card:hover {
+  transform: translateY(-2px);
+}
+
+.ams-process-check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  background-color: #f6ad55;
+  color: #fff;
+  border-radius: 50%;
+  font-weight: 600;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+
+.ams-process-card p {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+/* Unsure of Where to Begin Full-Bleed Section */
+.ams-unsure-section {
+  padding: 80px 0;
+  overflow: hidden;
+  background-color: #faf8f6;
+}
+
+.ams-unsure-outer-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-direction: column;
+}
+
+/* Left Image Side: Breaks out to touch absolute left screen edge */
+.ams-unsure-image-side {
+  flex: 1;
+  position: relative;
+}
+
+.ams-unsure-image-side img {
+  object-fit: cover;
+  display: block;
+  border-radius: 12px;
+}
+
+/* Floating Arrow on the right edge of the image */
+.ams-image-arrow {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ams-image-arrow:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Right Content Side: Kept neatly within standard grid container alignment */
+.ams-unsure-content-side {
+  flex: 1;
+}
+
+.ams-unsure-title {
+  text-align: left !important;
+}
+
+.ams-unsure-subheading {
+  text-align: left !important;
+}
+
+.ams-unsure-list {
+  list-style-type: disc !important;
+  padding-left: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ams-unsure-list li {
+  font-size: 16px;
+  color: #444;
+  line-height: 26px;
+}
+
+.ams-unsure-cta-group {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.ams-schedule-btn {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* Related Services Section */
+.ams-related-services-section {
+  padding: 80px 0;
+}
+
+.ams-related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+/* Base Card Styles */
+.ams-related-card {
+  border-radius: 16px;
+  padding: 20px;
+  display: grid;
+  align-items: center;
+  gap: 30px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.04);
+  transition: transform 0.2s ease;
+  background-color: #f7f8f9;
+}
+
+/* Image Box */
+.ams-related-image-box img {
+  border-radius: 16px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Content Box */
+.ams-related-content-box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.ams-related-btn {
+  border-radius: 20px;
+}
+
+/* Start Your Journey Section */
+.ams-journey-section {
+  padding: 0 0 80px 0;
+}
+
+.ams-journey-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 50px;
+  align-items: stretch;
+}
+
+/* Left Dark Panel */
+.ams-journey-left-box {
+  background-color: #12222d;
+  color: #ffffff;
+  border-radius: 16px;
+  padding: 50px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ams-journey-title,
+.ams-journey-desc {
+  color: #ffffff !important;
+  text-align: left !important;
+}
+
+/* Right Form Panel */
+.ams-journey-form-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.ams-journey-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.ams-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ams-form-group label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+.ams-form-group input,
+.ams-form-group textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  color: #1a1a1a;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.ams-form-group input:focus,
+.ams-form-group textarea:focus {
+  outline: none;
+  border-color: #e86800;
+  box-shadow: 0 0 0 3px rgba(246, 173, 85, 0.15);
+}
+
+.ams-journey-submit-btn {
+  margin-top: 10px;
+  padding: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: opacity 0.2s ease;
+}
+
+.ams-journey-submit-btn:hover {
+  opacity: 0.9;
+}
+
 
 
 /* ==========================================================================
@@ -352,6 +761,106 @@
   .ams-growth-cards-wrapper {
     flex-direction: row;
   }
+
+  .ams-support-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .ams-support-image-wrapper {
+    flex: 1;
+  }
+
+  .ams-support-content {
+    flex: 1;
+  }
+
+  .ul-list {
+    width: 50%;
+  }
+
+  .ams-support-list .ams-sub-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  .list2 {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+  }
+
+  .list2 ul:last-child li:first-child {
+    margin-top: 0px;
+  }
+
+  .ams-carousel-slide {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .ams-integration-card {
+    min-height: 220px;
+  }
+
+  .ams-processes-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 50px;
+  }
+
+  .ams-unsure-outer-wrapper {
+    flex-direction: row;
+  }
+
+  .ams-unsure-image-side {
+    flex: 1;
+    position: relative;
+  }
+
+  .ams-unsure-image-side img {
+    max-height: 520px;
+    object-fit: cover;
+    display: block;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .ams-schedule-btn {
+    width: 65%;
+  }
+
+  .ams-unsure-image-side {
+    margin-left: calc((100vw - 745px) / -1);
+    width: 50vw;
+  }
+
+  .ams-related-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 50px;
+  }
+
+  .ams-related-card {
+    gap: 20px;
+    display: flex;
+  }
+
+  .ams-related-content-box {
+    flex: 1.4;
+  }
+
+  .ams-related-image-box {
+    flex: 1;
+    max-width: 50%;
+  }
+
+  .ams-journey-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ams-journey-left-box {
+    padding: 50px 40px;
+  }
 }
 
 /* Small Laptops (min-width: 1024px) */
@@ -378,6 +887,19 @@
     font-size: 34px;
     line-height: 44px;
   }
+
+  .ams-integration-card {
+    min-height: 220px;
+  }
+
+  .ams-schedule-btn {
+    width: auto;
+  }
+
+  .ams-unsure-image-side {
+    margin-left: calc((100vw - 960px) / -2);
+    width: 50vw;
+  }
 }
 
 /* Standard Desktop (min-width: 1280px) */
@@ -391,6 +913,14 @@
     font-size: 36px;
     line-height: 46px;
   }
+
+  .ams-integration-card {
+    min-height: 170px;
+  }
+
+  .ams-unsure-image-side {
+    margin-left: calc((100vw - 1200px) / -2.2);
+  }
 }
 
 /* Large Desktop (min-width: 1440px) */
@@ -403,5 +933,13 @@
   .ams-story-revenue {
     font-size: 38px;
     line-height: 48px;
+  }
+
+  .ams-integration-card {
+    min-height: 140px;
+  }
+
+  .ams-unsure-image-side {
+    margin-left: calc((100vw - 1200px) / -4);
   }
 }
