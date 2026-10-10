@@ -89,18 +89,18 @@
   padding: 80px 0;
 }
 
-.button-parent{
+.button-parent {
   display: flex;
   justify-content: center;
   margin-top: 50px;
 }
 
-.button-parent .black-button{
+.button-parent .black-button {
   border-radius: 3px;
   background-color: #000 !important;
 }
 
-.button-parent .black-button:hover{
+.button-parent .black-button:hover {
   background-color: #e86800 !important;
 }
 
@@ -163,6 +163,363 @@
   margin: 0;
 }
 
+/* Latest CX Resources & Insights Section - Mobile First */
+.cx-resources-section {
+  padding: 80px 0;
+}
+
+/* Mobile-first Stack Layout (1 Column) */
+.cx-resources-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.cx-resource-card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+.cx-resource-image-wrapper {
+  margin-bottom: 30px;
+}
+
+.cx-resource-image-wrapper img {
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+}
+
+.cx-resource-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  justify-content: space-between;
+}
+
+.cx-resource-btn {
+  align-self: flex-start;
+}
+
+/* Podcast Hero Banner Section - Mobile First */
+.podcast-banner-section {
+  background-image: url(https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/podcast-2023/podcast.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  padding: 80px 0;
+  overflow: auto;
+  position: relative;
+}
+
+.podcast-banner-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.podcast-banner-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+
+.podcast-logo-wrapper img {
+  max-width: 140px;
+}
+
+.podcast-banner-title {
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+.podcast-listen-text {
+  color: #ffffff !important;
+  margin: 0 !important;
+}
+
+.podcast-platforms-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.podcast-platform-badge img {
+  height: 35px;
+  display: block;
+  transition: transform 0.2s ease;
+}
+
+.podcast-platform-badge img:hover {
+  transform: scale(1.05);
+}
+
+/* ==========================================================================
+   Our Podcast Covers Section - Mobile First
+   ========================================================================== */
+.podcast-covers-section {
+  padding: 80px 0;
+}
+
+/* Filter Tab Menu - Mobile First */
+.podcast-tabs-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.podcast-tab-btn {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  line-height: 28px;
+  color: #444;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.podcast-tab-btn:hover {
+  color: #444;
+}
+
+.podcast-tab-btn.active {
+  color: #444;
+  font-weight: 600;
+}
+
+.podcast-tab-btn.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #e86800;
+}
+
+/* Episode Showcase Card - Mobile Layout (Stacked) */
+.podcast-episodes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.podcast-episode-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #fcfcfc;
+}
+
+/* Left Dark Panel */
+.podcast-episode-left {
+  padding: 30px 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.podcast-episode-tag {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.podcast-episode-banner-title {
+  color: #fff !important;
+}
+
+/* Speakers Row inside Dark Card */
+.podcast-featuring-label {
+  color: #fff !important;
+}
+
+.podcast-speakers-grid {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  flex-direction: column;
+}
+
+.podcast-speaker-item {
+  flex: 1;
+  min-width: 100px;
+  text-align: center;
+  border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.podcast-speaker-item:last-child {
+  border-right: none;
+  padding-right: 0;
+  border-bottom: 0;
+}
+
+.podcast-speaker-item:last-child .podcast-speaker-company:last-child {
+  padding-bottom: 0px;
+}
+
+.podcast-speaker-img {
+  width: 100px !important;
+  height: 100px !important;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px;
+}
+
+.podcast-speaker-name {
+  color: #ffffff !important;
+  margin-bottom: 10px !important;
+}
+
+.podcast-speaker-role {
+  color: #fff !important;
+}
+
+.podcast-speaker-company {
+  color: #e86800 !important;
+  text-transform: uppercase;
+  margin-top: auto !important;
+  padding-bottom: 20px;
+}
+
+/* Right Content Panel */
+.podcast-episode-right {
+  padding: 30px 20px;
+  background-color: #f3f3f3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.podcast-episode-main-title {
+  text-align: left !important;
+}
+
+.podcast-watch-btn {
+  border-radius: 20px;
+}
+
+.podcast-no-results {
+  text-align: center;
+  color: #718096;
+  font-size: 16px;
+}
+
+/* ==========================================================================
+   New On-Demand Webinar Section - Mobile First
+   ========================================================================== */
+.webinar-featured-section {
+  padding: 80px 0;
+}
+
+.webinar-featured-card {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.webinar-card-image-wrapper {
+  width: 100%;
+}
+
+.webinar-card-image-wrapper img {
+  object-fit: cover;
+  display: block;
+}
+
+.webinar-main-title {
+  text-align: left !important;
+}
+
+/* Right Content Panel */
+.webinar-card-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.webinar-cta-btn {
+  border-radius: 40px;
+}
+
+/* ==========================================================================
+   Webinar Listing Section - Mobile First
+   ========================================================================== */
+.webinar-list-section {
+  padding: 0 0 80px 0;
+}
+
+.webinar-cards-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.webinar-item-card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid #edf2f7;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.2s ease;
+}
+
+.webinar-item-image img {
+  /* aspect-ratio: 16 / 9; */
+  object-fit: cover;
+  display: block;
+}
+
+.webinar-item-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: flex-start;
+}
+
+.webinar-item-badge {
+  display: inline-block;
+  background-color: #6b7280;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+.webinar-item-title {
+  text-align: left !important;
+}
+
+.webinar-item-btn {
+  border-radius: 40px;
+  margin-top: auto;
+}
+
+
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
@@ -178,6 +535,73 @@
     grid-template-columns: 7fr 3fr;
     gap: 30px;
   }
+
+  .cx-resources-grid {
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .podcast-banner-section {
+    background-position: center;
+  }
+
+  .podcast-banner-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .podcast-platforms-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .podcast-banner-title {
+    max-width: 420px;
+  }
+
+  .podcast-tabs-wrapper {
+    gap: 15px 30px;
+    justify-content: flex-start;
+  }
+
+  .podcast-episode-card {
+    flex-direction: row;
+    min-height: 460px;
+  }
+
+  .podcast-episode-left {
+    flex: 1.1;
+    padding: 40px 30px;
+    justify-content: normal;
+  }
+
+  .podcast-episode-right {
+    flex: 1;
+    padding: 40px 30px;
+  }
+
+  .webinar-featured-card {
+    flex-direction: row;
+  }
+
+  .webinar-card-image-wrapper {
+    flex: 1.2;
+  }
+
+  .webinar-card-right {
+    flex: 1;
+  }
+
+  .webinar-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+
+  .webinar-item-content {
+    padding: 30px;
+  }
 }
 
 /* Small Laptops (min-width: 1024px) */
@@ -185,10 +609,30 @@
   .blogs-cards-grid {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .podcast-banner-section {
+    background-position: 60%;
+  }
+
+  .podcast-banner-title {
+    max-width: 600px;
+  }
+
+  .webinar-card-image-wrapper {
+    flex: 1;
+  }
 }
 
 /* Standard Desktop (min-width: 1280px) */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+  .podcast-banner-section {
+    background-position: center;
+  }
+
+  .podcast-banner-title {
+    max-width: 720px;
+  }
+}
 
 /* Large Desktop (min-width: 1440px) */
 @media only screen and (min-width: 1440px) {}

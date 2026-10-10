@@ -34,6 +34,8 @@ import SolutionDesign from "./pages/services-pages/solution-design";
 import RollOutAdoption from "./pages/services-pages/roll-out-and-adoption";
 import ApplicationManagedServices from "./pages/services-pages/application";
 import AMS from "./pages/services-pages/commerece-ams";
+import Podcasts from "./pages/insights-and-news-pages/podcasts";
+import Webinars from "./pages/insights-and-news-pages/webinars";
 
 function App() {
   return (
@@ -73,6 +75,8 @@ function App() {
           <Route path="/services/roll-out-and-adoption" element={<RollOutAdoption />} />
           <Route path="/services/Application" element={<ApplicationManagedServices />} />
           <Route path="/services/ams" element={<AMS />} />
+          <Route path="/insights-and-news/podcasts" element={<Podcasts />} />
+          <Route path="/insights-and-news/webinars" element={<Webinars />} />
         </Routes>
 
         <Footer />

@@ -1,3 +1,5 @@
+import Webinars from "../pages/insights-and-news-pages/webinars";
+
 // Define them once globally
 export const sharedStats = [
   { value: "27+", label: "Years of<br />Experience" },
@@ -1823,7 +1825,6 @@ export const globalData = {
         "Accounting and Reconciliation Automation",
       ],
     },
-
     unsureWhereToBegin: {
       title: "Unsure of Where to Begin?",
       description:
@@ -1842,7 +1843,6 @@ export const globalData = {
       brochureButtonText: "Download Brochure",
       brochureButtonLink: "/brochure",
     },
-
     relatedServices: {
       title: "Related Services",
       services: [
@@ -1885,6 +1885,301 @@ export const globalData = {
           image:
             "https://www.knacksystems.com/hubfs/ks-web/commerce-ams/service-4.png",
           cardClass: "card-neutral",
+        },
+      ],
+    },
+  },
+
+  podcasts: {
+    banner: {
+      logo: "https://www.knacksystems.com/hubfs/podcast-2023/CX-now-next.svg",
+      heading:
+        "Make digital Customer Experience amazing every time with insights from our industry experts, and CX practitioners.",
+      listenText: "Watch and Listen on",
+      platforms: [
+        {
+          name: "Spotify",
+          icon: "https://www.knacksystems.com/hubfs/podcast-2023/spotify-cx-now-and-next.svg",
+          link: "#",
+        },
+        {
+          name: "Apple Podcasts",
+          icon: "https://www.knacksystems.com/hubfs/podcast-2023/apple-cx-now-and-next.svg",
+          link: "#",
+        },
+        {
+          name: "YouTube",
+          icon: "https://www.knacksystems.com/hubfs/podcast-2023/youtube-cx-now-and-next.svg",
+          link: "#",
+        },
+        {
+          name: "Google Podcasts",
+          icon: "https://www.knacksystems.com/hubfs/podcast-2023/google-cx-now-and-next.svg",
+          link: "#",
+        },
+        {
+          name: "Amazon Music",
+          icon: "https://www.knacksystems.com/hubfs/podcast-2023/amazon-cx-now-and-next.svg",
+          link: "#",
+        },
+      ],
+    },
+    podcastCovers: {
+      title: "Our Podcast Covers",
+      categories: [
+        "ALL",
+        "Industrial Manufacturing & Components",
+        "Building Materials",
+        "Wholesale & Distribution",
+        "Consumer Goods",
+        "Chemicals",
+        "Digital Commerce",
+        "Sales",
+        "Configure, Price & Quote (CPQ)",
+        "Service",
+        "Customer Data Management",
+        "Marketing",
+      ],
+      episodes: [
+        {
+          id: 3,
+          episodeNumber: "Episode 03",
+          category: "Configure, Price & Quote (CPQ)",
+          bannerTitle:
+            "Unlocking SAP's New B2B Self-Service Portal for SAP ERP with Knack Systems",
+          mainTitle:
+            "The New SAP B2B Self-Service Portal & Knack Systems: Your Fastest Path to B2B Self-Service Success",
+          description:
+            "SAP has launched a new SAP B2B Self-Service Portal designed for SAP ERP customers and Knack Systems is at the center of it. In this episode, Imran Shahdad (SAP) and Sandeep Nalgundwar (Knack Systems) join host James DuBose to discuss how SAP empowers SAP ERP customers with the new portal.",
+          subDescription:
+            "Watch the full episode to learn how SAP ERP customers can unlock B2B self-service capabilities for buyers, sales, and service teams.",
+          buttonText: "Watch Now!",
+          buttonLink: "/podcasts/episode-03",
+          bgImage:
+            "https://www.knacksystems.com/hubfs/Podcast-Listing/b2b_Self-service-podcast.jpg",
+          speakers: [
+            {
+              name: "Imran Shahdad",
+              role: "Global VP, SAP CX, Commerce, Consumer Industries & Customer Engagement Solutions",
+              company: "SAP",
+              image:
+                "https://www.knacksystems.com/hubfs/Podcast-Listing/imran_podcast.png",
+            },
+            {
+              name: "Sandeep Nalgundwar",
+              role: "Partner and Chief Sales & Marketing Officer",
+              company: "KNACK SYSTEMS",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/Sandeep.png",
+            },
+            {
+              name: "James H. DuBose III",
+              role: "Director - National Sales",
+              company: "KNACK SYSTEMS",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/James-1.png",
+            },
+          ],
+        },
+        {
+          id: 2,
+          episodeNumber: "Episode 02",
+          category: "Digital Commerce",
+          bannerTitle:
+            "Knack Systems and Zoovu's Partnership for AI-powered Product Search & Discovery",
+          mainTitle:
+            "Knack Systems & Zoovu: A Power-packed Partnership Delivering Real AI Value for B2B and B2C Brands",
+          description:
+            "What happens when Knack Systems, a leading SAP CX partner, teams up with Zoovu, the #1 AI-powered product discovery platform?",
+          subDescription:
+            "You get powerful insights on accelerating AI adoption, simplifying complexity, and unlocking real results for B2B and B2C brands. Watch the video episode to discover how this partnership makes AI adoption practical, scalable, and impactful.",
+          buttonText: "Watch Now!",
+          buttonLink: "/podcasts/episode-02",
+          bgImage:
+            "https://www.knacksystems.com/hubfs/podcast-2023/Knack-and-Zoovu%E2%80%99s-banner.jpg",
+          speakers: [
+            {
+              name: "Sandeep Nalgundwar",
+              role: "Partner and Chief Sales & Marketing Officer",
+              company: "KNACK SYSTEMS",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/Sandeep.png",
+            },
+            {
+              name: "Julie Mall",
+              role: "Vice President of Solutions Consulting",
+              company: "ZOOVU",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/Julie.png",
+            },
+            {
+              name: "James H. DuBose III",
+              role: "Director - National Sales",
+              company: "KNACK SYSTEMS",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/James-1.png",
+            },
+          ],
+        },
+        {
+          id: 1,
+          episodeNumber: "Episode 01",
+          category: "Industrial Manufacturing & Components",
+          bannerTitle: "Optimizing B2B Sales with SAP CPQ",
+          mainTitle:
+            "Boosting Revenue in Industrial Manufacturing: A sneak peek into the episode discussion:",
+          description:
+            "Given the complex pricing and quoting processes and customer expectations, how can Industrial Manufacturing leaders ensure consistent B2B sales success? We have all the answers!",
+          subDescription:
+            "The episode discussion provides insights into four trends in industrial manufacturing, highlighting the complex challenges faced in IM&C sales. It introduces the SAP CPQ Solution and explains why it is suitable for the IM&C industry.",
+          buttonText: "Watch Now!",
+          buttonLink: "/podcasts/episode-01",
+          bgColor: "#222222",
+          speakers: [
+            {
+              name: "RK Pai",
+              role: "Director of Delivery - CPQ & Integration",
+              company: "KNACK SYSTEMS",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/RK%20Paiv2.png",
+            },
+            {
+              name: "James H. DuBose III",
+              role: "Director - National Sales",
+              company: "KNACK SYSTEMS",
+              image:
+                "https://www.knacksystems.com/hubfs/podcast-2023/James%20H.%20DuBose%20IIIv2.png",
+            },
+          ],
+        },
+      ],
+    },
+    title: "Latest CX Resources & Insights!",
+    resources: [
+      {
+        category: "BLOG",
+        title:
+          "Migrate from SAP Commerce Accelerator-Based Storefront to a Composable Storefront",
+        buttonText: "Watch Now",
+        buttonLink: "/resources/migrate-sap-commerce",
+        image:
+          "https://www.knacksystems.com/hubfs/podcast-2023/Migrate-from-SAP-Commerce.jpg",
+      },
+      {
+        category: "BLOG",
+        title: "Unlocking the Power of Composable eCommerce",
+        buttonText: "Read More",
+        buttonLink: "/resources/composable-ecommerce",
+        image:
+          "https://www.knacksystems.com/hubfs/podcast-2023/Composable-eCommerce.jpg",
+      },
+      {
+        category: "BLOG",
+        title: "Maximizing eCommerce Profitability with UX Design Services",
+        buttonText: "Read More",
+        buttonLink: "/resources/maximizing-ecommerce-profitability",
+        image:
+          "https://www.knacksystems.com/hubfs/podcast-2023/UX-Design-Services.jpg",
+      },
+    ],
+  },
+
+  Webinars: {
+    hero: {
+      title: "Webinars",
+      subtitle: "The One Stop for All of Knack Systems’ Webinar Content",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/webinar1.png",
+    },
+    featuredWebinar: {
+      sectionTitle: "New On-Demand Webinar",
+      mainTitle: "Composable B2B Commerce with SAP Commerce Cloud",
+      description:
+        "Most B2B organizations running on the SAP Commerce Accelerator know a change is coming but few are moving fast enough. End-of-support in 2028 isn't the cliff to plan around. The migration timeline is. And that clock has already started.",
+      subDescription:
+        "Three specialists in Composable Frontend, SAP B2B Commerce implementations, and AI-powered B2B search walk you through a proven path: how to modernize the experience your buyers see without touching the SAP Commerce Cloud backend you've already invested in.",
+      buttonText: "Watch the On-Demand Webinar",
+      buttonLink: "/webinars/composable-b2b-commerce",
+      cardImage:
+        "https://www.knacksystems.com/hubfs/ks-website-2025/Composable-B2B-Commerce-webinar.jpg",
+    },
+    webinarListSection: {
+      sectionTitle: "Webinars",
+      webinars: [
+        {
+          categoryBadge: "THE WOODGRAIN SUCCESS STORY",
+          title: "Revenue Growth Through Sales & Service Process Optimization",
+          description:
+            "Streamlining your sales and service processes takes time and effort. You need to put in the leg work in order to get the entire organization on the same system and simplify any and all bloated processes. Now, how do you take the next step in growing your business while investing in a dramatically cheaper customer experience solution?",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/woodgrain-success-story",
+          image:
+            "	https://www.knacksystems.com/hubfs/ks-website-2025/woodgrain-success-story-banner.jpg",
+        },
+        {
+          categoryBadge: "",
+          title:
+            "Top Priorities for Food Services Business and Technology Leaders",
+          description:
+            "In this webinar, Knack Systems' thought leaders will look into the Top Priorities for Food Services Business and Technology Leaders while we all traverse the unpredictability of COVID-19. Join the thought leaders and interact with your industry peers LIVE for 45 minutes and explore the best ways right now for your sales reps, field agents, and sales managers to boost the sales pipeline 2x-3x.",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/food-services-priorities",
+          image:
+            "https://www.knacksystems.com/hubfs/AvocadoOne_webinar_small1.png",
+        },
+        {
+          categoryBadge: "",
+          title: "How to cut down quote-to-order time from days to minutes",
+          description:
+            "See SAP CPQ Cloud in action as we demonstrate how to set a guardrail to protect margins, streamline your approval processes, and decrease your quote-to-order time with the right CPQ solution. Hear from top CPQ experts how you can enable sales representatives to quickly generate accurate quotes, including standard, promotional, and customer-specific quotes, to boost sales activity in this one-hour webinar session.",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/cut-down-quote-time",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/webinar/cpq-small.png",
+        },
+        {
+          categoryBadge: "",
+          title:
+            "Overcoming challenges faced in B2B Commerce to better focus on the global market",
+          description:
+            "Knack Systems' Customer Experience and Commerce Experts— Joe Mead and Nitin Patki— and learn how you can go to market quickly with a solution that enables you to create highly targeted, relevant, and exciting customer experiences across all touchpoints.",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/overcoming-b2b-challenges",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/webinar/commerce-cloud-small.png",
+        },
+        {
+          categoryBadge: "",
+          title:
+            "Engaging with customers more intelligently with SAP C/4HANA",
+          description:
+            "You will learn best practices for providing the same standard of user experience at every touchpoint – something that customers expect in today’s connected world....",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/overcoming-b2b-challenges",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/webinar/c4hana-small.png",
+        },
+        {
+          categoryBadge: "",
+          title:
+            "Learn how to transform customer support into a competitive advantage and create an amazing customer experience",
+          description:
+            "If you want to dominate the Customer Service game and delight your customers better, try out SAP Hybris Service Cloud…",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/overcoming-b2b-challenges",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/webinar/service-cloud-small.png",
+        },
+        {
+          categoryBadge: "",
+          title:
+            "How Bentley Systems achieved a harmonized channel partner ecosystem",
+          description:
+            "Hear Kiran Koons, Senior Director – IT Business Solutions & Sales Operations Technology, and Jamie Louangaphay…",
+          buttonText: "View Recording",
+          buttonLink: "/webinars/overcoming-b2b-challenges",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/webinar/bently-systems-small.jpg",
         },
       ],
     },
