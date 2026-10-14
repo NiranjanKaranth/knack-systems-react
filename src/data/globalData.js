@@ -2150,8 +2150,7 @@ export const globalData = {
         },
         {
           categoryBadge: "",
-          title:
-            "Engaging with customers more intelligently with SAP C/4HANA",
+          title: "Engaging with customers more intelligently with SAP C/4HANA",
           description:
             "You will learn best practices for providing the same standard of user experience at every touchpoint – something that customers expect in today’s connected world....",
           buttonText: "View Recording",
@@ -2182,6 +2181,669 @@ export const globalData = {
             "https://www.knacksystems.com/hubfs/knack-systems/webinar/bently-systems-small.jpg",
         },
       ],
+    },
+  },
+
+  newsAndEvents: {
+    hero: {
+      title: "News & Events",
+      subtitle: "",
+      bgImage:
+        "https://www.knacksystems.com/hubfs/knack-systems/news-events/news&events.png",
+    },
+    eventsSection: {
+      sectionTitle: "Events",
+      events: [
+        {
+          title:
+            "Knack Systems Joins UNITED VARS as Newest Member to Expand Global SAP Customer Experience Expertise",
+          description:
+            "Knack Systems is pleased to announce it has joined the UNITED VARS Global Partner Program as its newest member, further strengthening the alliance's capabilities in delivering world-class SAP Customer Experience (CX) solutions across international markets.",
+          buttonText: "Learn More!",
+          buttonLink: "/events/united-vars-partnership",
+          titleDescription: "united-vars-partnership",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-website-2025/Uinted-VARs-PR.webp",
+        },
+        {
+          title: "Meet Knack Systems at SAP Sapphire 2026",
+          description:
+            "Join us at SAP Sapphire & ASUG Annual Conference in Orlando — the world's largest SAP event. Visit the Knack Systems team to explore how we're accelerating SAP CX, B2B Commerce, and AI-powered digital transformation for consumer brands and industrial manufacturers.",
+          date: "May 11-13, 2026",
+          location: "Orange County Convention Center, Orlando, FL",
+          buttonText: "Read More!",
+          buttonLink: "/events/sap-sapphire-2026",
+          titleDescription: "sap-sapphire-2026",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-website-2025/sapphire-news-and-events.jpg",
+        },
+        {
+          title:
+            "Knack Systems Showcased Its New BetterB2B Offering at SAP Connect Day Dallas 2026",
+          description:
+            "Built on SAP Commerce, Sales, CPQ, Service, BTP, and AI, the BetterB2B offering helps unify fragmented CX systems, accelerate decision-making, and deliver connected, real-world B2B experiences. Live demos highlighted practical AI use cases driving smarter self-service and more relevant buyer journeys.",
+          buttonText: "Read More!",
+          buttonLink: "/events/sap-connect-day-dallas",
+          titleDescription: "sap-connect-day-dallas",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-website-2025/SAP-Connect-banner-news-and-events.jpg",
+        },
+        {
+          title:
+            "Knack Systems and Alokai: Driving SAP Commerce Cloud Storefront Modernization",
+          description:
+            "Knack Systems partnered with Alokai, a Frontend as a Service (FEaaS) platform for composable commerce. The partnership brings together Knack Systems' experience in SAP Customer Experience implementations with Alokai's frontend platform to support organizations using SAP Commerce Cloud in modernizing their storefronts. As an Alokai partner, Knack Systems integrates Alokai's storefront platform into SAP Commerce Cloud environments, supporting both B2B and B2C use cases.",
+          buttonText: "Learn More!",
+          buttonLink: "/events/alokai-partnership",
+          titleDescription: "alokai-partnership",
+          image:
+            "https://www.knacksystems.com/hubfs/ks-website-2025/Knack-Systems-and-Alokai-news-and-events.jpg",
+        },
+        {
+          title: "Exclusive Golf & Networking at TPC Jasna Polana",
+          description:
+            "Knack Systems is proud to join SAP in hosting an unforgettable day of golf, gourmet dining, and networking at the prestigious TPC Jasna Polana, Princeton, NJ on September 22, 2025. Guests will enjoy championship golf on a Gary Player–designed course while supporting a meaningful cause.",
+          titleDescription: "JPC-Golf-event",
+          image: "https://www.knacksystems.com/hubfs/JPC-Golf-event.jpg",
+        },
+        {
+          title:
+            "Knack Systems & Knack Brava: Accelerating SAP’s New B2B Self-Service Portal Adoption",
+          description:
+            "Together with SAP, Knack Systems is raising the bar for B2B self-service with the launch of SAP’s latest B2B Self-Service Portal. As SAP’s chosen partner, we’re enabling SAP Cloud ERP customers to go live with the newest B2B Self-Service Portal in just weeks, powered by Knack Brava’s rapid-deployment accelerator, proven methodology, and deep industry expertise.",
+          buttonText: "Read More!",
+          buttonLink: "/events/B2B-Self-Service",
+          titleDescription: "B2B-Self-Service",
+          image: "https://www.knacksystems.com/hubfs/B2B%20Self%20Service.jpg",
+        },
+        {
+          title:
+            "Knack Systems and Contentful Team Up to Power Future-Ready Digital Experiences",
+          description:
+            "Knack Systems has partnered with Contentful to bring together our SAP CX expertise and Contentful’s leading composable content platform. Together, we help enterprises deliver seamless, AI-powered digital experiences with a future-ready headless CMS. This enables businesses to manage content at scale, personalize customer journeys, and gain a competitive edge.",
+          buttonText: "Read More!",
+          buttonLink: "/events/Contentful-Knack-Systems",
+          titleDescription: "Contentful-Knack-Systems",
+          image:
+            "https://www.knacksystems.com/hubfs/Contentful-Knack-Systems.jpg",
+        },
+        {
+          title:
+            "Knack Systems and Zoovu Join Forces to Advance AI-Powered Product Discovery",
+          description:
+            "Knack Systems has joined forces with Zoovu to embed AI-powered search and product discovery into SAP CX e-commerce platforms. This partnership helps businesses deliver richer digital commerce experiences, lift conversions by up to 29%, and cut AI implementation timelines from months to weeks.",
+          buttonText: "Read More!",
+          buttonLink: "/events/Zoovu-Knack-Systems",
+          titleDescription: "Zoovu-Knack-Systems",
+          image: "https://www.knacksystems.com/hubfs/Zoovu-Knack-Systems.jpg",
+        },
+        {
+          title:
+            "Unveiling Knack Systems’ CX Now & Next - an Industry-tailored Podcast Series",
+          description:
+            "In our Industry-Tailored Podcast Series, CX Now & Next, Knack Systems brings together highly accomplished guests - experts in their field, the industry's finest minds, our valued customers, and SAP CX leaders. Join us as we explore everything it takes to achieve exceptional customer experience across industries.",
+          buttonText: "Read More!",
+          buttonLink: "/events/Podcast-press-release",
+          titleDescription: "Podcast-press-release",
+          image: "https://www.knacksystems.com/hubfs/Podcast-press-release.jpg",
+        },
+        {
+          title:
+            "Inaugural Episode: Boosting Revenue in Industrial Manufacturing: Optimizing B2B Sales with SAP CPQ",
+          description:
+            "Our inaugural episode explores four key trends in industrial manufacturing, revealing the challenges the industry faces. Our Industry Veteran - RK Pai and Host - James DuBose discover the ideal fit of the SAP CPQ Solution for the industry, alongside insights into visualization, configuration, and a customer success story.",
+          buttonText: "Watch More!",
+          buttonLink: "/events/cx-now-and-next",
+          titleDescription: "cx-now-and-next",
+          image: "https://www.knacksystems.com/hubfs/cx-now-and-next.jpg",
+        },
+        {
+          title: "KNACK SYSTEMS AT NRF 2023",
+          subHeading:
+            "We are excited to have participated in the Retail’s Big Show event, NRF 2023!",
+          dateTitle: "NewYork | January 15-17",
+          description:
+            "We co-sponsored the SAP Fashion Dinner during NRF 2023. Our team showed the SAP Fashion community of leading brands and SAP executives how our SeasonOne solution, a robust ordering and collaboration tool would help run the seasonal business efficiently, effectively, and profitably from pre-season to current season ordering. Sandeep Nalgundwar, Chief Sales and Marketing Officer- at Knack Systems had a fulfilling interaction with Peter Akbar, the “father of SAP fashion solution” at NRF 2023.",
+          titleDescription: "NRF-2023",
+          image: "https://www.knacksystems.com/hubfs/NRF-2023.jpg",
+        },
+        {
+          title: "Our Annual Team Event 2022 in Manhattan City",
+          description:
+            "Knack Systems organized its Annual Team Event in Sep 2022 to celebrate the organization’s success, and great performances, and gear up for 2023 with a solid vision. The invigorating outing will help us bring immense value to our customers in their Digital Transformation journeys.",
+          buttonText: "Watch More!",
+          buttonLink: "/events/Knack_Annual_Team_Event_US",
+          titleDescription: "Knack_Annual_Team_Event_US",
+          image:
+            "https://www.knacksystems.com/hubfs/Knack_Annual_Team_Event_US.jpg",
+        },
+        {
+          title: "SAP Fashion Council Live Session",
+          subHeading: "Creating A New PremiumTech B2B Experience",
+          dateTitle: "Tuesday February 15, 2022",
+          description:
+            "This is the time for you to discover all that you need to know about how <a href='https://knack-systems-app.vercel.app/' class='inline-link'>Knack Systems</a>, <a href='/born' class='inline-link'>BORN</a>, and <a href='/sap' class='inline-link'>SAP</a> first got together to collaborate on creating a PremiumTech platform to offer streamlined discovery, connection, and transaction to premium B2B buyers and brands across multiple categories.",
+          titleDescription: "SAP-Fashion-Council-Live-Session-news",
+          image:
+            "https://www.knacksystems.com/hubfs/SAP-Fashion-Council-Live-Session-news.jpg",
+        },
+        {
+          title: "NRF",
+          description:
+            "From January 12 to 14, the Knack Systems team was at National Retail Federation (NRF) 2020, New York City, along with our customer, Pentland Brands. Abhy Thomas Joseph, Global IT Director (CIO) at Pentland Brands, presented their E-Commerce success story at the event.",
+          subDescription:
+            "At SAP’s booth at NRF 2020: Retail’s BIG Show, an international crowd of brands discovered Knack Systems’ SeasonOne—a single platform for all pre-book, re-order, and personalized product management needs for consumer product businesses. SeasonOne is now available on the SAP App Center.",
+          titleDescription: "event",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/news-events/event-1.png",
+        },
+        {
+          title: "2020 SAP Field Kick-Off Meeting",
+          description:
+            "From Jan 15 to 17, 2020, the Knack Systems team was at the 2020 SAP Field Kick-Off Meeting (FKOM), Las Vegas, Nevada, to meet our friends from SAP, discussing Mission 2020 strategy and planning.",
+          subDescription:
+            "This was an SAP internal event with partners, which celebrated the 2019 accomplishments and ended with fruitful discussions on ensuring collaborative success this year.",
+          titleDescription: "event-2",
+          image:
+            "https://www.knacksystems.com/hubfs/knack-systems/news-events/event-2.png",
+        },
+      ],
+    },
+  },
+
+  leadership: {
+    hero: {
+      title: "Meet Our Leadership Team",
+      subtitle:
+        "Spanning all departments, our leaders represent Knack Systems’ deep-rooted values and our commitment to refining customer experience for businesses. Every day, they set the stage for innovation, perception, and development.",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/leadership1.png",
+    },
+    title: "Leadership team",
+    members: [
+      {
+        id: 1,
+        name: "Rajiv Sharma",
+        role: "Founder and Chief Executive Officer",
+        image:
+          "https://www.knacksystems.com/hs-fs/hubfs/knack-systems/rajiv-sharma.jpg?width=927&height=927&name=rajiv-sharma.jpg",
+      },
+      {
+        id: 2,
+        name: "Sandeep Arora",
+        role: "Chief Operating Officer",
+        image:
+          "https://www.knacksystems.com/hs-fs/hubfs/knack-systems/sandeep-a.png?width=1350&height=1350&name=sandeep-a.png",
+      },
+      {
+        id: 3,
+        name: "Krishna Moorthy",
+        role: "EVP and Partner - Digital CX Practice",
+        image:
+          "https://www.knacksystems.com/hs-fs/hubfs/knack-systems/krishna.png?width=1350&height=1350&name=krishna.png",
+      },
+      {
+        id: 4,
+        name: "Sandeep Nalgundwar",
+        role: "EVP and Partner - Digital CX Practice",
+        image:
+          "https://www.knacksystems.com/hs-fs/hubfs/Sandeep%20N.jpg?width=1666&height=1800&name=Sandeep%20N.jpg",
+      },
+    ],
+  },
+
+  partnersSection: {
+    title: "Partners",
+    introText:
+      "Knack Systems works closely with leading software application providers to nurture long-term, valuable relationships that help serve clients better. Knack Systems leverages its business and technical expertise, industry knowledge, and cost-effective, global delivery model to strengthen its collaboration with partners and deliver complete solutions to customers.",
+    partners: [
+      {
+        id: 1,
+        name: "SAP Gold Service Partner",
+        logo: "https://www.knacksystems.com/hubfs/knack-systems/sap-gold-partner-1.png",
+        description:
+          "Knack Systems has been evaluated and certified as a provider of quality services on SAP applications, and partners with SAP for its Services, Co-Innovation and Testing program. Additionally, Knack Systems participates in joint GTM programs and works to provide inputs and resources for the overall enhancement of SAP Applications.",
+      },
+      {
+        id: 2,
+        name: "United VARs",
+        logo: "https://www.knacksystems.com/hubfs/ks-website-2025/united-var.jpg",
+        description:
+          "Knack Systems is proud to be part of the United VARs network—one of the largest global alliances of SAP solution providers. This partnership enables us to collaborate with trusted, local experts across 100+ countries, delivering seamless, scalable, and high-impact SAP Customer Experience (CX) solutions to our clients worldwide. By combining Knack’s deep expertise in SAP CX, AI, and composable commerce with United VARs’ global reach, we empower businesses to accelerate digital transformation, enhance customer engagement, and achieve consistent innovation across markets.",
+      },
+      {
+        id: 3,
+        name: "Coveo",
+        logo: "	https://www.knacksystems.com/hubfs/coveo_partners.jpg",
+        description:
+          "Coveo’s AI-Relevance platform integrates with SAP Commerce Cloud, SAP Service Cloud, and other solutions—infusing every interaction with intelligence. From relevant consistent digital experiences throughout your SAP Customer Experience portfolio. With an SAP endorsed app, Coveo drives real results: improved conversions, personalized shopping and support, effective self-service, and faster case resolution through unified knowledge access. Future-proof your digital strategy with a scalable AI platform that grows with your business—transforming every customer interaction into a chance to boost engagement, satisfaction, and growth.",
+      },
+      {
+        id: 4,
+        name: "Alokai",
+        logo: "https://www.knacksystems.com/hubfs/ks-website-2025/alokai.jpg",
+        description:
+          "Knack Systems partnered with Alokai, a Frontend as a Service (FEaaS) platform for composable commerce. The partnership brings together Knack Systems’ experience in SAP Commerce Cloud in modernizing their storefronts. As an Alokai partner, Knack Systems integrates Alokai’s storefront platform into SAP Commerce Cloud environments, supporting both B2B and B2C use cases.<br><br/> \"Our partnership with Knack Systems helps SAP Commerce Cloud customers modernize their storefronts without disrupting existing backend investments.\" — Patrick Friday, CEO & Co-Founder, Alokai. Learn more at <a href='https://alokai.com' target='_blank' rel='noopener noreferrer' class='inline-link'>alokai.com</a>",
+      },
+      {
+        id: 5,
+        name: "Contentful",
+        logo: "https://www.knacksystems.com/hubfs/contentful-partner.jpg",
+        description:
+          "Knack Systems partnered with Contentful, the leading composable content platform, to help businesses streamline content operations and deliver high-impact digital experiences. Powered by AI, Contentful transforms how businesses manage and deliver content—enabling dynamic personalization, automated distribution, and real-time testing that boost engagement and conversions. With built-in AI, businesses can generate, translate, and personalize content in seconds—driving stronger omnichannel engagement across brands, products, and regions.<br><br/> \ Discover how Contentful can help your business accelerate growth, improve customer engagement, and increase ROI. Learn more at <a href='https://www.contentful.com/' target='_blank' rel='noopener noreferrer' class='inline-link'>www.contentful.com</a>",
+      },
+      {
+        id: 6,
+        name: "Zoovu",
+        logo: "https://www.knacksystems.com/hubfs/zoovu-partner.jpg",
+        description:
+          "Knack Systems Partners with Zoovu to Accelerate AI-Powered Search and Product Discovery for SAP CX E-Commerce Platforms. Zoovu is the leading AI search and product discovery platform helping B2B and B2C brands transform product data into conversions. Companies like 3M, Microsoft, and Honeywell use Zoovu's AI-powered platform to create search, guided selling experiences, visual configurators, and CPQ assistants that guide buyers and sales teams through complex catalogs to find the products they need. Zoovu's personalized, self-serve experiences have helped organizations increase conversion rates, time to quote, and sales while helping turn million-SKU catalogs into discoverable product data. Learn more about how Zoovu is helping conquer complexity and digitize sales at <a href='https://zoovu.com/' target='_blank' rel='noopener noreferrer' class='inline-link'>zoovu.com</a>",
+      },
+      {
+        id: 7,
+        name: "Mindtouch",
+        logo: "https://www.knacksystems.com/hubfs/knack-systems/mindtouch.png",
+        description:
+          "Knack Systems entered into a partnership with MindTouch, a leading provider of cloud based software that helps companies drive user adoption and customer success. As part of this partnership, Knack Systems has developed an integration between MindTouch solution with SAP Cloud for Service and SAP Cloud for Social Engagement. The enhanced integration would help self service users as well as customer service agents to get quick responses from Mindtouch and help maximize customer satisfaction using sophisticated natural language search and processing, content ranking technology, and powerful analytics.",
+      },
+      {
+        id: 8,
+        name: "Neptune Software",
+        logo: "https://www.knacksystems.com/hubfs/knack-systems/neptune.png",
+        description:
+          "Knack Systems is a strategic Silver partner of Neptune Software, a leading provider of the most cost-effective next-generation user interface solutions for SAP applications on phone, tablet, and desktop. As part of this partnership, Knack Systems is authorized and qualified to sell and implement Neptune Software’s Fiori Apps with SAP Hybris Cloud solutions. The enhanced SAP Fiori implementation capabilities will enable users to deliver business anytime, anywhere with mobile and web apps for SAP built on Neptune software.",
+      },
+    ],
+    title: "Certifications",
+    gridCertifications: [
+      {
+        id: 1,
+        title: "SAP Recognized Expertise",
+        logo: "https://www.knacksystems.com/hubfs/Knack_Systems_September2019/Images/sap-recognized-expertise.png",
+        description:
+          "Based on our expertise, achievements, and successful completion of all the requirements, Knack Systems has been awarded the SAP Recognized Expertise® designation for our competence in the area of Sales, Service, and Marketing Cloud Solutions within the United States. As a recognized expert, Knack Systems’ competencies in the field of sales, service, and marketing are also listed on various SAP websites.",
+      },
+      {
+        id: 2,
+        title: "SAP Co-Innovation Partner",
+        logo: "https://www.knacksystems.com/hubfs/Knack_Systems_September2019/Images/sap-co-innovation-partner.png",
+        description:
+          "Under this partnership, Knack Systems and SAP jointly explore emerging IT trends and new ideas, create prototypes, and work toward creating enhancements to SAP products and new solutions to generate business impact for our joint customers.",
+      },
+      {
+        id: 3,
+        title: "SAP Value-Added Reseller",
+        logo: "https://www.knacksystems.com/hubfs/Knack_Systems_September2019/Images/value-added-reseller.png",
+        description:
+          "Knack Systems builds, delivers, services, and implements highly innovative and value-added solution portfolios for customers that help them gain a market advantage.",
+      },
+    ],
+    featuredCertification: {
+      title: "Minority Owned Businesses",
+      logo: "	https://www.knacksystems.com/hubfs/Knack_Systems_September2019/Images/mbe-nmsde.png",
+      description:
+        "Knack Systems is a Minority-Owned Global Information Technology Services Company providing a full spectrum of SAP Services, since 1998. As a Minority-Owned business, Knack Systems is proud to be certified by the National Minority Supplier Development Council (NMSDC) and complies with all the standards adopted by the Council. Knack Systems supports the vision and mission of NMSDC and is dedicated to furthering the goals of this national organization through participation in its various programs.",
+    },
+  },
+
+  careersPage: {
+    hero: {
+      title: "Knack Enclave 2026",
+      subtitle: "Transform. Adapt. Lead.",
+      bgImage: "https://www.knacksystems.com/hubfs/Careers-Page-banner.jpg",
+    },
+    lifeAtKnack: {
+      title: "Life At Knack Systems!",
+      subtitle: "Your Place to Grow, Succeed, and Make a Difference.",
+      tabs: [
+        {
+          year: "2026",
+          slides: [
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-india-01.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-india-02.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-india-03.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-india-04.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-india-05.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-india-06.jpg",
+          ],
+        },
+        {
+          year: "2025",
+          slides: [
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-US-01.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-US-02.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-US-03.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-US-04.jpg",
+            "https://www.knacksystems.com/hubfs/life-at-knack/Enclave-2026-US-05.jpg",
+          ],
+        },
+      ],
+    },
+    whyWorkSection: {
+      title: "Why Work With Knack Systems",
+      cards: [
+        {
+          id: 1,
+          title: "Employee Focus",
+          description:
+            "At Knack Systems, our people power every CX transformation we deliver. We recognize your impact through competitive pay, biannual performance incentives, a dedicated rewards program, and regular team celebrations that keep you energized and inspired.",
+        },
+        {
+          id: 2,
+          title: "Never Stop Learning",
+          description:
+            "Grow your expertise across SAP Commerce Cloud, Sales Cloud, CPQ, Service Cloud, Field Service Management, Customer Data Cloud, Enterprise Service Management, BTP, and Integration Suite, as well as AI and digital experience platforms, with mentoring and certification support.",
+        },
+        {
+          id: 3,
+          title: "Value-Oriented Culture",
+          description:
+            "We foster an inclusive environment built on integrity, collaboration, and practical problem-solving. We look for consultants, developers, and architects who share these values and want to deliver scalable solutions that create lasting value for our clients.",
+        },
+        {
+          id: 4,
+          title: "AI-Driven Innovation",
+          description:
+            "Help shape AI-powered CX transformation for our clients. Using our structured BetterB2B approach and industry-specific accelerators, you'll design intelligent solutions for commerce, sales, and service while sharpening your technical and analytical skills.",
+        },
+        {
+          id: 5,
+          title: "Opportunity Match",
+          description:
+            "We never push you into a role that doesn't fit. Instead, we match your skills with projects in building products, consumer goods, industrial manufacturing, wholesale distribution, and chemicals, spanning B2B, B2C, B2B2C, and marketplace environments.",
+        },
+        {
+          id: 6,
+          title: "Flexible Schedule",
+          description:
+            "Our teams collaborate with clients across time zones, so we understand that flexibility matters. Flexible working hours help you balance project commitments with personal priorities, so you can do your best work and stay present for what matters most.",
+        },
+        {
+          id: 7,
+          title: "Nearly Three Decades of Excellence",
+          description:
+            "Founded in 1998 by Rajiv Sharma in Woodbridge, New Jersey, Knack Systems is a regional SAP Gold Partner with over 27 years of CX expertise. Through strategic partnerships with leading digital commerce platforms, you'll help clients adopt composable commerce, AI-powered search and personalization, and composable content for omnichannel experiences.",
+        },
+        {
+          id: 8,
+          title: "An Inspiring Leadership Team",
+          description:
+            "Our leaders bring deep SAP CX and industry experience, and they lead by example. Through open communication and a strong commitment to talent development, they set a clear direction and help every team member grow with the business.",
+        },
+        {
+          id: 9,
+          title: "Workplace Safety",
+          description:
+            "Your wellbeing comes first. We maintain safe, secure, and respectful workplaces, backed by clear policies, regular training, and open channels to raise concerns. Every team member can work with confidence, whether on-site or remote.<br/><br/><a href='https://www.knacksystems.com/hubfs/policy/posh-policy.pdf' class='inline-link'>View Our Workplace Safety Policy</a>",
+        },
+      ],
+    },
+  },
+
+  contactUs: {
+    hero: {
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/knack-systems/industry/contact.png",
+    },
+    inquiries: [
+      {
+        id: 1,
+        title: "GENERAL INQUIRIES",
+        email: "Info@knacksystems.com",
+      },
+      {
+        id: 2,
+        title: "NEW BUSINESS",
+        email: "sales@knacksystems.com",
+      },
+      {
+        id: 3,
+        title: "CAREERS",
+        email: "careers@knacksystems.com",
+      },
+      {
+        id: 4,
+        title: "EX-EMPLOYEE VERIFICATION",
+        email: "bgv@knacksystems.com",
+      },
+    ],
+    connectSection: {
+      ctaButtons: [
+        { text: "REQUEST DEMO", link: "/request-demo" },
+        { text: "CONNECT WITH DIGITAL EXPERT", link: "/connect-expert" },
+      ],
+      offices: {
+        title: "Our Offices",
+        hq: {
+          title: "Corporate Headquarters - New Jersey",
+          address:
+            "#10 Woodbridge Center Drive, Suite #425, Woodbridge, New Jersey – 07095.",
+        },
+        locations: [
+          {
+            city: "Mumbai, India",
+            address:
+              "902 Alpha Building, Hiranandani Gardens, Powai, Mumbai – 400 076.",
+            phone: "+91-22-25707700",
+          },
+          {
+            city: "Hyderabad, India",
+            address:
+              "402, Manjeera Trinity Corporate, Opp to JNTU Kukatpally, Hyderabad – 500 072.",
+            phone: "+91-40-49707700",
+          },
+          {
+            city: "Chandigarh, India",
+            address:
+              "Plot no. C10, Phase 1, Industrial Area, Mohali, Punjab – 160055.",
+            phone: "+91-172-466-4445/46",
+          },
+          {
+            city: "Jaipur, India",
+            address:
+              "Plot No. IT 2016, Ramchandrapura, Sitapura, Jaipur – 302022",
+            phone: "+91 141-716-8805/06",
+          },
+        ],
+      },
+      form: {
+        title: "Connect with Us",
+        hearAboutOptions: [
+          "Please Select",
+          "Google or Other Search",
+          "Social Media",
+          "SAP Reference",
+          "Customer Reference",
+          "Sales Reference",
+          "Article or Blog Post",
+          "Word of Mouth",
+          "Emailer",
+        ],
+      },
+    },
+  },
+
+  sapCommerceCloud: {
+    hero: {
+      titlePrefix: "We’re SAP's Preferred Partner for ",
+      titleHighlight: "SAP Commerce Cloud, cloud ERP edition",
+      description:
+        "Knack Systems helps SAP Cloud ERP customers launch unified, B2B-grade commerce experiences that make it easier for buyers to do business with you.",
+      buttonText: "Download Brochure",
+      buttonLink: "/download-brochure", // or brochure PDF/form URL
+      bgImage: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/hero-bg.png",
+    },
+    theProblem: {
+      tagline: "THE PROBLEM",
+      mainHeading:
+        "Your SAP Cloud ERP and your B2B commerce speak different languages. Your buyers pay the price.",
+      cards: [
+        {
+          id: 1,
+          icon: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/icon-pricing-1.svg",
+          title: "Inconsistent Pricing",
+          description: "Contract pricing isn't reflected in real time.",
+        },
+        {
+          id: 2,
+          icon: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/icon-productdata.svg",
+          title: "Disconnected Product Data",
+          description:
+            "Catalogs, inventory, and availability fall out of sync.",
+        },
+        {
+          id: 3,
+          icon: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/icon-order-1.svg",
+          title: "Manual Order Processing",
+          description: "Disconnected workflows increase errors and delays.",
+        },
+        {
+          id: 4,
+          icon: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/limited-customer-1.svg",
+          title: "Limited Customer Visibility",
+          description:
+            "Customers rely on support for order and invoice updates.",
+        },
+      ],
+      footerText:
+        "The New SAP Commerce Cloud, cloud ERP edition built for SAP Cloud ERP customers closes that gap. And Knack Systems deploys this solution in weeks.",
+    },
+    faqs: {
+      title: "FAQs",
+      items: [
+        {
+          id: 1,
+          question: "What is SAP Commerce Cloud, Cloud ERP Edition?",
+          answer:
+            "A lightweight B2B commerce solution built directly into SAP S/4HANA Cloud Public Edition, launched by SAP at Sapphire Orlando in May 2026. Catalogs, orders, contracts, and invoices run inside your ERP's native screens — with SAP Joule AI included.",
+        },
+        {
+          id: 2,
+          question:
+            "How is the Cloud ERP Edition different from standard SAP Commerce Cloud?",
+          answer:
+            "It's embedded inside S/4HANA Public Cloud, while standard Commerce Cloud is a standalone enterprise platform. The ERP Edition is streamlined for faster deployment and lower cost; the Cloud Edition suits large catalogs and composable storefronts.",
+        },
+        {
+          id: 3,
+          question: "Is this the same as SAP Hybris?",
+          answer:
+            "No — it's the newest, ERP-embedded member of the same family that succeeded Hybris. With Hybris on-premise losing mainstream maintenance on July 31, 2026, Knack Systems helps you plan the move rather than get caught without support.",
+        },
+        {
+          id: 4,
+          question: "Why did SAP launch a Cloud ERP Edition of Commerce Cloud?",
+          answer:
+            "To give mid-market B2B companies a native commerce option on cloud ERP. Full Commerce Cloud was too heavy for many, while lighter tools couldn't handle B2B pricing and inventory — embedding commerce in S/4HANA closes that gap.",
+        },
+        {
+          id: 5,
+          question: "Who should use SAP Commerce Cloud, Cloud ERP Edition?",
+          answer:
+            "Small and mid-sized B2B companies already on — or moving to — SAP S/4HANA Cloud Public Edition. Manufacturers, distributors, and wholesalers with catalog-based, repeat-order selling are the strongest fit.",
+        },
+        {
+          id: 6,
+          question:
+            "Is this a good fit for large enterprises with complex storefronts?",
+          answer:
+            "Usually not — big catalogs, multi-brand storefronts, and heavy customization are better served by standard SAP Commerce Cloud. Knack Systems reviews your needs and recommends the right edition, not a one-size-fits-all answer.",
+        },
+        {
+          id: 7,
+          question: "What if we're not on S/4HANA Public Cloud yet?",
+          answer:
+            "You can still plan for it in your ERP roadmap; a Private Cloud variant is expected later in 2026. Knack Systems maps commerce into your broader S/4HANA migration so both moves reinforce each other.",
+        },
+        {
+          id: 8,
+          question: "How does Knack Systems approach the implementation?",
+          answer:
+            "Using SAP Activate, SAP's fit-to-standard methodology, with clear goals, fixed scope, and on-budget delivery. That discipline is what makes a 90-day timeline realistic without cutting corners.",
+        },
+        {
+          id: 9,
+          question:
+            "Why choose Knack Systems for SAP Commerce Cloud, Cloud ERP Edition?",
+          answer:
+            "Knack Systems is a premium SAP partner specialized in Customer Experience and commerce — an SAP Gold Partner, Hybris Gold and Build Partner, S/4HANA lighthouse partner, and VAR. That's exactly the commerce-plus-ERP depth an embedded project needs.",
+        },
+        {
+          id: 10,
+          question:
+            "What makes Knack Systems different from other SAP partners?",
+          answer:
+            "Deep focus on SAP CX and commerce rather than every SAP line, backed by S/4HANA credentials, its own SAP Store commerce solutions, and full strategy-to-support delivery.",
+        },
+        {
+          id: 11,
+          question: "How do we get started with Knack Systems?",
+          answer:
+            "Start with a fit assessment to confirm whether the Cloud ERP Edition or standard Commerce Cloud suits you. Reach out to Knack Systems to book a discovery call and scope your project.",
+        },
+        {
+          id: 12,
+          question: "How does AI factor into this solution?",
+          answer:
+            "SAP Joule and SAP Business AI are built in, enabling AI-driven autonomous commerce. With data in SAP Business Data Cloud, AI can guide buyers and automate tasks like reordering and order status checks.",
+        },
+        {
+          id: 13,
+          question:
+            "What are the main benefits of SAP Commerce Cloud, Cloud ERP Edition?",
+          answer:
+            "Faster deployment, lower total cost of ownership, and one source of truth for commerce and ERP data. There's no separate platform to integrate, and SAP targets a 90-day go-live.",
+        },
+      ],
+    },
+    customersSection: {
+      title: "Our B2B Commerce Customers",
+      logos: [
+        {
+          id: 1,
+          name: "Carlisle",
+          logoUrl:
+            "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/carlisle.png",
+        },
+        {
+          id: 2,
+          name: "Sloan",
+          logoUrl: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/sloan.png",
+        },
+        {
+          id: 3,
+          name: "Electrolux",
+          logoUrl:
+            "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/electrolux.png",
+        },
+        {
+          id: 4,
+          name: "Woodgrain",
+          logoUrl:
+            "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/woodgrain.png",
+        },
+        {
+          id: 5,
+          name: "Xymogen",
+          logoUrl:
+            "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/xymogen.png",
+        },
+        {
+          id: 6,
+          name: "Apex Tool Group",
+          logoUrl: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/apex.png",
+        },
+      ],
+    },
+    ctaSection: {
+      tagline: "NEXT STEP",
+      heading: "Ready to make B2B buying effortless?",
+      description:
+        "Talk to a Knack Systems SAP CX expert and see how quickly you can go live with SAP Commerce Cloud, cloud ERP edition.",
+      primaryBtnText: "Schedule a Free Discovery Call",
+      primaryBtnLink: "/contact-us",
+      secondaryBtnText: "Download Brochure",
+      secondaryBtnLink: "/download-brochure",
     },
   },
 };

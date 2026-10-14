@@ -1,0 +1,339 @@
+/* ==========================================================================
+   SAP Commerce Cloud Hero Section - Mobile First
+   ========================================================================== */
+.sap-commerce-hero {
+   position: relative;
+   width: 100%;
+   padding: 80px 0;
+   background-size: cover;
+   background-position: center right;
+   background-repeat: no-repeat;
+   display: flex;
+   align-items: center;
+   min-height: 480px;
+}
+
+.sap-hero-content {
+   max-width: 100%;
+}
+
+.sap-hero-title {
+   color: #fff;
+}
+
+.sap-hero-title .highlight-text {
+   color: #fff;
+}
+
+.sap-hero-desc {
+   max-width: 580px;
+   color: #fff !important;
+}
+
+.sap-hero-btn {
+   background-color: #4a4a4a;
+   transition: background-color 0.2s ease;
+}
+
+.sap-hero-btn:hover {
+   background-color: #e86800;
+}
+
+/* ==========================================================================
+   The Problem Section - Mobile First
+   ========================================================================== */
+.sap-problem-section {
+   padding: 80px 0;
+   text-align: center;
+}
+
+/* Tagline with Center Line Styling */
+.section-tagline-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+
+.section-tagline {
+   color: #e86800 !important;
+   border-bottom: 1px solid#e2e8f0;
+   font-weight: 400 !important;
+   letter-spacing: 5px;
+   text-transform: uppercase;
+   padding-bottom: 5px;
+   width: 400px;
+}
+
+.problem-main-heading {
+   max-width: 900px;
+   margin: 0 auto 50px auto !important;
+}
+
+/* Cards Grid */
+.problem-cards-grid {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   margin-bottom: 50px;
+}
+
+.problem-card {
+   background-color: #ffffff;
+   border: 1px solid #edf2f7;
+   border-radius: 12px;
+   padding: 30px 20px;
+   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: left;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.problem-card:hover {
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.problem-card-icon-wrapper {
+   width: 48px;
+   height: 48px;
+   background-color: #fef3eb;
+   border-radius: 8px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+/* .problem-card .problem-card-icon-wrapper:nth-child(1){
+   background-color: #ececec;
+} */
+
+.problem-card-icon {
+   width: 28px !important;
+   height: 28px !important;
+   object-fit: contain;
+}
+
+/* Summary Footer Text */
+.problem-footer-text {
+   max-width: 950px;
+   margin: 0 auto !important;
+}
+
+/* ==========================================================================
+   FAQs Accordion Section - Mobile First
+   ========================================================================== */
+.faq-accordion-list {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   max-width: 950px;
+   margin: 0 auto;
+}
+
+.faq-accordion-item {
+   background-color: #ffffff;
+   border: 1px solid #e2e8f0;
+   border-radius: 8px;
+   overflow: hidden;
+   transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+/* Active state styling matching screenshot orange border and tint */
+.faq-accordion-item.active {
+   border-color: #e86800;
+   background-color: #fef8f4;
+}
+
+.faq-accordion-header {
+   width: 100%;
+   background: transparent;
+   border: none;
+   padding: 20px;
+   text-align: left;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   cursor: pointer;
+   gap: 15px;
+}
+
+.faq-question-text {
+   margin: 0 !important;
+   font-size: 18px !important;
+   line-height: 28px !important;
+   font-weight: 600;
+}
+
+.faq-arrow-icon {
+   font-size: 16px;
+   color: #444;
+   flex-shrink: 0;
+}
+
+.faq-accordion-body {
+   padding: 0 20px 20px 20px;
+}
+
+/* Rotates the chevron upward when open */
+.faq-arrow-icon.open {
+   transform: rotate(180deg);
+}
+
+.faq-arrow-icon svg path {
+   transition: stroke 0.2s ease;
+}
+
+.faq-accordion-item.active .faq-arrow-icon svg path {
+   stroke: #444;
+}
+
+/* ==========================================================================
+   Our B2B Commerce Customers Section - Mobile First
+   ========================================================================== */
+.sap-customers-section {
+   padding: 80px 0;
+   text-align: center;
+}
+
+.customers-logo-grid {
+   display: grid;
+   grid-template-columns: 1fr;
+   gap: 30px;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.customer-logo-card {
+   background-color: #ffffff;
+   border: 1px solid #f0f0f0;
+   border-radius: 10px;
+   padding: 20px 10px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.customer-logo-card:hover {
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.07);
+}
+
+.customer-logo-img {
+   max-width: 100%;
+   max-height: 60px;
+   object-fit: contain;
+}
+
+/* ==========================================================================
+   Next Step CTA Section - Mobile First
+   ========================================================================== */
+.sap-cta-section {
+   padding: 80px 0px;
+   background: #292929 url(https://www.knacksystems.com/hubfs/SAP-HANA-CPE/cta-bg.png) 50% / cover no-repeat;
+   text-align: center;
+   color: #ffffff;
+}
+
+/* Tagline with Center Line Styling */
+.cta-tagline-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+   margin-bottom: 24px;
+}
+
+.cta-tagline-line {
+   height: 1px;
+   background-color: #4a5568;
+   width: 200px;
+}
+
+.cta-tagline-text {
+   font-size: 18px;
+   line-height: 28px;
+   font-weight: 600;
+   color: #ffffff;
+   letter-spacing: 10px;
+   text-transform: uppercase;
+}
+
+/* Heading & Description */
+.cta-heading,
+.cta-description {
+   color: #fff !important;
+}
+
+/* Buttons Styling */
+.cta-buttons-wrapper {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   justify-content: center;
+   align-items: center;
+}
+
+.cta-btn {
+   background-color: #ffffff;
+   color: #444 !important;
+}
+
+.cta-btn:hover {
+   background-color:#444;
+   color: #fff !important;
+}
+
+
+
+/* ==========================================================================
+   RESPONSIVE BREAKPOINTS
+   ========================================================================== */
+
+/* Tablets (min-width: 768px) */
+@media only screen and (min-width: 768px) {
+   .sap-hero-content {
+      max-width: 55%;
+   }
+
+   .problem-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+   }
+
+   .customers-logo-grid {
+      grid-template-columns: repeat(3, 1fr);
+   }
+
+   .cta-buttons-wrapper {
+      flex-direction: row;
+   }
+}
+
+/* Small Laptops (min-width: 1024px) */
+@media only screen and (min-width: 1024px) {
+   .sap-hero-content {
+      max-width: 50%;
+   }
+
+   .problem-cards-grid {
+      grid-template-columns: repeat(4, 1fr);
+   }
+
+   .customers-logo-grid {
+      grid-template-columns: repeat(6, 1fr);
+   }
+
+   .customer-logo-img {
+      max-height: -webkit-fill-available;
+   }
+}
+
+/* Standard Desktop (min-width: 1280px) */
+@media only screen and (min-width: 1280px) {}
+
+/* Large Desktop (min-width: 1440px) */
+@media only screen and (min-width: 1440px) {}

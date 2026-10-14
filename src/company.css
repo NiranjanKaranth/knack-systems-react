@@ -194,6 +194,477 @@
     margin-top: 30px;
 }
 
+/* ==========================================================================
+   Leadership Team Section - Mobile First
+   ========================================================================== */
+.leadership-section {
+    padding: 80px 0;
+}
+
+.leadership-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.leadership-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+}
+
+.leadership-image-wrapper {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.leadership-img {
+    object-fit: cover;
+    display: block;
+}
+
+.leadership-name {
+    margin-bottom: 20px !important;
+}
+
+.leadership-role {
+    font-weight: 600;
+}
+
+/* ==========================================================================
+   Partners Section - Mobile First
+   ========================================================================== */
+.partners-section {
+    padding: 80px 0;
+}
+
+.partners-intro {
+    text-align: center !important;
+}
+
+.partners-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.partner-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.partner-logo-wrapper {
+    width: 100%;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 4px;
+}
+
+.partner-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+/* ==========================================================================
+   Certifications Section - Mobile First
+   ========================================================================== */
+.certifications-section {
+    padding: 80px 0;
+    background-color: #f7fafc;
+}
+
+/* 3-Column Grid Styling */
+.certifications-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.certification-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.certification-logo-wrapper {
+    width: 100%;
+    height: 220px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.certification-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.certification-card-title {
+    text-align: left !important;
+}
+
+/* Featured Bottom Card Layout */
+.certification-featured-card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.certification-featured-logo-wrapper {
+    width: 100%;
+    height: 220px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+.certification-featured-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* ==========================================================================
+   Life At Knack Systems Section - Mobile First
+   ========================================================================== */
+.life-knack-section {
+    padding: 80px 0;
+    overflow: hidden;
+}
+
+.life-knack-subtitle {
+    text-align: center;
+}
+
+/* Mobile Accordion Layout Default */
+.life-tabs-desktop {
+    display: none;
+}
+
+.life-accordion-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.life-accordion-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.life-accordion-header {
+    width: 100%;
+    background-color: #f3f3f3;
+    color: #1a1a1a;
+    border: none;
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.life-accordion-header.active {
+    background-color: #e86800;
+    color: #ffffff;
+}
+
+.life-accordion-body {
+    padding-top: 30px;
+}
+
+/* Sliding Track Container */
+.life-carousel-stage-wrapper {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.life-single-img-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.life-single-img-card img {
+    object-fit: cover;
+    display: block;
+}
+
+/* Carousel Grid Layout */
+.life-carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.life-carousel-stage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.life-carousel-track {
+    display: flex;
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+}
+
+.life-slide-item {
+    flex: 0 0 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.life-carousel-peak {
+    display: none;
+}
+
+.life-carousel-main {
+    width: 100%;
+}
+
+.life-img-card {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Carousel Prev/Next Buttons */
+/* Single Controls & Dots Styling */
+.life-carousel-footer-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.life-carousel-controls {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.carousel-tabmenu-btn {
+    background-color: #e86800;
+    color: #ffffff;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 20px;
+    padding-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.2s ease;
+}
+
+.carousel-tabmenu-btn:hover {
+    background-color: #e86800;
+}
+
+.life-carousel-dots {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.life-carousel-dots .dot {
+    width: 10px;
+    height: 10px;
+    background-color: #cbd5e1;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.life-carousel-dots .dot.active {
+    background-color: #e86800;
+}
+
+/* ==========================================================================
+   Why Work With Knack Systems Section - Mobile First
+   ========================================================================== */
+.why-work-section {
+    padding: 0 0 80px 0;
+}
+
+.why-work-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.why-work-card {
+    background-color: #fafafa;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.why-work-card:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================================
+   Connect & Offices Section CSS - Mobile First
+   ========================================================================== */
+.inquiry-item {
+    text-align: center;
+}
+
+.inquiry-item p {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.inquiry-email {
+    margin-bottom: 30px;
+}
+
+.inquiry-item:last-child .inquiry-email {
+    margin-bottom: 0px;
+}
+
+.connect-offices-section {
+    padding: 80px 0;
+}
+
+/* Top Pills CTA Buttons */
+.top-cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.cta-pill-btn {
+    background-color: #000000;
+    border-radius: 40px;
+}
+
+.cta-pill-btn:hover {
+    background-color: #e86800;
+}
+
+/* 2-Column Grid Layout */
+.connect-offices-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+/* Left Column: Offices */
+.offices-column {
+    text-align: center;
+}
+
+.office-hq-card {
+    margin-bottom: 50px;
+}
+
+.locations-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+/* Right Column: Connect Form */
+.form-column {
+    width: 100%;
+}
+
+.connect-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #444;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+    background-color: #ffffff;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #e86800;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-btn{
+    margin-top: 10px;
+}
+
+
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
@@ -256,6 +727,154 @@
     .growth-content-display {
         display: block;
     }
+
+    .leadership-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 0;
+    }
+
+    .leadership-image-wrapper {
+        width: 240px;
+        height: 240px;
+    }
+
+    .partners-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 100px;
+    }
+
+    /* 3-Column Layout on Desktop */
+    .certifications-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+    }
+
+    /* Featured Row: Image Left, Text Right */
+    .certification-featured-card {
+        flex-direction: row;
+        gap: 50px;
+    }
+
+    .certification-featured-logo-wrapper {
+        flex: 0 0 320px;
+    }
+
+    .certification-featured-content {
+        flex: 1;
+    }
+
+    /* Hide Mobile Accordion on Desktop */
+    .life-accordion-mobile {
+        display: none;
+    }
+
+    /* Show Desktop Tabs */
+    .life-tabs-desktop {
+        display: block;
+    }
+
+    .life-tabs-header {
+        display: flex;
+        gap: 30px;
+        border-bottom: 1px solid #f3f3f3;
+        margin-bottom: 50px;
+    }
+
+    .life-tab-btn {
+        background: transparent;
+        border: none;
+        padding: 15px 40px;
+        font-size: 18px;
+        font-weight: 600;
+        color: #444444;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .life-tab-btn.active {
+        background-color: #e86800;
+        color: #ffffff;
+        border-radius: 6px 6px 0 0;
+    }
+
+    /* Desktop Stage strictly contained within container bounds with Shaded Peaks */
+    .life-carousel-container {
+        max-width: 1050px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 50px;
+    }
+
+    .life-carousel-stage {
+        align-items: center;
+    }
+
+    .life-carousel-footer-controls {
+        position: relative;
+    }
+
+    /* Keep slides within container bounds without edge touch */
+    .life-carousel-stage-wrapper {
+        flex: 0 0 60%;
+    }
+
+    /* Peak Adjacent Images on Desktop */
+    .life-carousel-main {
+        flex: 0 0 60%;
+    }
+
+    .life-carousel-peak {
+        display: block;
+        flex: 0 0 51%;
+        opacity: 0.35;
+        pointer-events: none;
+        filter: grayscale(30%);
+        overflow: hidden;
+    }
+
+    .life-carousel-peak .life-single-img-card img {
+        height: 214px;
+    }
+
+    .life-carousel-controls {
+        position: absolute;
+        top: -105px;
+        left: 0;
+        right: 0;
+        transform: translateY(-50%);
+        justify-content: space-between;
+        margin-top: 0;
+        padding: 0 30px;
+        pointer-events: none;
+    }
+
+    .carousel-tabmenu-btn {
+        pointer-events: auto;
+    }
+
+    /* 3-Column Grid Layout on Desktop */
+    .why-work-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .why-work-card {
+        padding: 30px;
+    }
+
+    .connect-offices-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+    }
+
+    .locations-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px 30px;
+    }
 }
 
 /* Small Laptops (min-width: 1024px) */
@@ -268,10 +887,42 @@
         width: 100px;
         height: 100px;
     }
+
+    .certification-featured-logo-wrapper {
+        flex: 0 0 400px;
+    }
+
+    .life-carousel-peak {
+        flex: 0 0 22.5%;
+    }
+
+    .life-carousel-peak .life-single-img-card img {
+        height: 296px;
+    }
+
+    .life-carousel-controls {
+        top: -165px;
+    }
 }
 
 /* Standard Desktop (min-width: 1280px) */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+    .life-carousel-peak {
+        flex: 0 0 30%;
+    }
+
+    .life-carousel-peak .life-single-img-card img {
+        height: 326px;
+    }
+}
 
 /* Large Desktop (min-width: 1440px) */
-@media only screen and (min-width: 1440px) {}
+@media only screen and (min-width: 1440px) {
+    .life-carousel-peak {
+        flex: 0 0 36%;
+    }
+
+    .life-carousel-peak .life-single-img-card img {
+        height: 327px;
+    }
+}

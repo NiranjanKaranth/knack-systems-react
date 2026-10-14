@@ -36,6 +36,12 @@ import ApplicationManagedServices from "./pages/services-pages/application";
 import AMS from "./pages/services-pages/commerece-ams";
 import Podcasts from "./pages/insights-and-news-pages/podcasts";
 import Webinars from "./pages/insights-and-news-pages/webinars";
+import NewsEvents from "./pages/insights-and-news-pages/news-and-events";
+import LeadershipTeam from "./pages/company-pages/leadership-team";
+import CertificationsPartner from "./pages/company-pages/certifications-and-partners";
+import Careers from "./pages/company-pages/careers";
+import ContactUs from "./pages/company-pages/contact-us";
+import SapCommerceCloud from "./pages/solutions-pages/sap-commerece-cloud";
 
 function App() {
   return (
@@ -77,6 +83,12 @@ function App() {
           <Route path="/services/ams" element={<AMS />} />
           <Route path="/insights-and-news/podcasts" element={<Podcasts />} />
           <Route path="/insights-and-news/webinars" element={<Webinars />} />
+          <Route path="/insights-and-news/news-and-events" element={<NewsEvents />} />
+          <Route path="/company/leadership-team" element={<LeadershipTeam />} />
+          <Route path="/company/certifications-partners" element={<CertificationsPartner />} />
+          <Route path="/company/careers" element={<Careers />} />
+          <Route path="/company/contact-us" element={<ContactUs />} />
+          <Route path="/solutions/sap-commerce-cloud" element={<SapCommerceCloud />} />
         </Routes>
 
         <Footer />
