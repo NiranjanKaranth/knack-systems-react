@@ -1,5 +1,3 @@
-import Webinars from "../pages/insights-and-news-pages/webinars";
-
 // Define them once globally
 export const sharedStats = [
   { value: "27+", label: "Years of<br />Experience" },
@@ -2670,7 +2668,7 @@ export const globalData = {
       description:
         "Knack Systems helps SAP Cloud ERP customers launch unified, B2B-grade commerce experiences that make it easier for buyers to do business with you.",
       buttonText: "Download Brochure",
-      buttonLink: "/download-brochure", // or brochure PDF/form URL
+      buttonLink: "/download-brochure",
       bgImage: "https://www.knacksystems.com/hubfs/SAP-HANA-CPE/hero-bg.png",
     },
     theProblem: {
@@ -2844,6 +2842,54 @@ export const globalData = {
       primaryBtnLink: "/contact-us",
       secondaryBtnText: "Download Brochure",
       secondaryBtnLink: "/download-brochure",
+    },
+  },
+
+  AiSAPCX: {
+    hero: {
+      titlePrefix: "Accelerate your SAP CX Transformation with AI",
+      titleHighlight:
+        "Faster time- to-market with proven SAP CX expertise, industry solutions and AI.",
+      description:
+        "Knack Systems helps organizations activate AI inside SAP CX with clean processes, predictable delivery and measurable results. Our work is simple. Build customer experiences that feel easy for your teams and meaningful for your customers.",
+      buttonText: "Book an AI CX Assessment",
+      buttonLink: "/Book-an-AI-CX-Assessment",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/AI-for-SAP-CX/banner-new.jpg",
+      features: [
+        "Practical AI for real CX workflows",
+        "Built for SAP CX and SAP Business AI",
+        "Strong engineering with no added complexity",
+        "Proven accelerators for B2B and B2B2C teams",
+      ],
+    },
+    whyAiMatters: {
+      titlePrefix: "Why AI Matters for ",
+      titleHighlight: "Customer Experience",
+      image:
+        "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/AI-home-page.jpg",
+      items: [
+        {
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/01-customer-want-custer-experience.svg",
+          text: "Customers expect simple choices, fast responses, and effortless interactions across every touchpoint.",
+        },
+        {
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/02-Your-teams-want-custer-experience.svg",
+          text: "Teams need intelligent tools that reduce manual effort and operational complexity.",
+        },
+        {
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/03-SAP-CX-brings-custer-experience.svg",
+          text: "SAP CX unifies customer data and journeys across channels and systems.",
+        },
+        {
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/04-AI-turns-that-connection-custer-experience.svg",
+          text: "AI strengthens SAP CX by simplifying workflows and accelerating interactions.",
+        },
+        {
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/05-At-Knack-we-treat-AI-custer-experience.svg",
+          text: "At Knack Systems, we apply AI only where it delivers measurable CX and business outcomes.",
+        },
+      ],
     },
   },
 };

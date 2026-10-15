@@ -42,6 +42,7 @@ import CertificationsPartner from "./pages/company-pages/certifications-and-part
 import Careers from "./pages/company-pages/careers";
 import ContactUs from "./pages/company-pages/contact-us";
 import SapCommerceCloud from "./pages/solutions-pages/sap-commerece-cloud";
+import AiSAPCX from "./pages/solutions-pages/ai-sap-cx";
 
 function App() {
   return (
@@ -89,6 +90,7 @@ function App() {
           <Route path="/company/careers" element={<Careers />} />
           <Route path="/company/contact-us" element={<ContactUs />} />
           <Route path="/solutions/sap-commerce-cloud" element={<SapCommerceCloud />} />
+          <Route path="/solutions/Ai-for-sap-cx" element={<AiSAPCX />} />
         </Routes>
 
         <Footer />

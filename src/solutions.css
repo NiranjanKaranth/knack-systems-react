@@ -283,10 +283,100 @@
 }
 
 .cta-btn:hover {
-   background-color:#444;
+   background-color: #444;
    color: #fff !important;
 }
 
+.sap-cx-hero-content {
+   text-align: center !important;
+}
+
+.sap-cx-hero-desc,.sap-cx-sub-text {
+   color: #fff !important;
+}
+
+/* Container for the 4 boxes */
+.sap-hero-features {
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+   margin-top: 50px;
+   flex-wrap: wrap;
+}
+
+/* Individual Feature Box */
+.sap-feature-box {
+   background: rgba(255, 255, 255, 0.05);
+   border: 1px solid rgba(255, 255, 255, 0.2);
+   border-radius: 12px;
+   padding: 20px;
+   min-height: 90px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   min-width: -webkit-fill-available;
+}
+
+.sap-feature-box p {
+   color: #ffffff !important;
+}
+
+.why-ai-matters-section {
+   padding: 80px 0;
+}
+
+.why-ai-title .highlight-text {
+   color: #e86800;
+}
+
+.why-ai-content-wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 50px;
+}
+
+.why-ai-image-col {
+   flex: 1;
+}
+
+.why-ai-graphic {
+   max-width: 550px;
+   border-radius: 12px;
+   display: block;
+}
+
+.why-ai-list-col {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.why-ai-item {
+   display: flex;
+   align-items: center;
+   gap: 20px;
+}
+
+/* Orange Circular Icon Box styling for SVGs */
+.why-ai-icon-box {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-shrink: 0;
+}
+
+.why-ai-svg-icon {
+   width: 50px !important;
+   height: 50px !important;
+}
+
+.why-ai-item p {
+   color: #444;
+}
 
 
 /* ==========================================================================
@@ -309,6 +399,23 @@
    }
 
    .cta-buttons-wrapper {
+      flex-direction: row;
+   }
+
+   .sap-hero-features {
+      flex-wrap: nowrap;
+   }
+
+   .sap-feature-box {
+      flex: 1;
+      min-width: auto;
+   }
+
+   .why-ai-content-wrapper {
+      flex-direction: row;
+   }
+
+   .why-ai-item {
       flex-direction: row;
    }
 }
