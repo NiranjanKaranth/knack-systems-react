@@ -245,9 +245,9 @@
 }
 
 /* ==========================================================================
-   3. DESKTOP ENHANCEMENT (min-width: 993px)
+   3. DESKTOP ENHANCEMENT (min-width: 992px)
    ========================================================================== */
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 992px) {
   .hamburger-btn {
     display: none;
   }

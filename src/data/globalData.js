@@ -2891,5 +2891,219 @@ export const globalData = {
         },
       ],
     },
+    focusAreas: {
+      titlePrefix: "Knack's ",
+      titleHighlight: "AI Focus Areas",
+      subtitle:
+        "We apply AI to the processes that impact customer and employee experience the most. Each focus area is designed to reduce steps, improve clarity and help teams move with confidence",
+      cards: [
+        {
+          id: 1,
+          title: "AI for Commerce",
+          description:
+            "Natural language search, visual search and guided buying. Customers find what they want quickly and your teams manage catalogs with less manual effort.",
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/01-AI-for-commerce.svg",
+        },
+        {
+          id: 2,
+          title: "AI for Sales",
+          description:
+            "Automated quotes. Simple account insights. Context from emails and meetings delivered instantly. Reps spend more time selling and less time navigating systems.",
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/02-AI-for-Sales.svg",
+        },
+        {
+          id: 3,
+          title: "AI for Service",
+          description:
+            "Automatic classification of cases. Clear summaries of long conversations. AI agents that resolve common questions. Agents focus on meaningful work and resolutions come faster.",
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/03-AI-for-Service.svg",
+        },
+        {
+          id: 4,
+          title: "AI for CPQ",
+          description:
+            "Accurate pricing and quote suggestions aligned with your rules. Less rework. Cleaner approvals. Consistent output.",
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/04-AI-for-CPQ.svg",
+        },
+        {
+          id: 5,
+          title: "AI for CX Analytics and Insights",
+          description:
+            "Predictive scoring. Behavioral segments. Reports built by asking simple questions. Better insights without BI friction.",
+          icon: "https://www.knacksystems.com/hubfs/AI-for-SAP-CX/05-AI-for-CX-Analytics.svg",
+        },
+        {
+          id: 6,
+          title: "AI Agents and Copilots with SAP BTP and Joule",
+          description:
+            "Ask the system for what you need and get it instantly. Navigation and actions become conversational and simple.",
+          icon: "	https://www.knacksystems.com/hubfs/AI-for-SAP-CX/06-AI-Agents-and-Copilots.svg",
+        },
+      ],
+    },
+    knackDifferent: {
+      titlePrefix: "What Makes ",
+      titleHighlight: "Knack Different",
+      subtitle: "Your brand philosophy now drives this section.",
+      cards: [
+        {
+          id: 1,
+          title: "Clear and simple engineering",
+          description:
+            "We remove complexity. We design workflows that are easy to understand and maintain.",
+        },
+        {
+          id: 2,
+          title: "Focused expertise in SAP CX and SAP Business AI",
+          description:
+            "We work in this space every day. Our depth makes delivery predictable and stable.",
+        },
+        {
+          id: 3,
+          title: "Accelerators for B2B and B2B2C",
+          description:
+            "Strong templates and patterns that shorten timelines and improve quality.",
+        },
+        {
+          id: 4,
+          title: "Predictable delivery with measurable value",
+          description:
+            "We track real outcomes. Time saved. Steps removed. Speed gained.",
+        },
+        {
+          id: 5,
+          title: "Industry knowledge that guides the work",
+          description:
+            "High tech, manufacturing, wholesale distribution, consumer products, chemicals, life sciences. We understand how these industries operate and what AI can improve.",
+        },
+      ],
+    },
+    assessmentCta: {
+      headingPart1: "Ready to activate ",
+      headingHighlight: "AI inside SAP CX",
+      headingPart2: " with clarity and confidence?",
+      boxTitle: "Book your AI CX Assessment",
+      boxDescription:
+        "A focused session to identify where AI can simplify your workflows and deliver quick, measurable improvements.",
+      buttonText: "Book an AI CX Assessment",
+      buttonLink: "/contact-us",
+      bgImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/AI-for-SAP-CX/cta-bg.svg",
+    },
+  },
+  SapB2BSelfServicePortal: {
+    heroBanner: {
+      title: "Launch the New SAP B2B Self-Service Portal in Weeks",
+      subtitle: "Purpose-Built for SAP ERP Customers.",
+      tagline: "Powered by KNACK SYSTEMS.",
+      highlightText: "Your Fastest Path to B2B Self-Service Success.",
+      primaryCtaText: "BOOK A PERSONALIZED DEMO!",
+      primaryCtaLink: "/contact-us",
+      secondaryCtaText: "Download Brochure",
+      secondaryCtaLink: "/assets/sap-b2b-portal-brochure.pdf",
+      disclaimer:
+        "*Actual implementation times may differ depending on organizational strategy, roadmap, integration needs, and customization requirements.",
+      bannerImage:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/B2B-Self-Service-Portal-new/banner-image_v02.png",
+    },
+    customerLogosSection: {
+      title: "Our B2B Self-Service Portal Customers",
+      logos: [
+        {
+          name: "Sloan",
+          alt: "Sloan Logo",
+          url: "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-new/Sloan2.png",
+        },
+        {
+          name: "Carlisle",
+          alt: "Carlisle Logo",
+          url: "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-new/carlisle2.png",
+        },
+        {
+          name: "GCP Applied Technologies",
+          alt: "GCP Logo",
+          url: "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-new/gcp2.png",
+        },
+        {
+          name: "Electrolux",
+          alt: "Electrolux Logo",
+          url: "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-new/electrolux_logo-01.png",
+        },
+        {
+          name: "Pentland",
+          alt: "Pentland Logo",
+          url: "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-new/Pentland_logo-01.png",
+        },
+      ],
+    },
+    testimonialSection: {
+      videoThumbnail:
+        "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-new/Imaran-video-thumbnail-v4.png",
+      quoteIcon:
+        "https://2435241.fs1.hubspotusercontent-na1.net/hubfs/2435241/B2B-Self-Service-Portal-new/quotemark_v02.svg",
+      quoteText:
+        "Knack Systems’ expertise in delivering cutting-edge commerce solutions and expanding self-service use cases makes them the perfect partner for SAP’s B2B Self-Service Portal.",
+      authorName: "Imran Shahdad",
+      authorTitle:
+        "Global VP, SAP CX, Commerce, Consumer Industries & Customer Engagement Solutions",
+      companyLogoText: "SAP",
+    },
+    insightsSection: {
+      title: "Latest B2B Self-Service Portal Resources & Insights!",
+      slides: [
+        {
+          title: "SAP B2B Self Service Portal: What, Why & How",
+          description:
+            "Scale your channel revenue without scaling your support team",
+          image:
+            "https://www.knacksystems.com/hubfs/SAP-B2B-Self-service-portal-1.jpg", 
+          linkText: "Read More",
+          linkUrl: "#",
+        },
+        {
+          title: "Real-Time Shipping and Order Tracking in B2B Portals",
+          description:
+            "Your customers already live in a world of real-time visibility...",
+          image:
+            "https://www.knacksystems.com/hubfs/Order-Tracking-for-B2B-Portals.png", 
+          linkText: "Read More",
+          linkUrl: "#",
+        },
+        {
+          title:
+            "Google Analytics (GA4) for B2B Self-Service: From Guesswork to Growth",
+          description:
+            "Leveraging analytics for B2B self-service portal optimization...",
+          image:
+            "https://www.knacksystems.com/hubfs/Google-Analytics-for-B2B-Self-Service-portal.png", 
+          linkText: "Read More",
+          linkUrl: "#",
+        },
+        {
+          title: "Your B2B Sales Team Deserves Better: Rewriting the Rules of",
+          description:
+            "Your B2B Sales Team Deserves Better: Rewriting the Rules of...",
+          image:
+            "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portal-with%20-SAP1.jpg",
+          linkUrl: "#",
+        },
+        {
+          title: "Order Management for B2B Self-Service Portals: Features,...",
+          description:
+            "B2B customers no longer tolerate the friction that once defined wholesale...",
+          image:
+            "https://www.knacksystems.com/hubfs/B2B-Self-Service-Portals-Quote-and-Price-Negotiation.jpg",
+          linkUrl: "#",
+        },
+        {
+          title: "How B2B Self-Service Portals Make Quote and Price",
+          description:
+            "Scale your channel revenue without scaling your support team",
+          image:
+            "https://www.knacksystems.com/hubfs/Order-Tracking-for-B2B-Portals.png",
+          linkUrl: "#",
+        },
+      ],
+    },
   },
 };

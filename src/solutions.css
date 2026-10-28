@@ -291,7 +291,8 @@
    text-align: center !important;
 }
 
-.sap-cx-hero-desc,.sap-cx-sub-text {
+.sap-cx-hero-desc,
+.sap-cx-sub-text {
    color: #fff !important;
 }
 
@@ -378,6 +379,506 @@
    color: #444;
 }
 
+/* ==========================================================================
+   AI Focus Areas Section - Mobile First
+   ========================================================================== */
+.ai-focus-section {
+   text-align: center;
+}
+
+.focus-main-heading .highlight-text {
+   color: #e86800;
+   /* Signature orange accent color */
+}
+
+.focus-subtitle {
+   max-width: 800px;
+   margin: 0 auto 30px auto !important;
+}
+
+/* Cards Layout */
+.focus-cards-grid {
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+}
+
+.focus-card {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: left;
+   border-radius: 20px;
+   box-shadow: 0 7px 20px 0 hsla(240, 5%, 41%, .2);
+   padding: 30px;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.focus-card:hover {
+   box-shadow: 0 5px 15px rgba(0, 0, 0, .35);
+}
+
+/* Orange Icon Box */
+.focus-icon-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+}
+
+.focus-icon {
+   display: block;
+   object-fit: cover;
+}
+
+.focus-icon-wrapper img,
+.focus-card img {
+   transition: transform 0.5s;
+}
+
+.focus-card:hover .focus-icon {
+   transform: scale(1.08);
+}
+
+.focus-card-title {
+   margin-bottom: 10px !important;
+}
+
+.focus-card:hover .focus-card-title {
+   transition: color .5s;
+   color: #e86800;
+}
+
+/* ==========================================================================
+   What Makes Knack Different Carousel Section - Mobile First
+   ========================================================================== */
+.knack-different-section {
+   padding: 80px 0;
+   text-align: center;
+}
+
+.knack-different-heading .highlight-text {
+   color: #e86800;
+}
+
+/* Outer Container for Absolute Arrow Positioning */
+.carousel-relative-container {
+   position: relative;
+   max-width: 1050px;
+   margin: 0 auto;
+}
+
+/* Viewport and Sliding Track */
+.carousel-viewport-container {
+   overflow: hidden;
+   width: 100%;
+}
+
+.carousel-track {
+   display: flex;
+   transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
+   width: 100%;
+}
+
+.carousel-card-slide {
+   padding: 0 15px;
+   box-sizing: border-box;
+}
+
+/* Card Styling */
+.knack-different-card {
+   background-color: #ffffff;
+   border: 2px solid #edf2f7;
+   border-radius: 16px;
+   padding: 30px;
+   text-align: left;
+   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.02);
+   height: 100%;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.knack-different-card:hover {
+   border: 2px solid #e86800;
+   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+   transition: transform 0.4s ease, border 0.8s ease;
+}
+
+.knack-different-card .card-heading {
+   margin: 0 0 20px 0;
+   text-align: left;
+   font-family: "Roboto Serif", serif;
+}
+
+/* Circular Orange Navigation Arrows */
+.carousel-dot-arrow {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   width: 48px;
+   height: 48px;
+   background-color: #e86800;
+   border: none;
+   border-radius: 50%;
+   color: #ffffff;
+   padding-bottom: 2px;
+   font-size: 20px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   z-index: 10;
+   box-shadow: 0 4px 12px rgba(232, 104, 0, 0.3);
+   transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.carousel-dot-arrow:hover {
+   background-color: #d15d00;
+   transform: translateY(-50%) scale(1.06);
+}
+
+.left-arrow {
+   left: -10px;
+}
+
+.right-arrow {
+   right: -10px;
+}
+
+/* Pagination Dots / Pill Indicator */
+.carousel-dots-wrapper {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   margin-top: 30px;
+}
+
+.carousel-dot {
+   width: 10px;
+   height: 10px;
+   background-color: #cbd5e0;
+   border: none;
+   border-radius: 50%;
+   padding: 0;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.carousel-dot.active {
+   width: 30px;
+   border-radius: 12px;
+   background-color: #e86800;
+}
+
+/* ==========================================================================
+   AI CX Assessment CTA Section - Mobile First
+   ========================================================================== */
+.ai-assessment-cta-section {
+   padding: 80px 0px;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   text-align: center;
+   color: #ffffff;
+}
+
+.ai-assessment-cta-section .ai-cta-heading {
+   max-width: 650px;
+   margin: 0 auto 50px auto;
+   color: #fff;
+}
+
+.ai-cta-heading .highlight-text {
+   color: #e86800;
+}
+
+/* Inner Box Container matching provided DevTools specifications */
+.activate-box-content {
+   background-color: hsla(0, 0%, 100%, 0.05);
+   border: 2px solid hsla(0, 0%, 100%, 0.1);
+   border-radius: 20px;
+   padding: 40px 30px;
+   max-width: 950px;
+   margin: 0 auto;
+   text-align: left;
+   backdrop-filter: blur(4px);
+}
+
+.activate-box-content .ai-box-title,
+.activate-box-content .ai-box-desc {
+   color: #fff;
+   text-align: left;
+}
+
+.ai-cta-btn {
+   transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* SAP B2B Hero Banner Styles */
+.sap-b2b-banner-section {
+   padding: 80px 0;
+   width: 100%;
+   overflow-x: hidden
+}
+
+.sap-b2b-banner-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+   gap: 50px;
+}
+
+/* Left Content Column */
+.sap-b2b-banner-content {
+   max-width: 100%;
+}
+
+.sap-b2b-banner-title {
+   color: #e86800;
+}
+
+.sap-b2b-banner-subtitle {
+   font-weight: 400 !important;
+   text-align: left !important;
+}
+
+.sap-b2b-banner-tagline,
+.sap-b2b-banner-highlight {
+   text-align: left !important;
+}
+
+.banner-btn {
+   border-radius: 40px;
+}
+
+/* CTA Buttons */
+.sap-b2b-banner-actions {
+   display: flex;
+   align-items: center;
+   gap: 30px;
+   margin-bottom: 20px;
+   flex-wrap: wrap;
+}
+
+/* Right Image Column with Custom Curved Corner */
+.sap-b2b-banner-image-wrapper {
+   width: 100%;
+   max-width: 100%;
+   border-bottom-left-radius: 120px;
+   overflow: hidden;
+}
+
+.sap-b2b-banner-img {
+   object-fit: cover;
+   display: block;
+}
+
+/* B2B Portal Customers Section */
+.b2b-customers-section {
+   padding: 0 0 80px 0;
+   text-align: center;
+}
+
+/* Grid layout for 5 cards in a single row on desktop */
+.b2b-customers-grid {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+
+/* Individual Card Styling with Subtle Gray Border and Rounded Corners */
+.b2b-customer-card {
+   max-width: 200px;
+   background-color: #ffffff;
+   border: 1px solid #dcdcdc;
+   border-radius: 12px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 10px;
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.b2b-customer-card:hover {
+   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.b2b-customer-logo {
+   max-width: 100%;
+   max-height: 100%;
+   object-fit: contain;
+   display: block;
+}
+
+/* SAP Testimonial Section Styles */
+/* .sap-testimonial-section {
+   padding: 80px 0;
+} */
+
+.sap-testimonial-container {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   text-align: center;
+   gap: 50px;
+}
+
+/* Left Video Thumbnail */
+.sap-testimonial-image-wrapper {
+   position: relative;
+   flex-shrink: 0;
+   width: 280px;
+   height: 280px;
+   border-radius: 20px;
+   overflow: hidden;
+   cursor: pointer;
+   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.sap-testimonial-thumb {
+   object-fit: cover;
+   display: block;
+}
+
+.sap-play-button-overlay {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   width: 56px;
+   height: 56px;
+   background-color: rgba(255, 255, 255, 0.85);
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: background-color 0.3s ease;
+}
+
+.sap-testimonial-image-wrapper:hover .sap-play-button-overlay {
+   background-color: rgba(255, 255, 255, 1);
+}
+
+.sap-play-icon {
+   color: #e86800;
+   font-size: 18px;
+   margin-left: 3px;
+}
+
+/* Right Content */
+.sap-testimonial-content {
+   flex: 1;
+   position: relative;
+   text-align: left;
+}
+
+.sap-quote-icon-wrapper {
+   display: none;
+}
+
+.sap-quote-icon-wrapper {
+   position: absolute;
+   top: -10px;
+   right: 0;
+}
+
+.sap-testimonial-content .sap-testimonial-quote {
+   text-align: left;
+   color: #e86800;
+}
+
+.sap-testimonial-content .sap-author-name {
+   text-align: left;
+   margin-bottom: 20px;
+}
+
+.sap-testimonial-content .sap-author-title {
+   margin-bottom: 20px;
+}
+
+/* Insights Carousel Section */
+.sap-insights-section {
+   padding: 80px 0;
+   overflow: hidden;
+}
+
+.sap-insights-carousel-viewport {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 60px;
+}
+
+.sap-insights-track {
+   display: flex;
+   transition: transform 0.6s ease-in-out;
+   gap: 30px;
+   width: 100%;
+}
+
+/* Individual Card Styling */
+.sap-insight-card {
+   flex: 0 0 calc((100% - 50px) / 3);
+   background: #ffffff;
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: column;
+}
+
+.sap-insight-card .sap-insight-card-title {
+   text-align: left;
+}
+
+.sap-insight-image-box {
+   width: 100%;
+   height: 240px;
+   border-radius: 12px;
+   overflow: hidden;
+   margin-bottom: 20px;
+}
+
+.sap-insight-img {
+   object-fit: cover;
+   display: block;
+}
+
+/* Navigation Arrows (Bottom Right as per design) */
+.sap-insights-arrows {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   display: flex;
+   gap: 15px;
+   z-index: 10;
+}
+
+.sap-arrow-btn {
+   width: 40px;
+   height: 40px;
+   background-color: #444;
+   color: #ffffff;
+   border: none;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   cursor: pointer;
+   padding-bottom: 2px;
+   font-size: 20px;
+   transition: background-color 0.3s ease;
+}
+
+.sap-arrow-btn:hover {
+   background-color: #e86800;
+}
+
 
 /* ==========================================================================
    RESPONSIVE BREAKPOINTS
@@ -418,6 +919,63 @@
    .why-ai-item {
       flex-direction: row;
    }
+
+   /* 3 Cards side-by-side on desktop */
+   .focus-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+   }
+
+   .left-arrow {
+      left: -20px;
+   }
+
+   .right-arrow {
+      right: -20px;
+   }
+
+   .activate-box-content {
+      padding: 50px;
+   }
+
+   .sap-b2b-banner-container {
+      flex-direction: row;
+   }
+
+   .sap-b2b-banner-content {
+      flex: 1;
+      max-width: 50%;
+   }
+
+   /* Right Image: Pulls out of container to browser right edge */
+   .sap-b2b-banner-image-wrapper {
+      flex: 1;
+      width: calc(50% + (100vw - 100%) / 2);
+      margin-right: calc((100% - 100vw) / 2);
+   }
+
+   .b2b-customer-card {
+      flex: 0 1 calc(33.333% - 16px);
+      max-width: 180px;
+   }
+
+   .sap-testimonial-container {
+      flex-direction: row;
+      align-items: center;
+   }
+
+   .sap-quote-icon-wrapper {
+      display: block;
+   }
+
+   .sap-testimonial-content .sap-testimonial-quote {
+      max-width: 350px;
+   }
+
+   .sap-insight-card {
+      flex: 0 0 calc((100% - 20px) / 2);
+   }
 }
 
 /* Small Laptops (min-width: 1024px) */
@@ -437,10 +995,34 @@
    .customer-logo-img {
       max-height: -webkit-fill-available;
    }
+
+   .b2b-customer-card {
+      max-width: 160px;
+   }
+
+   .sap-testimonial-content .sap-testimonial-quote {
+      max-width: 550px;
+   }
 }
 
 /* Standard Desktop (min-width: 1280px) */
-@media only screen and (min-width: 1280px) {}
+@media only screen and (min-width: 1280px) {
+   .sap-b2b-banner-section {
+      padding: 0;
+   }
+
+   .b2b-customers-section {
+      padding: 80px 0;
+   }
+
+   .b2b-customer-card {
+      max-width: 200px;
+   }
+
+   .sap-testimonial-content .sap-testimonial-quote {
+      max-width: 900px;
+   }
+}
 
 /* Large Desktop (min-width: 1440px) */
 @media only screen and (min-width: 1440px) {}

@@ -151,8 +151,8 @@ function Header() {
               {activeMenu === "lob" && (
                 <div className="dropdown-menu two-column-dropdown">
                   <div className="dropdown-column left-column">
-                    <span className="column-title"><Link to="/line-of-business/e-commerce" onClick={closeMobile}>E-COMMERCE</Link></span>
                     <ul className="dropdown-item-list">
+                      <li><Link to="/line-of-business/e-commerce" onClick={closeMobile}>E-COMMERCE</Link></li>
                       <li><Link to="/line-of-business/b2b-commerce" onClick={closeMobile}>B2B Commerce</Link></li>
                       <li><Link to="/line-of-business/b2c-commerce" onClick={closeMobile}>B2C Commerce</Link></li>
                     </ul>
@@ -179,21 +179,21 @@ function Header() {
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("solutions")}
               >
-                <span>Solutions</span>
+                <span><Link to="/" onClick={closeMobile}>Solutions</Link></span>
                 <span className="arrow-icon">▶</span>
               </div>
 
               {activeMenu === "solutions" && (
                 <div className="dropdown-menu single-column-dropdown">
                   <ul className="dropdown-item-list">
-                    <li><Link to="#" onClick={closeMobile}>Autonomous CX for SAP</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>SAP Commerce Cloud, cloud ERP Edition</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Better B2B</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>AI for SAP CX</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>SAP B2B Self-Service Portal Accelerator</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Knack Brava B2B Omnichannel Solution</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>B2B2C Network Commerce Solution</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>B2B Fashion Wholesale Solution</Link></li>
+                    <li><Link to="https://www.knacksystems.com/ai-center/autonomous-cx" onClick={closeMobile}>Autonomous CX for SAP</Link></li>
+                    <li><Link to="/solutions/sap-commerce-cloud" onClick={closeMobile}>SAP Commerce Cloud, cloud ERP Edition</Link></li>
+                    <li><Link to="https://www.knacksystems.com/solutions/better-b2b-sap-cx" onClick={closeMobile}>Better B2B</Link></li>
+                    <li><Link to="/solutions/Ai-for-sap-cx" onClick={closeMobile}>AI for SAP CX</Link></li>
+                    <li><Link to="/solutions/sap-b2b-self-service-portal" onClick={closeMobile}>SAP B2B Self-Service Portal Accelerator</Link></li>
+                    <li><Link to="https://www.knacksystems.com/solutions/b2b-self-service-portal-knack-brava" onClick={closeMobile}>Knack Brava B2B Omnichannel Solution</Link></li>
+                    <li><Link to="https://www.knacksystems.com/solutions/b2b2c-network-commerce-solution-seasononeb2b2c" onClick={closeMobile}>B2B2C Network Commerce Solution</Link></li>
+                    <li><Link to="https://www.knacksystems.com/solutions/b2b-fashion-wholesale-solution-seasonone" onClick={closeMobile}>B2B Fashion Wholesale Solution</Link></li>
                   </ul>
                 </div>
               )}
@@ -209,19 +209,19 @@ function Header() {
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("services")}
               >
-                <span>Services</span>
+                <span><Link to="/Services" onClick={closeMobile}>Services</Link></span>
                 <span className="arrow-icon">▶</span>
               </div>
 
               {activeMenu === "services" && (
                 <div className="dropdown-menu single-column-dropdown">
                   <ul className="dropdown-item-list">
-                    <li><Link to="#" onClick={closeMobile}>Strategy & Planning</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Implementation</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Solution Design</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Rollout & Adoption</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Application Managed Services & Operations</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Commerce AMS Services</Link></li>
+                    <li><Link to="/services/strategy-and-planning" onClick={closeMobile}>Strategy & Planning</Link></li>
+                    <li><Link to="/services/implementation" onClick={closeMobile}>Implementation</Link></li>
+                    <li><Link to="/services/solution-design" onClick={closeMobile}>Solution Design</Link></li>
+                    <li><Link to="/services/roll-out-and-adoption" onClick={closeMobile}>Rollout & Adoption</Link></li>
+                    <li><Link to="/services/Application" onClick={closeMobile}>Application Managed Services & Operations</Link></li>
+                    <li><Link to="/services/ams" onClick={closeMobile}>Commerce AMS Services</Link></li>
                   </ul>
                 </div>
               )}
@@ -244,17 +244,17 @@ function Header() {
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("insights")}
               >
-                <span>Insights & News</span>
+                <span><Link to="/insights-and-news" className="nav-link plain-link" onClick={closeMobile}>Insights & News</Link></span>
                 <span className="arrow-icon">▶</span>
               </div>
 
               {activeMenu === "insights" && (
                 <div className="dropdown-menu single-column-dropdown insights-wrap">
                   <ul className="dropdown-item-list">
-                    <li><Link to="#" onClick={closeMobile}>Blogs</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Podcasts</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Webinars</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>News & Events</Link></li>
+                    {/* <li><Link to="#" onClick={closeMobile}>Blogs</Link></li> */}
+                    <li><Link to="/insights-and-news/podcasts" onClick={closeMobile}>Podcasts</Link></li>
+                    <li><Link to="/insights-and-news/webinars" onClick={closeMobile}>Webinars</Link></li>
+                    <li><Link to="/insights-and-news/news-and-events" onClick={closeMobile}>News & Events</Link></li>
                   </ul>
                 </div>
               )}
@@ -270,17 +270,17 @@ function Header() {
                 className="nav-link"
                 onClick={() => toggleMobileSubmenu("company")}
               >
-                <span>Company</span>
+                <span><Link to="/company" className="nav-link plain-link" onClick={closeMobile}>Company</Link></span>
                 <span className="arrow-icon">▶</span>
               </div>
 
               {activeMenu === "company" && (
                 <div className="dropdown-menu single-column-dropdown last-dropdown">
                   <ul className="dropdown-item-list">
-                    <li><Link to="#" onClick={closeMobile}>Leadership Team</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Certifications & Partners</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Careers</Link></li>
-                    <li><Link to="#" onClick={closeMobile}>Contact Us</Link></li>
+                    <li><Link to="/company/leadership-team" onClick={closeMobile}>Leadership Team</Link></li>
+                    <li><Link to="/company/certifications-partners" onClick={closeMobile}>Certifications & Partners</Link></li>
+                    <li><Link to="/company/careers" onClick={closeMobile}>Careers</Link></li>
+                    <li><Link to="/company/contact-us" onClick={closeMobile}>Contact Us</Link></li>
                   </ul>
                 </div>
               )}

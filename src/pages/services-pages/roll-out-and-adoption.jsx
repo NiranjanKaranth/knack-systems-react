@@ -10,7 +10,7 @@ function RollOutAdoption() {
   const pageData = globalData.rollOut;
 
   return (
-    <div className="solution-design-landing-page">
+    <div className="roll-out-adoption-landing-page">
       {/* 1. Global Hero Banner Module */}
       <GlobalHero
         title={pageData.hero?.title}

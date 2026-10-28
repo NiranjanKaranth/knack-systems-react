@@ -8,7 +8,7 @@ import { globalData, sharedStats, sharedLogos } from "../data/globalData";
 import "../our-works.css";
 import "../data/common.css";
 
-function OurWorksPage() {
+function OurWorks() {
   const pageData = globalData.ourWorks;
   const worksList = pageData.worksList || [];
   const [activeTab, setActiveTab] = useState("All");
@@ -76,4 +76,4 @@ function OurWorksPage() {
   );
 }
 
-export default OurWorksPage;
+export default OurWorks;

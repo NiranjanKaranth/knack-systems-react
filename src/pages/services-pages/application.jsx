@@ -10,7 +10,7 @@ function ApplicationManagedServices() {
   const pageData = globalData.application;
 
   return (
-    <div className="solution-design-landing-page">
+    <div className="Application-landing-page">
       {/* 1. Global Hero Banner Module */}
       <GlobalHero
         title={pageData.hero?.title}

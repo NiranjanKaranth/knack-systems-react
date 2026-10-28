@@ -17,32 +17,33 @@ import HighTech from './pages/industries-pages/high-tech';
 import BuildingMaterials from './pages/industries-pages/building-materials';
 import LifeSciences from './pages/industries-pages/life-sciences';
 import LineOfBusiness from "./pages/line-of-business";
-import CPQ from "./pages/line-of-business-pages/cpq";
 import ECommerce from "./pages/line-of-business-pages/e-commerce";
 import B2BCommerce from "./pages/line-of-business-pages/b2b-commerce";
 import B2CCommerce from "./pages/line-of-business-pages/b2c-commerce";
+import CPQ from "./pages/line-of-business-pages/cpq";
 import Sales from "./pages/line-of-business-pages/sales";
 import Service from "./pages/line-of-business-pages/service";
 import Marketing from "./pages/line-of-business-pages/marketing";
+import SapCommerceCloud from "./pages/solutions-pages/sap-commerece-cloud";
+import AiSAPCX from "./pages/solutions-pages/ai-sap-cx";
+import SapB2BSelfServicePortal from "./pages/solutions-pages/sap-b2b-self-service-portal";
 import Services from "./pages/services";
-import OurWorksPage from "./pages/our-works";
-import InsightsNews from "./pages/insights-and-news";
-import Company from "./pages/company";
 import StrategyPlanning from "./pages/services-pages/strategy-and-planning";
 import Implementation from "./pages/services-pages/implementation";
 import SolutionDesign from "./pages/services-pages/solution-design";
 import RollOutAdoption from "./pages/services-pages/roll-out-and-adoption";
 import ApplicationManagedServices from "./pages/services-pages/application";
 import AMS from "./pages/services-pages/commerece-ams";
+import OurWorks from "./pages/our-works";
+import InsightsNews from "./pages/insights-and-news";
 import Podcasts from "./pages/insights-and-news-pages/podcasts";
 import Webinars from "./pages/insights-and-news-pages/webinars";
 import NewsEvents from "./pages/insights-and-news-pages/news-and-events";
+import Company from "./pages/company";
 import LeadershipTeam from "./pages/company-pages/leadership-team";
 import CertificationsPartner from "./pages/company-pages/certifications-and-partners";
 import Careers from "./pages/company-pages/careers";
 import ContactUs from "./pages/company-pages/contact-us";
-import SapCommerceCloud from "./pages/solutions-pages/sap-commerece-cloud";
-import AiSAPCX from "./pages/solutions-pages/ai-sap-cx";
 
 function App() {
   return (
@@ -72,25 +73,26 @@ function App() {
           <Route path="/line-of-business/Sales" element={<Sales />} />
           <Route path="/line-of-business/Service" element={<Service />} />
           <Route path="/line-of-business/Marketing" element={<Marketing />} />
+          <Route path="/solutions/sap-commerce-cloud" element={<SapCommerceCloud />} />
+          <Route path="/solutions/Ai-for-sap-cx" element={<AiSAPCX />} />
+          <Route path="/solutions/sap-b2b-self-service-portal" element={<SapB2BSelfServicePortal />} />
           <Route path="/Services" element={<Services />} />
-          <Route path="/our-works" element={<OurWorksPage />} />
-          <Route path="/insights-and-news" element={<InsightsNews />} />
-          <Route path="/company" element={<Company />} />
           <Route path="/services/strategy-and-planning" element={<StrategyPlanning />} />
           <Route path="/services/implementation" element={<Implementation />} />
           <Route path="/services/solution-design" element={<SolutionDesign />} />
           <Route path="/services/roll-out-and-adoption" element={<RollOutAdoption />} />
           <Route path="/services/Application" element={<ApplicationManagedServices />} />
           <Route path="/services/ams" element={<AMS />} />
+          <Route path="/our-works" element={<OurWorks />} />
+          <Route path="/insights-and-news" element={<InsightsNews />} />
           <Route path="/insights-and-news/podcasts" element={<Podcasts />} />
           <Route path="/insights-and-news/webinars" element={<Webinars />} />
           <Route path="/insights-and-news/news-and-events" element={<NewsEvents />} />
+          <Route path="/company" element={<Company />} />
           <Route path="/company/leadership-team" element={<LeadershipTeam />} />
           <Route path="/company/certifications-partners" element={<CertificationsPartner />} />
           <Route path="/company/careers" element={<Careers />} />
           <Route path="/company/contact-us" element={<ContactUs />} />
-          <Route path="/solutions/sap-commerce-cloud" element={<SapCommerceCloud />} />
-          <Route path="/solutions/Ai-for-sap-cx" element={<AiSAPCX />} />
         </Routes>
 
         <Footer />
